@@ -92,14 +92,14 @@ geospatial-remote-sensing-portfolio/
 
 ## Sample Cartographic Previews
 
-### 01. UNESCO Heritage Environmental Threat Index (Illustrative Sample)
-![UNESCO Threat Sample](01_Environmental_Heritage_Assessment/maps/01_unesco_composite_threat_index.png)
+### 01. UNESCO Heritage Environmental Threat Index
+![UNESCO Threat Sample](Environmental_Heritage_Assessment/maps/01_unesco_composite_threat_index.png)
 
-### 02. Okomu National Park Poaching Hotspot Analysis (Illustrative Sample)
-![Okomu Hotspot Sample](02_Okomu_Poaching_Hotspots/maps/01_okomu_poaching_hotspot_gi_star.png)
+### 02. Okomu National Park Poaching Hotspot Analysis
+![Okomu Hotspot Sample](Okomu_Poaching_Hotspots/maps/01_okomu_poaching_hotspot_gi_star.png)
 
-### 04. Multi-Criteria Flood Susceptibility Zonation (Illustrative Sample)
-![Flood Risk Sample](04_Flood_Risk_Assessment/maps/01_flood_susceptibility_ahp_map.png)
+### 04. Multi-Criteria Flood Susceptibility Zonation 
+![Flood Risk Sample](Flood_Risk_Assessment/maps/01_flood_susceptibility_ahp_map.png)
 
 ---
 
