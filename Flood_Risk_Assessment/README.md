@@ -1,6 +1,6 @@
 # Multi-Criteria Flood Susceptibility and Hydrological Risk Assessment (AHP-GIS)
 
-> **Portfolio Note:** The PNG maps currently stored in `maps/` are **illustrative cartographic templates** demonstrating layout design and thematic structure. Replace them with your actual exported ArcGIS Pro or QGIS layouts.
+
 
 ---
 
