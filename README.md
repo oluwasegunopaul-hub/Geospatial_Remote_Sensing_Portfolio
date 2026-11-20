@@ -86,7 +86,7 @@ geospatial-remote-sensing-portfolio/
 | **03** | **Soil Fertility Assessment** | Geostatistical interpolation (Ordinary Kriging), soil nutrient & pH index mapping | [View Project](./Soil_Fertility_Assessment/README.md) |
 | **04** | **Flood Risk Assessment** | Analytical Hierarchy Process (AHP), Topographic Wetness Index (TWI), hydrological modelling | [View Project](./Flood_Risk_Assessment/README.md) |
 | **05** | **Soil Erosion Assessment** | Revised Universal Soil Loss Equation (RUSLE), R, K, LS, C, and P factor raster modelling | [View Project](./Soil_Erosion_Assessment/README.md) |
-| **06** | **Other Geospatial & Remote Sensing Maps** | Study area maps, Random Forest LULC, SRTM DEM, Slope, NDVI, and NDWI outputs | [View Gallery](./06_Other_Geospatial_Maps/README.md) |
+| **06** | **Other Geospatial & Remote Sensing Maps** | Study area maps, Random Forest LULC, SRTM DEM, Slope, NDVI, and NDWI outputs | [View Gallery](./Other_Geospatial_Maps/README.md) |
 
 ---
 
