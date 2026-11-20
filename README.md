@@ -81,11 +81,11 @@ geospatial-remote-sensing-portfolio/
 
 | # | Project Category | Focus & Techniques | Folder Link |
 |---|---|---|---|
-| **01** | **Environmental Threats to UNESCO Heritage Sites (SW Nigeria)** | Multi-criteria spatial overlay, buffer encroachment analysis, LULC change detection | [View Project](./01_Environmental_Heritage_Assessment/README.md) |
-| **02** | **Poaching Hotspots in Okomu National Park, Nigeria** | Getis-Ord Gi* spatial clustering, Kernel Density Estimation, least-cost patrol modelling | [View Project](./02_Okomu_Poaching_Hotspots/README.md) |
-| **03** | **Soil Fertility Assessment** | Geostatistical interpolation (Ordinary Kriging), soil nutrient & pH index mapping | [View Project](./03_Soil_Fertility_Assessment/README.md) |
-| **04** | **Flood Risk Assessment** | Analytical Hierarchy Process (AHP), Topographic Wetness Index (TWI), hydrological modelling | [View Project](./04_Flood_Risk_Assessment/README.md) |
-| **05** | **Soil Erosion Assessment** | Revised Universal Soil Loss Equation (RUSLE), R, K, LS, C, and P factor raster modelling | [View Project](./05_Soil_Erosion_Assessment/README.md) |
+| **01** | **Environmental Threats to UNESCO Heritage Sites (SW Nigeria)** | Multi-criteria spatial overlay, buffer encroachment analysis, LULC change detection | [View Project](./Environmental_Heritage_Assessment/README.md) |
+| **02** | **Poaching Hotspots in Okomu National Park, Nigeria** | Getis-Ord Gi* spatial clustering, Kernel Density Estimation, least-cost patrol modelling | [View Project](./Okomu_Poaching_Hotspots/README.md) |
+| **03** | **Soil Fertility Assessment** | Geostatistical interpolation (Ordinary Kriging), soil nutrient & pH index mapping | [View Project](./Soil_Fertility_Assessment/README.md) |
+| **04** | **Flood Risk Assessment** | Analytical Hierarchy Process (AHP), Topographic Wetness Index (TWI), hydrological modelling | [View Project](./Flood_Risk_Assessment/README.md) |
+| **05** | **Soil Erosion Assessment** | Revised Universal Soil Loss Equation (RUSLE), R, K, LS, C, and P factor raster modelling | [View Project](./Soil_Erosion_Assessment/README.md) |
 | **06** | **Other Geospatial & Remote Sensing Maps** | Study area maps, Random Forest LULC, SRTM DEM, Slope, NDVI, and NDWI outputs | [View Gallery](./06_Other_Geospatial_Maps/README.md) |
 
 ---
