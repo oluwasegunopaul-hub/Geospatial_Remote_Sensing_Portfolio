@@ -1,6 +1,6 @@
 # Other Geospatial & Remote Sensing Thematic Maps
 
-> **Portfolio Note:** The PNG maps inside `Study_Area_Maps/`, `LULC_Maps/`, `Terrain_Maps/`, and `Vegetation_Maps/` are **illustrative cartographic placeholders** demonstrating how to organize diverse foundational GIS and Remote Sensing outputs in a clean, modular folder hierarchy.
+
 
 ---
 
