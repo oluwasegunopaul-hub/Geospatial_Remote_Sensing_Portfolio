@@ -17,10 +17,10 @@ This project applies spatial statistics, kernel density estimation, and least-co
 Okomu National Park, Ovia South-West Local Government Area, Edo State, Southern Nigeria (Illustrative boundary and sample post locations shown in placeholder maps).
 
 ## 4. Data Sources (Illustrative Examples / Placeholders)
-- **Protected Area & Sector Boundaries:** Nigeria National Park Service (NNPS) / WDPA — *(Placeholder)*
-- **Anthropogenic Threat / Patrol Records:** Illustrative synthetic sample coordinates *(Note: Actual sensitive wildlife/poaching coordinates are omitted for conservation security)*
-- **Terrain & Land Cover:** SRTM 30m DEM and Sentinel-2 LULC classification — *(Placeholder)*
-- **Infrastructure & Drainage:** OpenStreetMap roads, perimeter tracks, and river networks — *(Placeholder)*
+- **Protected Area & Sector Boundaries:** Nigeria National Park Service (NNPS) / WDPA 
+- **Anthropogenic Threat / Patrol Records:** Illustrative synthetic sample coordinates 
+- **Terrain & Land Cover:** SRTM 30m DEM and Sentinel-2 LULC classification 
+- **Infrastructure & Drainage:** OpenStreetMap roads, perimeter tracks, and river networks 
 
 ## 5. Software Used
 - ArcGIS Pro (Spatial Statistics Toolbox), QGIS, Python (PySAL / GeoPandas)
