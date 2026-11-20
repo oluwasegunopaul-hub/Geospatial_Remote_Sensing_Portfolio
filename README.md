@@ -106,18 +106,14 @@ geospatial-remote-sensing-portfolio/
 
 ---
 
-## Quick Customisation Guide
 
-1. **Replace Sample PNGs:** Export your map from ArcGIS Pro or QGIS at **300 DPI (PNG format)** and overwrite the matching file inside the project's `maps/` directory—or add a new file name and update `script.js`.
-2. **Edit Website Content:** Open `script.js` and edit the `PORTFOLIO_CONFIG` object at the top of the file to update your name, bio, skills, contact links, map paths, and captions without touching HTML or CSS.
-3. **Publish Online:** Push the repository to GitHub and turn on **GitHub Pages** under `Settings > Pages > Deploy from branch (main)`. See [`DEPLOYMENT_AND_EDITING_GUIDE.md`](./DEPLOYMENT_AND_EDITING_GUIDE.md) for complete step-by-step instructions.
 
 ---
 
 ## Author & Contact
 
-- **Name:** `[Your Full Name]`
-- **Qualification:** B.Sc. / M.Sc. Remote Sensing & Geographic Information Systems
-- **Core Tools:** ArcGIS Pro, QGIS, Google Earth Engine (GEE), ERDAS IMAGINE, Python (GeoPandas/Rasterio), R
-- **GitHub:** `https://github.com/<your-username>`
-- **Email:** `[your.email@example.com]`
+- **Name:** Paul Oluwasegun Adebisi
+- **Qualification:** B. Tech Remote Sensing & Geoscience Information Systems
+- **Core Tools:** ArcGIS Pro, QGIS, Google Earth Engine (GEE), ENVI
+- **GitHub:** `https://github.com/oluwasegunopaul-hub`
+- **Email:** `pauloadebisi@yahoo.com`
