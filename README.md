@@ -90,7 +90,7 @@ geospatial-remote-sensing-portfolio/
 
 ---
 
-## Sample Cartographic Previews
+## Cartographic Previews
 
 ### 01. UNESCO Heritage Environmental Threat Index
 ![UNESCO Threat Sample](Environmental_Heritage_Assessment/maps/01_unesco_composite_threat_index.png)
