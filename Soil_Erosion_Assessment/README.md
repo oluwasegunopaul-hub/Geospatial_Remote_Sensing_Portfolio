@@ -1,6 +1,6 @@
 # Spatial Soil Erosion Risk Assessment Using the RUSLE Model
 
-> **Portfolio Note:** The PNG maps currently stored in `maps/` are **illustrative cartographic templates** demonstrating layout design and thematic structure. Replace them with your actual exported ArcGIS Pro or QGIS layouts.
+
 
 ---
 
@@ -47,7 +47,7 @@ Agricultural & Upland Catchment in South-West Nigeria (Illustrative extent shown
 ![RUSLE Slope Length & Steepness (LS) Factor (Illustrative Sample)](maps/02_rusle_ls_topographic_factor.png)
 *Illustrative continuous topographic erosion potential surface derived from a 30m DEM.*
 
-## 9. Key Findings (Editable Placeholders)
+## 9. Key Findings 
 - *[Editable Placeholder — Replace with your actual findings]:* Estimated mean annual soil loss across the catchment was `[X] t/ha/yr`, with severe erosion (`> 50 t/ha/yr`) localized on steep slopes (`> [X]°`) lacking vegetative cover.
 - *[Editable Placeholder]:* Intact forest and agroforestry zones maintained soil loss below `[X] t/ha/yr` despite high seasonal rainfall.
 
@@ -55,7 +55,4 @@ Agricultural & Upland Catchment in South-West Nigeria (Illustrative extent shown
 - Current maps are **illustrative portfolio examples** and do not represent measured sediment yield data.
 - RUSLE estimates sheet and rill erosion potential and does not directly model gully erosion, bank collapse, or sediment deposition.
 
-## 11. Author Information
-- **Author:** `[Your Full Name]`
-- **Discipline:** Remote Sensing & Geographic Information Systems (GIS)
-- **Portfolio Home:** [Back to Main Repository](../README.md)
+
