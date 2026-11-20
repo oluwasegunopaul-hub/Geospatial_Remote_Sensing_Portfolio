@@ -20,10 +20,7 @@ Welcome to my **Remote Sensing & Geographic Information Systems (GIS) Portfolio*
 geospatial-remote-sensing-portfolio/
 │
 ├── README.md                                  # Main repository documentation & overview
-├── DEPLOYMENT_AND_EDITING_GUIDE.md            # Step-by-step GitHub Pages & editing manual
-├── index.html                                 # Main responsive portfolio website
-├── style.css                                  # Institutional cartographic styling (Navy/Forest/Earth)
-├── script.js                                  # Central project configuration & lightbox viewer
+
 │
 ├── 01_Environmental_Heritage_Assessment/
 │   ├── maps/
