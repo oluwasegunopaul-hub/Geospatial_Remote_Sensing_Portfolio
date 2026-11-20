@@ -1,6 +1,6 @@
 # Geospatial Assessment of Environmental Threats to Cultural and Natural Heritage UNESCO Sites in South-West Nigeria
 
-> **Portfolio Note:** The PNG maps currently stored in `maps/` are **illustrative cartographic templates** demonstrating layout design and thematic structure. Replace them with your actual exported ArcGIS Pro or QGIS layouts.
+
 
 ---
 
@@ -16,11 +16,11 @@ This project demonstrates a spatial multi-criteria and multi-temporal remote sen
 ## 3. Study Area
 Selected Cultural and Natural Heritage Landscapes in South-West Nigeria (Illustrative regional extent shown in sample maps; update with your exact coordinates, states, and site names).
 
-## 4. Data Sources (Illustrative Examples / Placeholders)
-- **Multispectral Satellite Imagery:** Sentinel-2 MSI (10m) / Landsat 8–9 OLI (30m) — *(Placeholder: Specify exact acquisition dates and path/row)*
-- **Digital Elevation Model:** Copernicus GLO-30 / SRTM 30m DEM — *(Placeholder)*
-- **Heritage & Administrative Boundaries:** UNESCO World Heritage Centre / National Commission for Museums and Monuments (NCMM) / OSGOF — *(Placeholder)*
-- **Climate & Ancillary Layers:** CHIRPS Precipitation & OpenStreetMap Road Networks — *(Placeholder)*
+## 4. Data Sources 
+- **Multispectral Satellite Imagery:** Sentinel-2 MSI (10m) / Landsat 8–9 OLI (30m) — 
+- **Digital Elevation Model:** Copernicus GLO-30 / SRTM 30m DEM — 
+- **Heritage & Administrative Boundaries:** UNESCO World Heritage Centre / National Commission for Museums and Monuments (NCMM) / OSGOF — 
+- **Climate & Ancillary Layers:** CHIRPS Precipitation & OpenStreetMap Road Networks — 
 
 ## 5. Software Used
 - ArcGIS Pro 3.x, QGIS 3.34 LTR, Google Earth Engine (GEE)
