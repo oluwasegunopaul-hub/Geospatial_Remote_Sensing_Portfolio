@@ -95,8 +95,8 @@ geospatial-remote-sensing-portfolio/
 ### 01. UNESCO Heritage Environmental Threat Index
 ![UNESCO Threat Sample](Environmental_Heritage_Assessment/maps/01_unesco_composite_threat_index.png)
 
-### 02. Okomu National Park Poaching Hotspot Analysis
-![Okomu Hotspot Sample](Okomu_Poaching_Hotspots/maps/01_okomu_poaching_hotspot_gi_star.png)
+### 02. Lower Ogun Osun soil Erosion Analysis
+![Okomu Hotspot Sample](Soil_Erosion_Assessment/maps/01_rusle_soil_loss_erosion_map.png)
 
 ### 04. Multi-Criteria Flood Susceptibility Zonation 
 ![Flood Risk Sample](Flood_Risk_Assessment/maps/01_flood_susceptibility_ahp_map.png)
