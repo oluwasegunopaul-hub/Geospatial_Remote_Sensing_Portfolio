@@ -2,17 +2,15 @@
 
 ![Portfolio Banner](assets/portfolio-images/portfolio_banner.png)
 
-> **Important Note on Sample Data:** All maps currently displayed in this repository are **illustrative portfolio templates and cartographic placeholders** generated to demonstrate folder organization, layout standards, and GitHub Pages presentation. They do **not** represent actual field measurements, empirical research findings, or real-world incident records. Replace these PNG files with your own ArcGIS Pro and QGIS layout exports using the instructions below.
+
 
 ---
 
 ## Overview
 
-Welcome to my **Remote Sensing & Geographic Information Systems (GIS) Portfolio**. This repository is structured specifically around **high-resolution static PNG map exports** produced in **ArcGIS Pro** and **QGIS**, eliminating the need to upload large raw shapefiles, geodatabases, or multi-gigabyte GeoTIFF rasters to GitHub.
+Welcome to my **Remote Sensing & Geographic Information Systems (GIS) Portfolio**. This repository is structured specifically around **high-resolution static PNG map exports** produced in **ArcGIS Pro** and **ARCMAP**, eliminating the need to upload large raw shapefiles, geodatabases, or multi-gigabyte GeoTIFF rasters to GitHub.
 
-### Live Portfolio Website
-Once GitHub Pages is enabled, your interactive portfolio gallery will be live at:
-`https://<your-github-username>.github.io/geospatial-remote-sensing-portfolio/`
+
 
 ---
 
