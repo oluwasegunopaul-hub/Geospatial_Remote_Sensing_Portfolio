@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remote Sensing & GIS Cartographic Portfolio</title>
+  <meta name="description" content="Academic and professional Remote Sensing, GIS spatial analysis, environmental modelling, and cartographic portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Institutional Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3.6 9h16.8M3.6 15h16.8M12 3a14.5 14.5 0 0 1 0 18M12 3a14.5 14.5 0 0 0 0 18"></path>
+          </svg>
+        </span>
+        <div class="brand-text">
+          <span class="brand-name" id="nav-author-name">Remote Sensing &amp; GIS Portfolio</span>
+          <span class="brand-sub">Cartography &bull; Spatial Analysis &bull; Earth Observation</span>
+        </div>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <a href="#about">Overview</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#" id="nav-github-link" class="nav-github-btn" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub Repo
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow-badge" id="hero-specialisation">Remote Sensing &amp; Geographic Information Systems Specialist</div>
+          <h1 id="hero-title">Spatial Intelligence, Environmental Assessment &amp; Cartographic Design</h1>
+          <p class="hero-lead" id="hero-bio">
+            Graduate in Remote Sensing and GIS specializing in multi-criteria spatial decision analysis, environmental hazard modelling, land-cover change detection, and publication-grade cartographic visualization in ArcGIS Pro and QGIS.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore Cartographic Projects</a>
+            <a href="#" id="hero-repo-btn" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+          </div>
+          <div class="disclaimer-strip">
+            <strong>Portfolio Notice:</strong> Currently populated with illustrative cartographic templates (static PNG exports). Replace sample files in <code>/maps/</code> with your own ArcGIS Pro or QGIS layouts via <code>script.js</code>.
+          </div>
+        </div>
+
+        <div class="hero-featured-card">
+          <div class="featured-card-header">
+            <span class="status-dot"></span>
+            <span>Featured Cartographic Output</span>
+          </div>
+          <div class="featured-map-frame" id="hero-featured-preview" role="button" tabindex="0" aria-label="Enlarge featured map">
+            <img src="01_Environmental_Heritage_Assessment/maps/01_unesco_composite_threat_index.png" alt="Featured Cartographic Map" id="hero-featured-img" />
+            <span class="zoom-hint">Click to Inspect High-Res PNG</span>
+          </div>
+          <div class="featured-card-footer">
+            <strong id="hero-featured-title">Composite Environmental Threat Index (SW Nigeria)</strong>
+            <span id="hero-featured-meta">Static Cartographic Layout &bull; ArcGIS Pro / QGIS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Overview & Metrics Strip -->
+    <section id="about" class="overview-section">
+      <div class="container">
+        <div class="stats-bar" id="stats-bar">
+          <!-- Populated dynamically from PORTFOLIO_CONFIG -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Cartographic &amp; Analytical Portfolio</span>
+            <h2>Spatial Research &amp; Thematic Mapping Projects</h2>
+          </div>
+          <p class="section-sub">
+            Select any project category to inspect objectives, methodology, software workflows, and high-resolution static map exports.
+          </p>
+        </div>
+
+        <!-- Category Filter Controls -->
+        <div class="filter-bar" id="category-filters" role="tablist" aria-label="Filter projects by category">
+          <!-- Filter buttons injected dynamically -->
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project cards injected dynamically from script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Core Competencies</span>
+            <h2>Remote Sensing, GIS &amp; Cartographic Stack</h2>
+          </div>
+          <p class="section-sub">
+            Methodological expertise spanning optical/radar image processing, geostatistics, hydrological modelling, and print/web cartography.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skill domains injected dynamically from script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Repository Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-info">
+            <span class="section-kicker light">Collaboration &amp; Inquiries</span>
+            <h2>Connect for GIS Research, Consulting &amp; Opportunities</h2>
+            <p>
+              Available for geospatial analysis, environmental impact mapping, remote sensing workflows, and cartographic visualization roles.
+            </p>
+            <div class="contact-links" id="contact-links">
+              <!-- Contact buttons injected dynamically -->
+            </div>
+          </div>
+          <div class="repo-quickstart">
+            <h3>Repository Architecture</h3>
+            <p>Designed specifically for lightweight, version-controlled static PNG map portfolios on GitHub Pages:</p>
+            <ul>
+              <li><strong>Zero Heavy Datasets:</strong> No multi-GB GeoTIFFs or shapefiles required.</li>
+              <li><strong>Central Config:</strong> Edit <code>script.js</code> to update maps, captions, and bios.</li>
+              <li><strong>Static Map Viewer:</strong> Built-in zoom, pan, fullscreen, and gallery navigation.</li>
+            </ul>
+            <a href="DEPLOYMENT_AND_EDITING_GUIDE.md" class="guide-link" target="_blank">Read Full Editing &amp; Deployment Guide &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="footer-year"></span> <span id="footer-name">Remote Sensing &amp; GIS Portfolio</span>. Hosted on GitHub Pages.</p>
+      <p class="footer-note">Note: Static PNG cartographic layouts displayed for visual inspection.</p>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" hidden>
+    <div class="modal-container">
+      <div class="modal-topbar">
+        <span class="modal-category-badge" id="modal-category">Category</span>
+        <button class="modal-close-btn" id="close-project-modal" aria-label="Close project details">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h2 id="modal-project-title">Project Title</h2>
+        <p class="modal-overview" id="modal-overview"></p>
+
+        <div class="modal-meta-grid">
+          <div class="meta-box">
+            <h4>Software &amp; Tools</h4>
+            <p id="modal-software"></p>
+          </div>
+          <div class="meta-box">
+            <h4>Datasets &amp; Inputs</h4>
+            <p id="modal-datasets"></p>
+          </div>
+          <div class="meta-box">
+            <h4>Documentation</h4>
+            <a href="#" id="modal-readme-link" class="readme-btn" target="_blank" rel="noopener noreferrer">Open Project README.md &nearr;</a>
+          </div>
+        </div>
+
+        <div class="modal-two-col">
+          <div class="detail-panel">
+            <h3>Research Objectives</h3>
+            <ul id="modal-objectives"></ul>
+          </div>
+          <div class="detail-panel">
+            <h3>Spatial Methodology</h3>
+            <ol id="modal-methodology"></ol>
+          </div>
+        </div>
+
+        <div class="modal-gallery-section">
+          <div class="gallery-header-row">
+            <h3>Cartographic Outputs (Static PNG Exports)</h3>
+            <span class="static-badge">Static Image Viewer &bull; Click any map to enlarge &amp; zoom</span>
+          </div>
+          <div class="modal-maps-grid" id="modal-maps-grid">
+            <!-- Map thumbnails injected dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- High-Resolution Static PNG Lightbox Viewer -->
+  <div class="lightbox-backdrop" id="map-lightbox" role="dialog" aria-modal="true" aria-label="High-resolution map viewer" hidden>
+    <div class="lightbox-toolbar">
+      <div class="lightbox-title-group">
+        <span class="lightbox-counter" id="lb-counter">Map 1 of 2</span>
+        <strong id="lb-title">Map Title</strong>
+      </div>
+      <div class="lightbox-controls">
+        <button type="button" class="lb-btn" id="lb-zoom-out" title="Zoom Out (-)">&minus;</button>
+        <span class="lb-zoom-level" id="lb-zoom-label">100%</span>
+        <button type="button" class="lb-btn" id="lb-zoom-in" title="Zoom In (+)">+</button>
+        <button type="button" class="lb-btn" id="lb-zoom-reset" title="Reset Zoom">Reset</button>
+        <button type="button" class="lb-btn" id="lb-fullscreen" title="Toggle Fullscreen">&#x26F6; Fullscreen</button>
+        <button type="button" class="lb-btn lb-close" id="lb-close" title="Close Viewer (Esc)">&times; Close</button>
+      </div>
+    </div>
+
+    <div class="lightbox-stage" id="lb-stage">
+      <button type="button" class="lb-nav prev" id="lb-prev" aria-label="Previous map">&#10094;</button>
+      <div class="lb-image-wrapper" id="lb-image-wrapper">
+        <img src="" alt="" id="lb-img" draggable="false" />
+      </div>
+      <button type="button" class="lb-nav next" id="lb-next" aria-label="Next map">&#10095;</button>
+    </div>
+
+    <div class="lightbox-caption-bar">
+      <p id="lb-caption"></p>
+      <span class="lb-hint">Scroll wheel or buttons to zoom &bull; Drag image when zoomed &bull; Use &larr; &rarr; arrow keys to switch maps</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
