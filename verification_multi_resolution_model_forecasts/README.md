@@ -1,9 +1,9 @@
-# Assessment of Soil Erosion Potential with Integrated RUSLE Model and GIS in Lower Ogun-Osun Basin, Nigeria
+# Verification of Multi-Resolution Model Forecasts of Heavy Rainfall Events in 2024 over Nigeria
 
-[![Project Category](https://img.shields.io/badge/Domain-Remote%20Sensing%20%26%20GIS-2E7D32)](#)
-[![Model](https://img.shields.io/badge/Model-RUSLE-1565C0)](#)
-[![Software](https://img.shields.io/badge/GIS%20Platform-ArcGIS%2010.7.1-6A1B9A)](#)
-[![Institution](https://img.shields.io/badge/Institution-FUTA%2C%20Nigeria-EF6C00)](#)
+[![Project Category](https://img.shields.io/badge/Domain-Hydrometeorology%20%26%20GIS-1565C0)](#)
+[![Study Region](https://img.shields.io/badge/Region-Nigeria%2C%20West%20Africa-2E7D32)](#)
+[![GIS Platform](https://img.shields.io/badge/GIS%20Platform-ArcGIS%2010.8-6A1B9A)](#)
+[![Data Format](https://img.shields.io/badge/Data-NetCDF%20%26%20Raster%20GIS-EF6C00)](#)
 
 ---
 
@@ -26,62 +26,67 @@
 
 ## Project Overview
 
-Soil erosion is a major environmental and land degradation process that depletes fertile topsoil, reduces agricultural productivity, and increases sedimentation in surface water systems. In the **Lower Ogun-Osun Basin** of southern Nigeria—an agriculturally vital region—the spatial extent and severity of water-induced soil erosion have remained inadequately documented, limiting the implementation of targeted soil conservation measures.
+Accurate spatial and quantitative forecasting of rainfall distribution is critical for flood risk management, water resources planning, and agricultural decision-making across Nigeria, where precipitation regimes are governed by strong seasonal migrations of the West African Monsoon and Harmattan wind systems. Evaluating how multi-resolution numerical weather prediction (NWP) forecast products capture localized heavy rainfall events relative to satellite-gauge reference observations provides essential insight into model reliability across distinct climatic zones.
 
-This project integrates the **Revised Universal Soil Loss Equation (RUSLE)** with **Remote Sensing (RS)** and **Geographic Information System (GIS)** techniques to model, quantify, and map soil erosion susceptibility across the Lower Ogun-Osun Basin. Using multi-source geospatial datasets—including Landsat 8 Operational Land Imager (OLI) satellite imagery, Shuttle Radar Topography Mission (SRTM) Digital Elevation Model (DEM) data, TAMSAT satellite-gauge rainfall records, and the FAO Harmonized World Soil Database (HWSD)—five biophysical and management factors ($R$, $K$, $LS$, $C$, and $P$) were derived and combined within a raster GIS environment.
+This project investigates and verifies the monthly spatial distribution and peak intensity of forecasted daily rainfall across **Nigeria** for the year **2024** using **Remote Sensing** and **Geographic Information System (GIS)** techniques. Daily satellite-based rainfall estimates from **TAMSAT v3.1** (`rfe_filled`) serve as the historical reference baseline against which four forecast model products (`rrarp_24`, `rrdwd_24`, `rrecmwf_24`, and `rruk_24`) are evaluated from **January to December 2024**.
 
-The primary purpose of this analysis is to estimate spatially distributed annual soil loss rates ($\text{t ha}^{-1}\text{ yr}^{-1}$), classify erosion severity zones, and provide an empirical cartographic baseline to guide watershed management, agricultural sustainability, and erosion mitigation planning.
+Using **Panoply** for NetCDF multidimensional data inspection and **ArcGIS 10.8** for geospatial processing, spatial comparison, and cartographic visualization, this analysis documents model agreement, spatial displacement errors, and intensity biases across Nigeria's dry, transitional, and peak wet seasons.
 
 ---
 
 ## Research Objectives
 
 **Research Aim:**  
-To evaluate soil erosion susceptibility within the Lower Ogun-Osun Basin of Nigeria utilizing a Geographic Information System (GIS) methodology coupled with integrated Revised Universal Soil Loss Equation (RUSLE) models.
+To verify the spatial distribution and peak intensity of multi-resolution model forecasts of heavy rainfall events over Nigeria in 2024 against TAMSAT satellite-based rainfall observations.  
+*(Note: `[Information to be provided — insert the exact verbatim Research Aim from Chapter One if different]`)*
 
-**Specific Objectives:**
-1. Integrate RUSLE factors ($R$, $K$, $LS$, $C$, and $P$) into a GIS platform to analyze spatial soil erosion patterns in the Lower Ogun-Osun Basin.
-2. Estimate long-term average annual soil erosion rates across the basin using the Revised Universal Soil Loss Equation (RUSLE).
-3. Develop a classified soil loss potential map for the study area to identify high-risk zones requiring priority soil conservation interventions.
+**Specific Objectives:**  
+1. `[Information to be provided — insert Specific Objective 1 from Chapter One]`
+2. `[Information to be provided — insert Specific Objective 2 from Chapter One]`
+3. `[Information to be provided — insert Specific Objective 3 from Chapter One]`
+
+*(Based on Chapters Three and Four of the manuscript, the analytical scope encompasses: [1] acquiring and inspecting 2024 NetCDF satellite rainfall estimates and multi-resolution model forecast products; [2] mapping monthly spatial rainfall distributions across Nigeria's 36 states and the Federal Capital Territory; and [3] comparing forecasted spatial patterns and peak intensities against historical TAMSAT observations from January to December 2024.)*
 
 ---
 
 ## Study Area
 
-The **Lower Ogun-Osun Basin** is situated in southern Nigeria and spans parts of five states: **Ogun, Osun, Ekiti, Ondo, and Edo States**.
+The study area is the **Federal Republic of Nigeria**, located in West Africa along the coast of the Gulf of Guinea.
 
-* **Geographic Coordinates:** Latitudes $6^\circ 36'\text{ N}$ to $7^\circ 38'\text{ N}$ and Longitudes $4^\circ 13'\text{ E}$ to $5^\circ 26'\text{ E}$
-* **Total Basin Area:** Approximately $16,135\text{ km}^2$ (total classified raster analysis extent: $1,571,753\text{ ha}$)
-* **Topography:** Elevation ranges from $-4\text{ m}$ to $1,072\text{ m}$ above mean sea level ($\text{a.m.s.l.}$), with terrain slopes ranging from $0^\circ$ to $80.5^\circ$.
-* **Climate:** Characterized by two distinct tropical seasons—a wet season from **April to October** and a dry season from **November to March**—with annual rainfall ranging between $1,290\text{ mm}$ and $2,200\text{ mm}$.
-* **Socio-Economic & Land Use Context:** The basin supports diverse communities (including Yoruba and Edo populations), with higher urban population densities in centers such as **Ile-Ife** and **Akure**. Agriculture is the dominant economic activity, centered on the cultivation of cocoa, cassava, maize, and yams, alongside fishing, irrigation farming, trading, and small-scale manufacturing.
+* **Geographic Coordinates:** Approximately Latitudes $4^\circ\text{N}$ to $14^\circ\text{N}$ and Longitudes $2^\circ 30'\text{E}$ to $15^\circ\text{E}$
+* **Administrative Boundaries:** Comprises 36 states and the Federal Capital Territory (FCT), sharing international land borders with **Niger** to the north, **Chad** to the northeast, **Cameroon** to the east, and **Benin** to the west, while bounded to the south by the **Atlantic Ocean**
+* **Total Land Area:** Approximately $923,768\text{ km}^2$
+* **Topography and Relief:** Varied physiography characterized by southern lowlands and coastal plains (including the Niger Delta) that transition northward into central hills and plateaus
+* **Climatic Regime:** Exhibits a pronounced north-south climatic gradient driven by seasonal moisture advection from the Atlantic Ocean and dry, dust-laden Saharan Harmattan winds—featuring a bimodal rainfall regime in the south (interrupted by the July/August "Little Dry Season" or "August Break") and a unimodal wet season peaking in August across the northern Sahelian zone
 
 ### Study Area Reference Map
-![Location Map of the Study Area](maps/01_study_area_location_map.png)
-*Figure 1: Geographical location of the Lower Ogun-Osun Basin across Southwestern Nigeria and Edo State, showing major river networks and road infrastructure.*
+![Study Area Map of Nigeria](maps/01_study_area_map.png)
+*Figure 1: Administrative map of the Federal Republic of Nigeria showing state boundaries, geographical coordinates, and continental/global locator insets.*
 
 ---
 
 ## Data Sources and Datasets
 
-All spatial datasets were projected to **WGS 1984 UTM Zone 31N** and standardized to a $30\text{ m} \times 30\text{ m}$ raster grid resolution for spatial modeling.
+Five primary gridded datasets covering **January to December 2024** were utilized in this research: one satellite-based reference rainfall dataset and four numerical weather forecast model products.
 
 | Dataset | Source | Acquisition Year / Period | Spatial Resolution | Application in the Research |
 | :--- | :--- | :--- | :--- | :--- |
-| **SRTM Digital Elevation Model (DEM)** | United States Geological Survey (USGS EarthExplorer) | `[Information to be provided]` | $30\text{ m}$ | Hydrological terrain processing (sink filling, flow direction, flow accumulation), slope gradient derivation, and computation of the Topographic ($LS$) factor. |
-| **Landsat 8 OLI Satellite Imagery** | United States Geological Survey (USGS EarthExplorer) | December 28, 2022 | $30\text{ m} \times 30\text{ m}$ | Supervised Land Use and Land Cover (LULC) classification and assignment of the Cover and Management ($C$) factor. |
-| **Monthly Average Rainfall Data** | Tropical Applications of Meteorology using Satellite data and ground-based observations (TAMSAT) | 2022 | $0.5^\circ \times 0.5^\circ$ (interpolated to $30\text{ m}$) | Spatial rainfall distribution mapping via IDW interpolation and estimation of the Rainfall-Runoff Erosivity ($R$) factor. |
-| **Digital Soil Map** | FAO Harmonized World Soil Database (HWSD) | `[Information to be provided]` | $30'' \times 30''$ | Delineation of major soil groups and derivation of topsoil textural and organic carbon parameters for the Soil Erodibility ($K$) factor. |
+| **TAMSAT v3.1 Daily Recovered Rainfall Estimate (`rfe_filled`)** | Tropical Applications of Meteorology using SATellite data (TAMSAT), Dept. of Meteorology, University of Reading; accessed via IRI Data Library, Lamont-Doherty Earth Observatory, Columbia University | January – December 2024 (Daily) | $0.0375^\circ \times 0.0375^\circ$ | Historical/observed reference baseline selected for enhanced local accuracy and suitability for African rainfall analysis. |
+| **`rrarp_24` Forecast Product** | `[Information to be provided — e.g., Météo-France ARPEGE model product]` | January – December 2024 | `[Information to be provided]` | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
+| **`rrdwd_24` (`RRDWD`) Forecast Product** | German National Meteorological Service (Deutscher Wetterdienst, DWD) | January – December 2024 | `[Information to be provided]` | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
+| **`rrecmwf_24` Forecast Product** | `[Information to be provided — e.g., European Centre for Medium-Range Weather Forecasts (ECMWF)]` | January – December 2024 | `[Information to be provided]` | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
+| **`rruk_24` Forecast Product** | `[Information to be provided — e.g., UK Met Office model product]` | January – December 2024 | `[Information to be provided]` | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
+
+*(Note: Chapter Three of the manuscript also references `RRGFS` from the Global Forecast Service and `RREM` during dataset selection; the four forecast layers systematically mapped and verified across Chapter Four are `rrarp_24`, `rrdwd_24`, `rrecmwf_24`, and `rruk_24`.)*
 
 ---
 
 ## Software and Technologies
 
-The geospatial processing, statistical computations, and cartographic visualization workflows were executed using the following tools:
+The geospatial data inspection, spatial analysis, and cartographic layout workflows were conducted using the following tools:
 
-* **ArcGIS 10.7.1:** Core GIS and remote sensing environment used for georeferencing, clipping, DEM hydrological conditioning, Inverse Distance Weighted (IDW) interpolation, supervised image classification, raster-to-vector conversions, Raster Calculator map algebra, and cartographic map layout production.
-* **Microsoft Excel:** Used for tabular computation of soil erodibility ($K$) sub-factors and statistical area summaries.
-* **Microsoft Word:** Used for technical research reporting and documentation.
+* **Panoply:** Used to open, visualize, and inspect multidimensional climate datasets downloaded in **NetCDF** (`.nc`) format and to identify/select the target analysis year (**2024**) exhibiting the highest rainfall.
+* **ArcGIS 10.8:** Core GIS software platform utilized for spatial data processing, raster visualization, overlay comparison with Nigerian administrative state boundaries (`Nig_States`), and production of all final monthly historical and forecast cartographic outputs.
 
 ---
 
@@ -91,80 +96,32 @@ The geospatial processing, statistical computations, and cartographic visualizat
 
 ```mermaid
 flowchart TD
-    A[TAMSAT Rainfall Data 2022] --> B[IDW Interpolation 30m]
-    B --> C["R = 0.5 * P"]
-    C --> R[Rainfall Erosivity Factor - R]
-
-    D[FAO HWSD Soil Map] --> E[Soil Texture & Organic Carbon Extraction]
-    E --> F["K_usle = f_csand * f_cl-si * f_orgc * f_hisand"]
-    F --> K[Soil Erodibility Factor - K]
-
-    G[SRTM 30m DEM] --> H[Fill Sinks]
-    H --> I[Flow Direction & Flow Accumulation]
-    H --> J[Slope Gradient]
-    I & J --> LS[Topographic Factor - LS]
-
-    L[Landsat 8 OLI - Dec 28, 2022] --> M[Supervised Classification - Maximum Likelihood]
-    M --> N[LULC Map]
-    N --> C_FAC[Cover Management Factor - C]
-
-    O[Field / Literature Assessment] --> P[Support Practice Factor - P = 1.0]
-
-    R & K & LS & C_FAC & P --> Q["RUSLE Raster Overlay: A = R * K * LS * C * P"]
-    Q --> S[Annual Soil Loss Raster - t/ha/yr]
-    S --> T[Risk Reclassification & Zonal Statistics]
+    A[TAMSAT v3.1 Daily Rainfall NetCDF] --> B[NetCDF Data Inspection in Panoply]
+    C[Multi-Resolution Forecast Products: rrarp_24, rrdwd_24, rrecmwf_24, rruk_24] --> B
+    B --> D[Selection of 2024 Annual Dataset Jan-Dec]
+    D --> E[Import & Spatial Alignment in ArcGIS 10.8]
+    F[Nigeria Administrative State Boundaries - Nig_States] --> E
+    E --> G[Monthly Spatial Distribution Mapping]
+    G --> H[Historical Baseline Maps - 12 Months]
+    G --> I[Multi-Model Forecast Maps - 12 Months]
+    H & I --> J[Monthly Visual & Peak Intensity Verification]
+    J --> K[Seasonal Climatological & Model Skill Assessment]
 ```
 
-### 1. Data Acquisition and Preprocessing
-All datasets were acquired from authoritative repositories (USGS, TAMSAT, and FAO HWSD), clipped to the Lower Ogun-Osun Basin boundary, and projected to **WGS 1984 UTM Zone 31N**. Continuous raster surfaces were resampled to a uniform spatial resolution of $30\text{ m} \times 30\text{ m}$ to ensure exact cell-by-cell alignment during map algebra overlay.
+### 1. Data Acquisition
+Daily recovered rainfall estimates (`rfe_filled`, Version 3.1) were retrieved from the TAMSAT archive via the International Research Institute for Climate and Society (IRI) Data Library at Columbia University (`https://iridl.ldeo.columbia.edu/SOURCES/.Reading/.Meteorology/.TAMSAT/.v3p1/.daily/.rfe_filled/index.html#info`). Concurrent 2024 forecast products (`rrarp_24`, `rrdwd_24`, `rrecmwf_24`, and `rruk_24`) were acquired from their respective meteorological modeling centers based on their established literature use over Nigeria, spatial resolution, and accessibility.
 
-### 2. Rainfall and Runoff Erosivity Factor ($R$)
-The $R$ factor quantifies the kinetic energy and erosive force of rainfall and surface runoff. Using 2022 annual precipitation data ($P$) from TAMSAT, rainfall erosivity was estimated using the empirical equation formulated by Roose (1976):
+### 2. NetCDF Inspection and Preprocessing
+Downloaded NetCDF climate files were inspected in **Panoply** to verify temporal dimensions, variable attributes, and annual precipitation magnitudes, confirming the selection of the **2024** dataset for analysis. The datasets were subsequently imported into **ArcGIS 10.8** and spatially clipped/overlaid against Nigeria's state boundary shapefile (`Nig_States`).
 
-$$R = 0.5 \times P$$
+### 3. Spatial Analysis and Forecast Verification
+Monthly rainfall surfaces from January through December 2024 were analyzed in **ArcGIS 10.8** using continuous color-ramp symbology (ranging from low/zero rainfall in dark blue to peak rainfall intensities in red). Each monthly historical TAMSAT map was compared against the corresponding multi-model forecast maps across three diagnostic criteria:
+* **Spatial Location and Rain-Belt Migration:** Evaluating whether models accurately capture the northward advance (March–August) and southward retreat (September–November) of the Intertropical Discontinuity / rain belt, as well as localized coastal or Sahelian precipitation cores.
+* **Peak Rainfall Intensity ($\text{mm}$):** Comparing maximum predicted grid values against historical TAMSAT peak values for each month.
+* **Inter-Model Consensus:** Assessing agreement or divergence among `rrarp_24`, `rrdwd_24`, `rrecmwf_24`, and `rruk_24` across dry, transitional, and wet seasons.
 
-Point/grid values were interpolated across the basin using the **Inverse Distance Weighted (IDW)** interpolation tool in ArcGIS 10.7.1 and converted into a $30\text{ m} \times 30\text{ m}$ raster layer.
-
-### 3. Soil Erodibility Factor ($K$)
-The $K$ factor represents the inherent susceptibility of soil particles to detachment and transport by rainfall and runoff. Using topsoil properties (sand, silt, clay, and organic carbon fractions) extracted from the FAO Harmonized World Soil Database (HWSD), $K$ values were computed using the equations defined by Neitsch et al. (2011):
-
-$$K_{\text{usle}} = f_{\text{csand}} \times f_{\text{cl-si}} \times f_{\text{orgc}} \times f_{\text{hisand}}$$
-
-where:
-
-$$f_{\text{csand}} = 0.2 + 0.3 \times \exp\left[-0.256 \times m_s \times \left(1 - \frac{m_{\text{silt}}}{100}\right)\right]$$
-
-$$f_{\text{cl-si}} = \left(\frac{m_{\text{silt}}}{m_c + m_{\text{silt}}}\right)^{0.3}$$
-
-$$f_{\text{orgc}} = 1 - \frac{0.25 \times \text{orgC}}{\text{orgC} + \exp(3.72 - 2.95 \times \text{orgC})}$$
-
-*(where $m_s$ is percent sand content, $m_{\text{silt}}$ is percent silt content, $m_c$ is percent clay content, and $\text{orgC}$ is percent organic carbon content).*
-
-### 4. Slope Length and Steepness Factor ($LS$)
-The topographic $LS$ factor captures the combined effect of slope length ($L$) and slope steepness ($S$) on surface runoff velocity and sediment transport. The $30\text{ m}$ SRTM DEM was hydrologically conditioned using the **Fill** tool in ArcGIS 10.7.1, followed by **Flow Direction**, **Flow Accumulation**, and **Slope** generation. The $LS$ raster was derived in Raster Calculator following Wischmeier and Smith (1978):
-
-$$LS = \left(\frac{\text{Flow Accumulation} \times \text{Cell Size}}{22.13}\right)^{0.4} \times \left(\frac{\sin(\text{Slope})}{0.0896}\right)^{1.3}$$
-
-### 5. Satellite Image Processing and Cover Management Factor ($C$)
-A cloud-free **Landsat 8 OLI** scene acquired on **December 28, 2022** ($30\text{ m}$ resolution) was processed in ArcGIS 10.7.1 using **Supervised Classification** with the **Maximum Likelihood (MLH)** algorithm. Six Land Use and Land Cover (LULC) classes were delineated:
-1. Water Body
-2. Sparse Vegetation
-3. Dense Vegetation
-4. Built-Up Area
-5. Bare Surface
-6. Bare Rock
-
-Literature-based $C$ factor coefficients ($0$, $0.03$, $0.25$, $0.6$, and $1.0$) were assigned to the classified LULC categories and converted into a $30\text{ m}$ raster layer.
-
-### 6. Conservation / Support Practice Factor ($P$)
-The $P$ factor accounts for structural erosion-control practices such as terracing, contour bunding, and strip cropping, ranging from $0$ (complete erosion control) to $1$ (absence of conservation practices). Due to the lack of widespread documented structural soil conservation practices across the basin, a uniform value of **$P = 1.0$** was applied.
-
-### 7. Spatial Modeling, Classification, and Map Production
-All five factor rasters ($R$, $K$, $LS$, $C$, and $P$) were multiplied cell-by-cell in ArcGIS Raster Calculator using the RUSLE equation (Renard et al., 1997):
-
-$$A = R \times K \times LS \times C \times P$$
-
-where $A$ is the estimated average annual soil loss ($\text{t ha}^{-1}\text{ yr}^{-1}$). The resulting continuous soil loss raster was reclassified into six erosion severity categories (`Slight`, `Moderate`, `High`, `Very High`, `Severe`, and `Very Severe`) and exported as standardized cartographic maps.
+### 4. Cartographic Production
+Standardized map layouts—incorporating geographic coordinate grids, north arrows, scale bars ($\text{km}$), state boundary overlays, and model-specific value legends—were generated in **ArcGIS 10.8**, producing one study area reference map and 24 monthly rainfall distribution maps.
 
 ---
 
@@ -174,207 +131,249 @@ where $A$ is the estimated average annual soil loss ($\text{t ha}^{-1}\text{ yr}
 
 | No. | Map Title | Suggested Filename | Category |
 | :---: | :--- | :--- | :--- |
-| 1 | Location Map of the Study Area | `01_study_area_location_map.png` | Reference |
-| 2 | Annual Rainfall Distribution Map | `02_annual_rainfall_map.png` | Thematic (Climatic) |
-| 3 | Rainfall Erosivity ($R$) Factor Map | `03_rusle_r_factor_map.png` | RUSLE Factor |
-| 4 | Soil Classification Map | `04_soil_classification_map.png` | Thematic (Pedological) |
-| 5 | Soil Erodibility ($K$) Factor Map | `05_rusle_k_factor_map.png` | RUSLE Factor |
-| 6 | Slope Gradient Map | `06_slope_gradient_map.png` | Thematic (Topographic) |
-| 7 | Topographic ($LS$) Factor Map | `07_rusle_ls_factor_map.png` | RUSLE Factor |
-| 8 | Land Use and Land Cover (LULC) Map | `08_lulc_classification_map.png` | Thematic (Land Cover) |
-| 9 | Cover Management ($C$) Factor Map | `09_rusle_c_factor_map.png` | RUSLE Factor |
-| 10 | Classified Soil Loss Potential Map | `10_classified_soil_loss_map.png` | Analytical Synthesis |
+| 1 | Study Area Map (`Fig 1`) | `01_study_area_map.png` | Reference |
+| 2 | Historical Daily Rainfall Distribution – January 2024 (`Fig 2`) | `02_historical_rainfall_january_2024.png` | Thematic (Historical) |
+| 3 | Forecasted Daily Rainfall Distribution – January 2024 (`Fig 3`) | `03_forecast_rainfall_january_2024.png` | Analytical (Forecast) |
+| 4 | Historical Daily Rainfall Distribution – February 2024 (`Fig 4`) | `04_historical_rainfall_february_2024.png` | Thematic (Historical) |
+| 5 | Forecasted Daily Rainfall Distribution – February 2024 (`Fig 5`) | `05_forecast_rainfall_february_2024.png` | Analytical (Forecast) |
+| 6 | Historical Daily Rainfall Distribution – March 2024 (`Fig 6`) | `06_historical_rainfall_march_2024.png` | Thematic (Historical) |
+| 7 | Forecasted Daily Rainfall Distribution – March 2024 (`Fig 7`) | `07_forecast_rainfall_march_2024.png` | Analytical (Forecast) |
+| 8 | Historical Daily Rainfall Distribution – April 2024 (`Fig 8`) | `08_historical_rainfall_april_2024.png` | Thematic (Historical) |
+| 9 | Forecasted Daily Rainfall Distribution – April 2024 (`Fig 9`) | `09_forecast_rainfall_april_2024.png` | Analytical (Forecast) |
+| 10 | Historical Daily Rainfall Distribution – May 2024 (`Fig 10`) | `10_historical_rainfall_may_2024.png` | Thematic (Historical) |
+| 11 | Forecasted Daily Rainfall Distribution – May 2024 (`Fig 11`) | `11_forecast_rainfall_may_2024.png` | Analytical (Forecast) |
+| 12 | Historical Daily Rainfall Distribution – June 2024 (`Fig 12`) | `12_historical_rainfall_june_2024.png` | Thematic (Historical) |
+| 13 | Forecasted Daily Rainfall Distribution – June 2024 (`Fig 13`) | `13_forecast_rainfall_june_2024.png` | Analytical (Forecast) |
+| 14 | Historical Daily Rainfall Distribution – July 2024 (`Fig 14`) | `14_historical_rainfall_july_2024.png` | Thematic (Historical) |
+| 15 | Forecasted Daily Rainfall Distribution – July 2024 (`Fig 15`) | `15_forecast_rainfall_july_2024.png` | Analytical (Forecast) |
+| 16 | Historical Daily Rainfall Distribution – August 2024 (`Fig 16`) | `16_historical_rainfall_august_2024.png` | Thematic (Historical) |
+| 17 | Forecasted Daily Rainfall Distribution – August 2024 (`Fig 17`) | `17_forecast_rainfall_august_2024.png` | Analytical (Forecast) |
+| 18 | Historical Daily Rainfall Distribution – September 2024 (`Fig 18`) | `18_historical_rainfall_september_2024.png` | Thematic (Historical) |
+| 19 | Forecasted Daily Rainfall Distribution – September 2024 (`Fig 19`) | `19_forecast_rainfall_september_2024.png` | Analytical (Forecast) |
+| 20 | Historical Daily Rainfall Distribution – October 2024 (`Fig 20`) | `20_historical_rainfall_october_2024.png` | Thematic (Historical) |
+| 21 | Forecasted Daily Rainfall Distribution – October 2024 (`Fig 21`) | `21_forecast_rainfall_october_2024.png` | Analytical (Forecast) |
+| 22 | Historical Daily Rainfall Distribution – November 2024 (`Fig 22`) | `22_historical_rainfall_november_2024.png` | Thematic (Historical) |
+| 23 | Forecasted Daily Rainfall Distribution – November 2024 (`Fig 23`) | `23_forecast_rainfall_november_2024.png` | Analytical (Forecast) |
+| 24 | Historical Daily Rainfall Distribution – December 2024 (`Fig 24`) | `24_historical_rainfall_december_2024.png` | Thematic (Historical) |
+| 25 | Forecasted Daily Rainfall Distribution – December 2024 (`Fig 25` / labeled `Fig 3` in text) | `25_forecast_rainfall_december_2024.png` | Analytical (Forecast) |
 
 ---
 
-### Cartographic Gallery & Technical Descriptions
+### Cartographic Gallery & Monthly Technical Descriptions
 
-#### 1. Annual Rainfall Distribution Map
-* **Technical Description:** Interpolated annual rainfall surface ($\text{mm}$) generated via IDW from 2022 TAMSAT precipitation data across five rainfall classes ($1,290\text{--}2,200\text{ mm}$).
-* **Purpose:** Illustrates the spatial gradient of precipitation across the basin as an input to rainfall erosivity modeling.
-* **Interpretation:** Rainfall exhibits a distinct latitudinal gradient, increasing progressively from the northern sector ($1,290\text{--}1,570\text{ mm}$) toward the southern coastal-influenced zone ($1,990\text{--}2,200\text{ mm}$).
+#### 1. January 2024 (Peak Dry Season / Harmattan)
+* **Historical Map (`02_historical_rainfall_january_2024.png`):** TAMSAT spatial rainfall raster showing nationwide dry Harmattan conditions ($0\text{ mm}$) across northern, central, and inland southern states, with localized coastal rainfall peaking at $14.1\text{ mm}$ over Bayelsa and Rivers States in the Niger Delta.
+* **Forecast Comparison Map (`03_forecast_rainfall_january_2024.png`):** Four-panel comparison (`rrarp_24`, `rrdwd_24`, `rrecmwf_24`, `rruk_24`). All models accurately capture northern and central dryness, but diverge on southern coastal placement and intensity (`rrecmwf_24` peaks at $3.52\text{ mm}$ over the central Niger Delta; `rrarp_24` peaks at $1.44\text{ mm}$ in the southwest; `rruk_24` shows widespread light southern showers up to $1.20\text{ mm}$; `rrdwd_24` predicts near-total dryness with $1.12\text{ mm}$ on the immediate delta coast).
 
-![Annual Rainfall Distribution Map](maps/02_annual_rainfall_map.png)
-
----
-
-#### 2. Rainfall Erosivity ($R$) Factor Map
-* **Technical Description:** Spatial distribution of the RUSLE $R$ factor ($\text{MJ mm ha}^{-1}\text{ h}^{-1}\text{ yr}^{-1}$) derived from $R = 0.5 \times P$ at $30\text{ m}$ resolution.
-* **Purpose:** Quantifies the spatial variation in rainfall kinetic energy and runoff erosive potential.
-* **Interpretation:** $R$ values range from $640$ to $1,100\text{ MJ mm ha}^{-1}\text{ h}^{-1}\text{ yr}^{-1}$ (mean: $880$, SD: $88$). Erosivity is highest in the southern portion of the basin ($1,000\text{--}1,100$) and lowest in the northern portion ($640\text{--}780$).
-
-![Rainfall Erosivity (R) Factor Map](maps/03_rusle_r_factor_map.png)
+![Historical Daily Rainfall – January 2024](maps/02_historical_rainfall_january_2024.png)
+![Forecasted Daily Rainfall – January 2024](maps/03_forecast_rainfall_january_2024.png)
 
 ---
 
-#### 3. Soil Classification Map
-* **Technical Description:** Vector-to-raster pedological map extracted from the FAO Harmonized World Soil Database (HWSD) showing major soil units within the basin.
-* **Purpose:** Identifies distinct soil groups to parameterize soil texture and organic matter properties.
-* **Interpretation:** Six major soil groups occur across the study area: **Ferric Luvisols** (dominating the central and northern sectors), **Dystric Nitosols** (forming a broad east-west belt in the south), **Eutric Nitosols**, **Lithosols**, **Dystric Regosols**, and **Gleysols**, alongside minor surface water bodies.
+#### 2. February 2024 (Late Dry Season)
+* **Historical Map (`04_historical_rainfall_february_2024.png`):** TAMSAT raster depicting persistent nationwide dry conditions interrupted by a distinct band of low-intensity rainfall (peaking at $8.3\text{ mm}$) across southwestern states (Ogun, Ondo, Ekiti, Osun, and Oyo).
+* **Forecast Comparison Map (`05_forecast_rainfall_february_2024.png`):** `rrarp_24` ($1.46\text{ mm}$) and `rrdwd_24` ($2.96\text{ mm}$) best align with the historical southwestern spatial footprint, whereas `rrecmwf_24` ($1.84\text{ mm}$) displaces peak rain eastward into the Niger Delta and `rruk_24` ($1.29\text{ mm}$) forecasts overly scattered southern precipitation.
 
-![Soil Classification Map](maps/04_soil_classification_map.png)
-
----
-
-#### 4. Soil Erodibility ($K$) Factor Map
-* **Technical Description:** Continuous spatial surface of soil erodibility ($K$, in $\text{t ha h ha}^{-1}\text{ MJ}^{-1}\text{ mm}^{-1}$) grouped into five susceptibility intervals from $0$ to $0.34$.
-* **Purpose:** Represents the differential vulnerability of basin soils to detachment by raindrop splash and overland flow.
-* **Interpretation:** $K$ values range from $0$ to $0.34\text{ t ha h ha}^{-1}\text{ MJ}^{-1}\text{ mm}^{-1}$, reflecting low to moderate overall erodibility. Lower erodibility ($0\text{--}0.068$) characterizes the southern Dystric Nitosol belt and central Lithosol strip, whereas higher erodibility ($0.204\text{--}0.34$) occurs predominantly across Ferric Luvisol and Gleysol zones.
-
-![Soil Erodibility (K) Factor Map](maps/05_rusle_k_factor_map.png)
+![Historical Daily Rainfall – February 2024](maps/04_historical_rainfall_february_2024.png)
+![Forecasted Daily Rainfall – February 2024](maps/05_forecast_rainfall_february_2024.png)
 
 ---
 
-#### 5. Slope Gradient Map
-* **Technical Description:** Terrain slope map (in degrees) derived from the $30\text{ m}$ SRTM DEM, classified into five slope intervals ($0^\circ\text{--}3.47^\circ$, $3.48^\circ\text{--}6.95^\circ$, $6.96^\circ\text{--}12.6^\circ$, $12.7^\circ\text{--}21.8^\circ$, and $21.9^\circ\text{--}80.5^\circ$).
-* **Purpose:** Characterizes basin relief and identifies steep escarpments and hilly terrain that accelerate surface runoff velocity.
-* **Interpretation:** Gentle slopes ($0^\circ\text{--}6.95^\circ$) dominate the southern and western lowlands, while steep slopes ($12.7^\circ\text{--}80.5^\circ$) are concentrated in the northern and east-central highlands.
+#### 3. March 2024 (Rainy Season Onset Transition)
+* **Historical Map (`06_historical_rainfall_march_2024.png`):** Marks the northward advance of the rain belt into the south and central Middle Belt (including Nasarawa, FCT, and Kogi), with peak intensity rising sharply to $114.7\text{ mm}$.
+* **Forecast Comparison Map (`07_forecast_rainfall_march_2024.png`):** All four models substantially underestimate peak rainfall intensity (`rruk_24`: $45.58\text{ mm}$; `rrecmwf_24`: $30.95\text{ mm}$; `rrarp_24`: $29.64\text{ mm}$; `rrdwd_24`: $24.89\text{ mm}$). `rruk_24` captures the broadest southern-to-Middle-Belt onset front, while `rrdwd_24` produces an anomalous north-central rain patch near Kaduna/Plateau.
 
-![Slope Gradient Map](maps/06_slope_gradient_map.png)
-
----
-
-#### 6. Topographic ($LS$) Factor Map
-* **Technical Description:** Dimensionless slope length and steepness ($LS$) raster computed from DEM flow accumulation and slope gradient, classified into five intervals up to $51.7$.
-* **Purpose:** Captures the combined topographic control of overland flow accumulation and slope angle on sediment transport capacity.
-* **Interpretation:** $LS$ values span from $0$ to $51.7$ (mean: $0.047$, SD: $1.095$). Low values ($0\text{--}0.31$) prevail across flat plains, whereas elevated $LS$ values ($> 2.3$) align with steep ridges and concentrated drainage pathways in the north and east-central uplands.
-
-![Topographic (LS) Factor Map](maps/07_rusle_ls_factor_map.png)
+![Historical Daily Rainfall – March 2024](maps/06_historical_rainfall_march_2024.png)
+![Forecasted Daily Rainfall – March 2024](maps/07_forecast_rainfall_march_2024.png)
 
 ---
 
-#### 7. Land Use and Land Cover (LULC) Map
-* **Technical Description:** Supervised Maximum Likelihood classification of 2022 Landsat 8 OLI imagery ($30\text{ m}$) depicting six land cover classes: `Water Body`, `Sparse Vegetation`, `Dense Vegetation`, `Built-Up Area`, `Bare Surface`, and `Bare Rock`.
-* **Purpose:** Maps surface land cover conditions to evaluate vegetative protection against raindrop impact and runoff.
-* **Interpretation:** Dense and sparse vegetation cover substantial portions of the central and southwestern basin, while built-up settlements, bare surfaces, and exposed bare rock are prominent in the northern, eastern, and urbanized corridors.
+#### 4. April 2024 (Early Wet Season Establishment)
+* **Historical Map (`08_historical_rainfall_april_2024.png`):** Shows widespread, established rainfall across the south, Middle Belt (Plateau, Nasarawa, Benue, Kwara), and southern fringes of Kaduna and Bauchi, with legend peak of $29.5\text{ mm}$ (cited as $216.9\text{ mm}$ in manuscript narrative).
+* **Forecast Comparison Map (`09_forecast_rainfall_april_2024.png`):** All four models forecast a severe negative rainfall anomaly (`rruk_24`: $13.16\text{ mm}$; `rrdwd_24`: $9.83\text{ mm}$; `rrarp_24`: $4.14\text{ mm}$; `rrecmwf_24`: $1.89\text{ mm}$), underpredicting both spatial inland penetration and peak intensity.
 
-![Land Use and Land Cover (LULC) Map](maps/08_lulc_classification_map.png)
-
----
-
-#### 8. Cover Management ($C$) Factor Map
-* **Technical Description:** Dimensionless RUSLE $C$ factor raster ($0$ to $1$) derived from the 2022 LULC map and classified into five intervals ($0\text{--}0.2$, $0.2\text{--}0.4$, $0.4\text{--}0.6$, $0.6\text{--}0.8$, and $0.8\text{--}1.0$).
-* **Purpose:** Quantifies the protective effect of canopy and surface cover relative to bare, continuously tilled land.
-* **Interpretation:** Areas with dense vegetative canopy exhibit low $C$ values ($0\text{--}0.2$), providing strong soil protection, whereas bare surfaces, exposed rock, and disturbed urban fringes exhibit high $C$ values ($0.6\text{--}1.0$), indicating heightened erosion susceptibility.
-
-![Cover Management (C) Factor Map](maps/09_rusle_c_factor_map.png)
+![Historical Daily Rainfall – April 2024](maps/08_historical_rainfall_april_2024.png)
+![Forecasted Daily Rainfall – April 2024](maps/09_forecast_rainfall_april_2024.png)
 
 ---
 
-#### 9. Classified Soil Loss Potential Map
-* **Technical Description:** Final composite RUSLE annual soil loss map ($A = R \times K \times LS \times C \times P$) categorized into six agronomic erosion risk classes (`Slight` to `Very Severe`) at $30\text{ m}$ spatial resolution.
-* **Purpose:** Synthesizes all five erosion-controlling factors to delineate spatial soil loss intensity and prioritize high-risk zones for conservation intervention.
-* **Interpretation:** While $59.07\%$ of the basin experiences slight erosion ($0\text{--}5\text{ t ha}^{-1}\text{ yr}^{-1}$), $22.26\%$ falls under the **Very Severe** category ($> 80\text{ t ha}^{-1}\text{ yr}^{-1}$), concentrated particularly in the northern, eastern, and southern sectors where steep terrain, sparse cover/bare surfaces, and high rainfall erosivity intersect.
+#### 5. May 2024 (Northward Shift to the Middle Belt)
+* **Historical Map (`10_historical_rainfall_may_2024.png`):** Demonstrates rainfall establishment across virtually the entire country, with heavy precipitation shifting into the Middle Belt (Niger, Kwara, Nasarawa, Benue, Kogi) and southeastern states; legend peak is $30.6\text{ mm}$ (text narrative also cites $244.3\text{ mm}$).
+* **Forecast Comparison Map (`11_forecast_rainfall_may_2024.png`):** Models display sharp divergence: `rrecmwf_24` ($35.13\text{ mm}$) and `rrarp_24` ($23.07\text{ mm}$) align closest with historical intensity, whereas `rrdwd_24` overpredicts an extreme north-central/eastern peak ($79.21\text{ mm}$) and `rruk_24` predicts severe dryness ($6.36\text{ mm}$).
 
-![Classified Soil Loss Potential Map](maps/10_classified_soil_loss_map.png)
+![Historical Daily Rainfall – May 2024](maps/10_historical_rainfall_may_2024.png)
+![Forecasted Daily Rainfall – May 2024](maps/11_forecast_rainfall_may_2024.png)
+
+---
+
+#### 6. June 2024 (First Coastal Peak)
+* **Historical Map (`12_historical_rainfall_june_2024.png`):** Peak rainfall ($44.0\text{ mm}$) concentrates strongly along the southern coastline, particularly across the Niger Delta (Delta, Bayelsa, and Rivers States).
+* **Forecast Comparison Map (`13_forecast_rainfall_june_2024.png`):** `rrarp_24` ($54.30\text{ mm}$) best matches the coastal focus, while `rruk_24` ($39.70\text{ mm}$) shows scattered southern rainfall, `rrdwd_24` ($36.25\text{ mm}$) shifts peak rainfall inland over Taraba and Adamawa, and `rrecmwf_24` ($17.24\text{ mm}$) anomalously centers lighter rain over the Middle Belt.
+
+![Historical Daily Rainfall – June 2024](maps/12_historical_rainfall_june_2024.png)
+![Forecasted Daily Rainfall – June 2024](maps/13_forecast_rainfall_june_2024.png)
+
+---
+
+#### 7. July 2024 (Consolidation of Coastal Rains & Onset of Inland Dip)
+* **Historical Map (`14_historical_rainfall_july_2024.png`):** Heavy coastal rainfall ($53.6\text{ mm}$ peak) spans from Lagos across the Niger Delta to Cross River and Akwa Ibom, accompanied by a slight inland reduction marking the onset of the "Little Dry Season."
+* **Forecast Comparison Map (`15_forecast_rainfall_july_2024.png`):** `rrarp_24` ($54.30\text{ mm}$) closely replicates the historical coastal peak magnitude, whereas `rruk_24` ($39.70\text{ mm}$), `rrdwd_24` ($36.25\text{ mm}$), and `rrecmwf_24` ($17.24\text{ mm}$) underestimate peak intensity or misplace maxima inland.
+
+![Historical Daily Rainfall – July 2024](maps/14_historical_rainfall_july_2024.png)
+![Forecasted Daily Rainfall – July 2024](maps/15_forecast_rainfall_july_2024.png)
+
+---
+
+#### 8. August 2024 (Sahelian Peak & Southern "August Break")
+* **Historical Map (`16_historical_rainfall_august_2024.png`):** Captures the northern monsoon peak ($29.7\text{ mm}$) across Sahelian states (Sokoto, Zamfara, Katsina, Kano, Jigawa) alongside pronounced drying across southern coastal states ("August Break").
+* **Forecast Comparison Map (`17_forecast_rainfall_august_2024.png`):** All four models fail to capture the far-northern Sahelian rain belt, erroneously placing rainfall maxima in the southeast (`rrarp_24`: $23.07\text{ mm}$; `rruk_24`: $6.36\text{ mm}$), southwest/central belt (`rrecmwf_24`: $35.13\text{ mm}$), or north-central/eastern highlands (`rrdwd_24`: $79.21\text{ mm}$).
+
+![Historical Daily Rainfall – August 2024](maps/16_historical_rainfall_august_2024.png)
+![Forecasted Daily Rainfall – August 2024](maps/17_forecast_rainfall_august_2024.png)
+
+---
+
+#### 9. September 2024 (Second Southern Rainy Season & Northeastern Peak)
+* **Historical Map (`18_historical_rainfall_september_2024.png`):** Shows the return of coastal rains to southern Nigeria (second rainy season) and a peak concentration ($34.2\text{ mm}$) in northeastern states (Borno and Yobe) as northern rains begin retreating southward.
+* **Forecast Comparison Map (`19_forecast_rainfall_september_2024.png`):** Models significantly overestimate northern rainfall intensity (`rrecmwf_24`: $206.52\text{ mm}$; `rrarp_24`: $185.51\text{ mm}$; `rruk_24`: $78.99\text{ mm}$; `rrdwd_24`: $59.84\text{ mm}$) concentrated in the northwest/north-central sector while under-representing the southern coastal resurgence.
+
+![Historical Daily Rainfall – September 2024](maps/18_historical_rainfall_september_2024.png)
+![Forecasted Daily Rainfall – September 2024](maps/19_forecast_rainfall_september_2024.png)
+
+---
+
+#### 10. October 2024 (Northern Cessation & Southern Second Peak)
+* **Historical Map (`20_historical_rainfall_october_2024.png`):** Reflects dry-season onset across northern Nigeria while the second rainy season persists in the southwest (Ondo, Osun, Ekiti, Ogun) and southeast (Cross River, Akwa Ibom) with a peak of $25.8\text{ mm}$.
+* **Forecast Comparison Map (`21_forecast_rainfall_october_2024.png`):** Three-model comparison (`rrdwd_24`, `rrecmwf_24`, `rruk_24`). `rrecmwf_24` ($24.81\text{ mm}$) closely matches both the southern spatial distribution and peak intensity; `rruk_24` ($43.63\text{ mm}$) captures southern rains but overestimates intensity, while `rrdwd_24` ($24.20\text{ mm}$) misplaces peak rainfall over north-central Kano/Bauchi.
+
+![Historical Daily Rainfall – October 2024](maps/20_historical_rainfall_october_2024.png)
+![Forecasted Daily Rainfall – October 2024](maps/21_forecast_rainfall_october_2024.png)
+
+---
+
+#### 11. November 2024 (Dry Season Expansion)
+* **Historical Map (`22_historical_rainfall_november_2024.png`):** Dry conditions expand over the northern two-thirds and much of southern Nigeria, leaving a localized remnant pocket of rainfall ($18.9\text{ mm}$ peak) over Oyo, Osun, and Kwara States.
+* **Forecast Comparison Map (`23_forecast_rainfall_november_2024.png`):** Models capture the broad nationwide drying trend (`rrarp_24`: $21.25\text{ mm}$; `rrdwd_24`: $16.85\text{ mm}$; `rruk_24`: $16.55\text{ mm}$; `rrecmwf_24`: $7.19\text{ mm}$), but shift the residual rain pocket toward the southeastern coast, central Niger Delta, or Kogi State rather than Oyo/Osun.
+
+![Historical Daily Rainfall – November 2024](maps/22_historical_rainfall_november_2024.png)
+![Forecasted Daily Rainfall – November 2024](maps/23_forecast_rainfall_november_2024.png)
+
+---
+
+#### 12. December 2024 (Full Harmattan Dry Season Completion)
+* **Historical Map (`24_historical_rainfall_december_2024.png`):** Completes the annual climate cycle with nationwide Harmattan dryness ($0\text{ mm}$) and a single localized coastal moisture pocket ($16.1\text{ mm}$ peak) over Akwa Ibom and Cross River States.
+* **Forecast Comparison Map (`25_forecast_rainfall_december_2024.png`):** Strong consensus across all four models (`rrdwd_24`: $5.52\text{ mm}$; `rrarp_24`: $5.49\text{ mm}$; `rruk_24`: $2.46\text{ mm}$; `rrecmwf_24`: $2.34\text{ mm}$), accurately reproducing nationwide dryness and isolated low-intensity coastal showers.
+
+![Historical Daily Rainfall – December 2024](maps/24_historical_rainfall_december_2024.png)
+![Forecasted Daily Rainfall – December 2024](maps/25_forecast_rainfall_december_2024.png)
 
 ---
 
 ## Results and Key Findings
 
-### Summary of RUSLE Factor Parameters
+### Monthly Peak Rainfall Comparison ($\text{mm}$) Across 2024
 
-| RUSLE Factor | Unit | Minimum | Maximum | Mean | Standard Deviation |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| **Rainfall Erosivity ($R$)** | $\text{MJ mm ha}^{-1}\text{ h}^{-1}\text{ yr}^{-1}$ | $640$ | $1,100$ | $880$ | $88$ |
-| **Soil Erodibility ($K$)** | $\text{t ha h ha}^{-1}\text{ MJ}^{-1}\text{ mm}^{-1}$ | $0$ | $0.34$ | `[Not reported]` | `[Not reported]` |
-| **Topographic Factor ($LS$)** | Dimensionless | $0$ | $51.7$ | $0.047$ | $1.095$ |
-| **Cover Management ($C$)** | Dimensionless | $0$ | $1.0$ | `[Not reported]` | `[Not reported]` |
-| **Support Practice ($P$)** | Dimensionless | $1.0$ | $1.0$ | $1.0$ | $0$ |
+| Month | Historical TAMSAT Peak ($\text{mm}$) | `rrarp_24` Peak ($\text{mm}$) | `rrdwd_24` Peak ($\text{mm}$) | `rrecmwf_24` Peak ($\text{mm}$) | `rruk_24` Peak ($\text{mm}$) | Dominant Spatial Pattern & Verification Summary |
+| :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| **January** | $14.1$ | $1.44$ | $1.12$ | $3.52$ | $1.20$ | High agreement on northern/central dryness; models underpredict Niger Delta coastal peak. |
+| **February** | $8.3$ | $1.46$ | $2.96$ | $1.84$ | $1.29$ | `rrarp_24` and `rrdwd_24` align with southwestern rain band; `rrecmwf_24` shifts east. |
+| **March** | $114.7$ | $29.64$ | $24.89$ | $30.95$ | $45.58$ | All models underestimate onset peak intensity; `rruk_24` captures broad northward advance. |
+| **April** | $29.5^*$ ($216.9^\dagger$) | $4.14$ | $9.83$ | $1.89$ | $13.16$ | Severe negative intensity bias across all four models; inland Middle Belt rain missed. |
+| **May** | $30.6^*$ ($244.3^\dagger$) | $23.07$ | $79.21$ | $35.13$ | $6.36$ | High inter-model spread: `rrecmwf_24` aligns best; `rrdwd_24` overpredicts; `rruk_24` too dry. |
+| **June** | $44.0$ | $54.30$ | $36.25$ | $17.24$ | $39.70$ | `rrarp_24` best captures coastal concentration; `rrecmwf_24` & `rrdwd_24` misplace maxima inland. |
+| **July** | $53.6$ | $54.30$ | $36.25$ | $17.24$ | $39.70$ | `rrarp_24` matches coastal peak magnitude; other models underpredict coastal intensity. |
+| **August** | $29.7$ | $23.07$ | $79.21$ | $35.13$ | $6.36$ | Models miss northern Sahelian peak and southern "August Break" dry anomaly. |
+| **September** | $34.2$ | $185.51$ | $59.84$ | $206.52$ | $78.99$ | Large positive intensity overestimation in northwest/north-central sector across models. |
+| **October** | $25.8$ | `[Not shown]` | $24.20$ | $24.81$ | $43.63$ | `rrecmwf_24` closely matches southern second rainy season peak and spatial distribution. |
+| **November** | $18.9$ | $21.25$ | $16.85$ | $7.19$ | $16.55$ | Models capture broad drying trend but displace residual rains from Oyo/Osun to the coast. |
+| **December** | $16.1$ | $5.49$ | $5.52$ | $2.34$ | $2.46$ | Strong multi-model consensus on nationwide Harmattan dryness and coastal trace showers. |
 
-### Estimated Annual Soil Loss and Risk Classification
+*\*Value displayed on the ArcGIS map legend (`High` class).*  
+*$\dagger$Value cited in the Chapter Four text narrative.*
 
-* **Mean Annual Soil Loss Rate:** $70.17\text{ t ha}^{-1}\text{ yr}^{-1}$
-* **Estimated Total Annual Soil Loss:** Approximately $3.4\text{ million tonnes yr}^{-1}$ across the basin
-
-| Soil Loss Range ($\text{t ha}^{-1}\text{ yr}^{-1}$) | Erosion Risk Intensity | Area ($\text{ha}$) | Area Coverage ($\%$) |
-| :---: | :--- | :---: | :---: |
-| $0\text{--}5$ | Slight | $928,381$ | $59.07\%$ |
-| $5\text{--}10$ | Moderate | $78,819$ | $5.01\%$ |
-| $10\text{--}25$ | High | $108,668$ | $6.91\%$ |
-| $25\text{--}50$ | Very High | $61,331$ | $3.90\%$ |
-| $50\text{--}80$ | Severe | $44,747$ | $2.85\%$ |
-| $> 80$ | Very Severe | $349,807$ | $22.26\%$ |
-| **Total** | — | **$1,571,753$** | **$100.00\%$** |
-
-### Key Analytical Takeaways
-1. **Bimodal Risk Distribution:** Nearly three-fifths ($59.07\%$) of the Lower Ogun-Osun Basin exhibits slight erosion ($0\text{--}5\text{ t ha}^{-1}\text{ yr}^{-1}$), primarily in well-vegetated and low-gradient terrain. However, a substantial proportion ($22.26\%$, or $349,807\text{ ha}$) experiences **Very Severe** soil loss ($> 80\text{ t ha}^{-1}\text{ yr}^{-1}$), elevating the basin-wide mean to $70.17\text{ t ha}^{-1}\text{ yr}^{-1}$.
-2. **Compound Environmental Drivers:** High-risk erosion zones are driven by the spatial coincidence of steep slopes (elevated $LS$ values in the north and east-central highlands), exposed surfaces/reduced canopy cover (high $C$ factors), and high southern rainfall erosivity ($R$ up to $1,100\text{ MJ mm ha}^{-1}\text{ h}^{-1}\text{ yr}^{-1}$).
-3. **Combined High-to-Very-Severe Exposure:** Collectively, $35.92\%$ of the basin ($564,553\text{ ha}$) experiences erosion rates exceeding $10\text{ t ha}^{-1}\text{ yr}^{-1}$ (`High` to `Very Severe` classes), signaling urgent need for targeted watershed intervention.
+### Summary of Verification Findings
+1. **High Dry-Season Forecast Skill (December–February):** All four models exhibited strong spatial agreement and reliability in predicting nationwide dry conditions during the Harmattan-dominated months of December, January, and February, restricting precipitation strictly to minor coastal zones.
+2. **Systematic Underestimation During Onset Months (March–April):** During the northward progression of the rain belt in March and April, all four models substantially underestimated peak rainfall intensities relative to TAMSAT observations and struggled to reproduce inland penetration into the Middle Belt.
+3. **High Inter-Model Divergence During Peak Monsoon & Transitional Regimes (May–October):** Forecast skill degraded during convective peak and transitional months, characterized by spatial displacement errors (such as missing the August Sahelian rain belt and southern "August Break") and large positive intensity biases in September (`rrecmwf_24` reaching $206.52\text{ mm}$ and `rrarp_24` reaching $185.51\text{ mm}$ versus $34.2\text{ mm}$ historical).
+4. **Quantitative Error Metrics:** `[Information to be provided — insert RMSE, Mean Bias, Correlation Coefficient, or categorical skill scores (POD, FAR, CSI) if computed in the full manuscript]`
 
 ---
 
 ## Discussion
 
-The spatial pattern of soil erosion in the Lower Ogun-Osun Basin demonstrates how topography, land cover dynamics, and tropical rainfall regimes interact to control land degradation:
+The spatiotemporal evaluation of multi-resolution rainfall forecasts against TAMSAT satellite-gauge observations highlights critical operational considerations for hydrometeorological applications in Nigeria:
 
-* **Agricultural Productivity & Food Security:** Because cocoa, cassava, maize, and yam cultivation underpin local livelihoods across Ogun, Osun, Ekiti, Ondo, and Edo States, severe topsoil loss ($> 50\text{ t ha}^{-1}\text{ yr}^{-1}$ across $25.10\%$ of the basin) threatens soil organic matter, nutrient retention, and long-term crop yields.
-* **Watershed & Reservoir Sedimentation:** Accelerated sheet and rill erosion on unprotected slopes increases sediment delivery into rivers and streams, elevating risks of channel siltation, degraded water quality, and reduced storage capacity in downstream water infrastructure.
-* **Spatial Planning Utility:** Identifying exact spatial hotspots allows state ministries of agriculture, river basin development authorities (such as the Ogun-Osun River Basin Development Authority), and environmental planners to concentrate limited conservation funding on the $22.26\%$ very-severe risk zones rather than applying uniform basin-wide measures.
+* **Disaster Risk Reduction & Flood Early Warning:** The pronounced spatial displacement and peak intensity biases observed during wet and transitional months (such as May, August, and September) indicate that relying on a single deterministic forecast product for flood forecasting in the Niger Delta, Middle Belt, or Sahelian basins can lead to false alarms or missed extreme events.
+* **Agricultural & Water Resources Planning:** Because planting calendars across southern and central Nigeria depend on reliable March–May rainfall onset and the timing of the July–August "Little Dry Season," systematic dry biases in April forecasts and spatial misplacements in August underscore the need for bias correction and multi-model ensemble blending before operational agro-advisory dissemination.
+* **Climatological Cycle Representation:** While the models successfully resolve synoptic-scale Harmattan dry-season stability, convective parameterization challenges remain evident during rapid seasonal transitions of the West African Monsoon.
 
 ---
 
 ## Research Limitations
 
-No formal section on study limitations was explicitly documented in the source thesis. However, the following methodological scope parameters are noted directly from the research design:
+No dedicated limitations section was included in the provided manuscript chapters; however, the following methodological scope constraints are evident from the study design:
 
-* **Erosion Process Scope:** In accordance with standard RUSLE formulation, the model estimates long-term average annual soil loss from **sheet and rill erosion** and does not explicitly simulate gully erosion, channel bank collapse, or sediment deposition processes.
-* **Support Practice ($P$) Assumption:** Due to the absence of basin-wide spatial records on structural conservation practices, $P$ was parameterized uniformly as $1.0$.
-* **Field Calibration / Accuracy Metrics:** `[Information to be provided — e.g., LULC classification confusion matrix / Kappa coefficient or field sediment validation records, if available]`
+* **Qualitative & Peak-Value Verification Scope:** The analysis evaluates spatial pattern alignment and monthly maximum grid values ($\text{mm}$), without pixel-by-pixel continuous or categorical statistical verification metrics (e.g., RMSE, Bias, POD, FAR).
+* **Manuscript Section Availability:** `[Information to be provided — insert any explicit study limitations documented in Chapters One or Five of the complete thesis]`
 
 ---
 
 ## Conclusion and Recommendations
 
 ### Conclusion
-Integrating the Revised Universal Soil Loss Equation (RUSLE) with Remote Sensing and ArcGIS 10.7.1 provides a practical, reproducible framework for quantifying spatial soil erosion susceptibility across the $16,135\text{ km}^2$ Lower Ogun-Osun Basin. While $59.07\%$ of the basin undergoes slight erosion ($0\text{--}5\text{ t ha}^{-1}\text{ yr}^{-1}$), the $22.26\%$ experiencing very severe soil loss ($> 80\text{ t ha}^{-1}\text{ yr}^{-1}$) drives an overall mean erosion rate of $70.17\text{ t ha}^{-1}\text{ yr}^{-1}$ ($\approx 3.4\text{ million tonnes yr}^{-1}$), underscoring the necessity for immediate, spatially targeted soil conservation interventions.
+Based on the 12-month spatial verification across Nigeria in 2024, multi-resolution numerical forecast models (`rrarp_24`, `rrdwd_24`, `rrecmwf_24`, and `rruk_24`) demonstrate high agreement and reliability in capturing widespread dry-season conditions during December, January, and February. Conversely, model performance degrades markedly during the rainy-season onset (March–April), peak monsoon/August Break dynamics (June–August), and southward retreat transitions (September–November), exhibiting substantial inter-model disagreement, spatial rain-belt displacement, and peak intensity biases.  
+*(Note: `[Information to be provided — insert formal concluding statements from Chapter Five]`)*
 
 ### Recommendations
-1. **Enact Targeted Soil Conservation in High-Risk Zones:**
-   * Implement **contour farming and terracing** on steep slopes to slow overland flow velocity and promote infiltration.
-   * Promote **cover cropping** (e.g., legumes and grasses) and **mulching** during off-seasons to shield topsoil from raindrop impact.
-   * Establish **vegetative buffer strips, riparian buffers, and grassed waterways** along stream banks and concentrated runoff pathways to trap sediment and prevent gully initiation.
-2. **Promote Sustainable Land Management (SLM) Practices:**
-   * Encourage **no-till or reduced-till agriculture** to preserve soil structure and surface organic matter.
-   * Integrate **agroforestry systems** and **crop rotation/diversification** (alternating deep-rooted and shallow-rooted crops) to reinforce soil binding.
-   * Maintain **permanent perennial vegetation** on highly erodible slopes and riparian margins.
-3. **Formulate and Enforce Land-Use and Stormwater Policies:**
-   * Establish **zoning regulations** restricting agricultural expansion or deforestation in identified very-severe erosion zones.
-   * Mandate **Environmental Impact Assessments (EIAs)** prior to major land-use conversions and enforce **reforestation/afforestation** on degraded lands.
-   * Implement **urban stormwater management regulations** (permeable pavements, rain gardens, and detention basins) in rapidly urbanizing hubs such as Akure and Ile-Ife to control impervious surface runoff.
+* `[Information to be provided — insert formal recommendations from Chapter Five of the manuscript, such as multi-model ensemble calibration, bias correction for hydrological modeling, or operational integration with NiMet ground gauge networks]`
 
 ---
 
 ## Repository Structure
 
 ```text
-lower-ogun-osun-rusle-soil-erosion/
-├── README.md                                  # Complete technical project documentation
-├── maps/                                      # Exported cartographic outputs (300 DPI PNGs)
-│   ├── 01_study_area_location_map.png         # Fig 1.7: Study area reference map
-│   ├── 02_annual_rainfall_map.png             # Fig 4.1.1.1: Annual rainfall map (2022)
-│   ├── 03_rusle_r_factor_map.png              # Fig 4.1.1.2: Rainfall erosivity (R) factor map
-│   ├── 04_soil_classification_map.png         # Fig 4.1.2.1: FAO HWSD soil groups map
-│   ├── 05_rusle_k_factor_map.png              # Fig 4.1.2.2: Soil erodibility (K) factor map
-│   ├── 06_slope_gradient_map.png              # Fig 4.1.3.1: SRTM DEM slope map (degrees)
-│   ├── 07_rusle_ls_factor_map.png             # Fig 4.1.3.2: Topographic (LS) factor map
-│   ├── 08_lulc_classification_map.png         # Fig 4.1.4.1: Landsat 8 LULC map (2022)
-│   ├── 09_rusle_c_factor_map.png              # Fig 4.1.4.2: Cover management (C) factor map
-│   └── 10_classified_soil_loss_map.png        # Fig 4.3: Classified annual soil loss potential map
-└── docs/                                      # Supporting research documentation
-    └── ADEBISI_PAUL_UPDATED_2-1.docx          # B.Tech Thesis Manuscript (October 2024)
+nigeria-2024-rainfall-forecast-verification/
+├── README.md                                        # Complete technical project documentation
+├── maps/                                            # Exported ArcGIS 10.8 cartographic outputs (PNG)
+│   ├── 01_study_area_map.png                        # Fig 1: Federal Republic of Nigeria study area map
+│   ├── 02_historical_rainfall_january_2024.png      # Fig 2: Historical TAMSAT rainfall (Jan 2024)
+│   ├── 03_forecast_rainfall_january_2024.png        # Fig 3: Multi-model forecast rainfall (Jan 2024)
+│   ├── 04_historical_rainfall_february_2024.png     # Fig 4: Historical TAMSAT rainfall (Feb 2024)
+│   ├── 05_forecast_rainfall_february_2024.png       # Fig 5: Multi-model forecast rainfall (Feb 2024)
+│   ├── 06_historical_rainfall_march_2024.png        # Fig 6: Historical TAMSAT rainfall (Mar 2024)
+│   ├── 07_forecast_rainfall_march_2024.png          # Fig 7: Multi-model forecast rainfall (Mar 2024)
+│   ├── 08_historical_rainfall_april_2024.png        # Fig 8: Historical TAMSAT rainfall (Apr 2024)
+│   ├── 09_forecast_rainfall_april_2024.png          # Fig 9: Multi-model forecast rainfall (Apr 2024)
+│   ├── 10_historical_rainfall_may_2024.png          # Fig 10: Historical TAMSAT rainfall (May 2024)
+│   ├── 11_forecast_rainfall_may_2024.png            # Fig 11: Multi-model forecast rainfall (May 2024)
+│   ├── 12_historical_rainfall_june_2024.png         # Fig 12: Historical TAMSAT rainfall (Jun 2024)
+│   ├── 13_forecast_rainfall_june_2024.png           # Fig 13: Multi-model forecast rainfall (Jun 2024)
+│   ├── 14_historical_rainfall_july_2024.png         # Fig 14: Historical TAMSAT rainfall (Jul 2024)
+│   ├── 15_forecast_rainfall_july_2024.png           # Fig 15: Multi-model forecast rainfall (Jul 2024)
+│   ├── 16_historical_rainfall_august_2024.png       # Fig 16: Historical TAMSAT rainfall (Aug 2024)
+│   ├── 17_forecast_rainfall_august_2024.png         # Fig 17: Multi-model forecast rainfall (Aug 2024)
+│   ├── 18_historical_rainfall_september_2024.png    # Fig 18: Historical TAMSAT rainfall (Sep 2024)
+│   ├── 19_forecast_rainfall_september_2024.png      # Fig 19: Multi-model forecast rainfall (Sep 2024)
+│   ├── 20_historical_rainfall_october_2024.png      # Fig 20: Historical TAMSAT rainfall (Oct 2024)
+│   ├── 21_forecast_rainfall_october_2024.png        # Fig 21: Multi-model forecast rainfall (Oct 2024)
+│   ├── 22_historical_rainfall_november_2024.png     # Fig 22: Historical TAMSAT rainfall (Nov 2024)
+│   ├── 23_forecast_rainfall_november_2024.png       # Fig 23: Multi-model forecast rainfall (Nov 2024)
+│   ├── 24_historical_rainfall_december_2024.png     # Fig 24: Historical TAMSAT rainfall (Dec 2024)
+│   └── 25_forecast_rainfall_december_2024.png       # Fig 25: Multi-model forecast rainfall (Dec 2024)
+└── docs/                                            # Supporting research manuscript
+    └── Momadelo_Adeleye_Blessing_1.docx             # Research paper manuscript (Chapters 3 & 4)
 ```
 
 ---
 
 ## Author and Project Information
 
-* **Author:** Adebisi Paul Oluwasegun
-* **Academic Qualification:** B.Tech in Remote Sensing and Geoscience Information System (GIS)
-* **Department & Institution:** Department of Remote Sensing and Geoscience Information System, School of Earth and Mineral Science, Federal University of Technology, Akure (FUTA), Ondo State, Nigeria
-* **Research Supervisor:** Prof. Suleiman A. Adegboyega
-* **Completion Date:** October 2024
-* **Project Category:** Watershed Hydrology, Soil Erosion Modeling (RUSLE), Remote Sensing & GIS
+* **Author:** Momadelo Adeleye Blessing *(extracted from manuscript filename — please confirm full name order)*
+* **Academic Qualification:** `[Information to be provided — e.g., B.Tech / M.Tech in Remote Sensing and GIS / Meteorology]`
+* **Department & Institution:** `[Information to be provided — e.g., Federal University of Technology, Akure (FUTA), Nigeria]`
+* **Research Supervisor:** `[Information to be provided]`
+* **Completion Year:** 2024 / `[Information to be provided]`
+* **Project Category:** Hydrometeorology, Numerical Weather Forecast Verification, Remote Sensing & GIS
 * **GitHub Profile:** `[Information to be provided — e.g., https://github.com/yourusername]`
 * **LinkedIn / Portfolio:** `[Information to be provided]`
 * **Contact Email:** `[Information to be provided]`
@@ -382,4 +381,4 @@ lower-ogun-osun-rusle-soil-erosion/
 ---
 
 ### Citation
-> Adebisi, P. O. (2024). *Assessment of Soil Erosion Potential with Integrated RUSLE Model and GIS in Lower Ogun-Osun Basin, Nigeria*. B.Tech Thesis, Department of Remote Sensing and Geoscience Information System, Federal University of Technology, Akure (FUTA), Nigeria.
+> Momadelo, A. B. (`[Year]`). *Verification of Multi-Resolution Model Forecasts of Heavy Rainfall Events in 2024 over Nigeria*. `[Degree/Project Type]`, `[Department and Institution]`.
