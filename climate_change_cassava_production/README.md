@@ -1,9 +1,9 @@
-# Assessment of Soil Erosion Potential with Integrated RUSLE Model and GIS in Lower Ogun-Osun Basin, Nigeria
+# Assessing the Impacts of Climate Change on Cassava Production and Farmers' Coping Strategies in Ekiti State, Nigeria
 
 [![Project Category](https://img.shields.io/badge/Domain-Remote%20Sensing%20%26%20GIS-2E7D32)](#)
-[![Model](https://img.shields.io/badge/Model-RUSLE-1565C0)](#)
-[![Software](https://img.shields.io/badge/GIS%20Platform-ArcGIS%2010.7.1-6A1B9A)](#)
-[![Institution](https://img.shields.io/badge/Institution-FUTA%2C%20Nigeria-EF6C00)](#)
+[![Application](https://img.shields.io/badge/Focus-Agro--Climatology%20%26%20Crop%20Monitoring-1565C0)](#)
+[![Software](https://img.shields.io/badge/GIS%20Platform-ArcGIS%2010.7-6A1B9A)](#)
+[![Study Area](https://img.shields.io/badge/Location-Ekiti%20State%2C%20Nigeria-EF6C00)](#)
 
 ---
 
@@ -26,62 +26,71 @@
 
 ## Project Overview
 
-Soil erosion is a major environmental and land degradation process that depletes fertile topsoil, reduces agricultural productivity, and increases sedimentation in surface water systems. In the **Lower Ogun-Osun Basin** of southern Nigeria—an agriculturally vital region—the spatial extent and severity of water-induced soil erosion have remained inadequately documented, limiting the implementation of targeted soil conservation measures.
+Cassava (*Manihot esculenta*) is a vital staple food crop in Southwestern Nigeria whose cultivation is predominantly rain-fed, making it highly sensitive to thermal stress, rainfall variability, and shifts in atmospheric moisture demand. In **Ekiti State, Nigeria**, understanding how multi-decadal climate trends and localized land surface warming affect vegetation vigor and agricultural resilience is essential for sustaining rural livelihoods and food security.
 
-This project integrates the **Revised Universal Soil Loss Equation (RUSLE)** with **Remote Sensing (RS)** and **Geographic Information System (GIS)** techniques to model, quantify, and map soil erosion susceptibility across the Lower Ogun-Osun Basin. Using multi-source geospatial datasets—including Landsat 8 Operational Land Imager (OLI) satellite imagery, Shuttle Radar Topography Mission (SRTM) Digital Elevation Model (DEM) data, TAMSAT satellite-gauge rainfall records, and the FAO Harmonized World Soil Database (HWSD)—five biophysical and management factors ($R$, $K$, $LS$, $C$, and $P$) were derived and combined within a raster GIS environment.
+This project integrates **multi-temporal satellite Remote Sensing**, **Geographic Information System (GIS)** spatial analysis, and **34-year hydroclimatic time-series analysis ($1990\text{--}2024$)** to evaluate the impacts of climate change on cassava production and infer the spatial effectiveness of farmers' coping strategies across five contiguous Local Government Areas (LGAs) in northern and central Ekiti State. Medium-resolution multispectral and thermal imagery from **Landsat 8 OLI ($2014$)** and **Landsat 9 OLI ($2024$)** were processed in **ArcGIS 10.7** to derive the **Normalized Difference Vegetation Index (NDVI)**, **Enhanced Vegetation Index (EVI)**, and **Land Surface Temperature (LST)**. These decadal spatial indicators were analyzed alongside long-term **ECMWF ERA-Interim** meteorological records (rainfall, minimum/maximum temperature, solar radiation, minimum/maximum relative humidity, and wind speed) and cassava cultivated area records.
 
-The primary purpose of this analysis is to estimate spatially distributed annual soil loss rates ($\text{t ha}^{-1}\text{ yr}^{-1}$), classify erosion severity zones, and provide an empirical cartographic baseline to guide watershed management, agricultural sustainability, and erosion mitigation planning.
+The primary purpose of this analysis is to provide spatially explicit evidence of surface warming and vegetation canopy stress, contextualize annual fluctuations in cassava cultivation, and identify high-vulnerability agricultural zones requiring targeted climate adaptation interventions.
 
 ---
 
 ## Research Objectives
 
+> **Note:** The introductory chapter containing the verbatim thesis aim and itemized objectives was not included in the uploaded manuscript excerpt. Below is a structured summary derived directly from the analytical scope in Chapters 3 and 4, alongside placeholders for your exact Chapter 1 wording.
+
 **Research Aim:**  
-To evaluate soil erosion susceptibility within the Lower Ogun-Osun Basin of Nigeria utilizing a Geographic Information System (GIS) methodology coupled with integrated Revised Universal Soil Loss Equation (RUSLE) models.
+`[Information to be provided — insert exact Research Aim from Chapter One of the manuscript]`  
+*(Operational summary: To assess the spatial-temporal impacts of climate change on vegetation vigor, thermal regime, and cassava production in northern and central Ekiti State, Nigeria, and evaluate implications for farmers' coping strategies using Remote Sensing, GIS, and multi-decadal climatic data.)*
 
 **Specific Objectives:**
-1. Integrate RUSLE factors ($R$, $K$, $LS$, $C$, and $P$) into a GIS platform to analyze spatial soil erosion patterns in the Lower Ogun-Osun Basin.
-2. Estimate long-term average annual soil erosion rates across the basin using the Revised Universal Soil Loss Equation (RUSLE).
-3. Develop a classified soil loss potential map for the study area to identify high-risk zones requiring priority soil conservation interventions.
+1. Derive and compare decadal spatial distributions of vegetation health and canopy condition using **NDVI** and **EVI** from Landsat 8 OLI ($2014$) and Landsat 9 OLI ($2024$) imagery.
+2. Retrieve and quantify decadal changes in **Land Surface Temperature (LST)** between $2014$ and $2024$ across the five selected LGAs to identify thermal stress hotspots.
+3. Analyze $34$-year ($1990\text{--}2024$) inter-annual trends and anomalies in key agro-climatic parameters (rainfall, minimum/maximum temperature, solar radiation, minimum/maximum relative humidity, and wind speed) alongside cassava cultivated area dynamics.
+4. Evaluate the spatial-temporal relationships between climatic stressors, vegetation spectral responses, and the efficacy of farmers' climate coping and adaptation strategies.
+5. `[Information to be provided — add any additional specific objectives from Chapter One, such as questionnaire/survey objectives if applicable]`
 
 ---
 
 ## Study Area
 
-The **Lower Ogun-Osun Basin** is situated in southern Nigeria and spans parts of five states: **Ogun, Osun, Ekiti, Ondo, and Edo States**.
+The research was conducted across **five contiguous Local Government Areas (LGAs)** situated primarily in the northern and central sectors of **Ekiti State**, within the Southwestern geopolitical zone of Nigeria:
 
-* **Geographic Coordinates:** Latitudes $6^\circ 36'\text{ N}$ to $7^\circ 38'\text{ N}$ and Longitudes $4^\circ 13'\text{ E}$ to $5^\circ 26'\text{ E}$
-* **Total Basin Area:** Approximately $16,135\text{ km}^2$ (total classified raster analysis extent: $1,571,753\text{ ha}$)
-* **Topography:** Elevation ranges from $-4\text{ m}$ to $1,072\text{ m}$ above mean sea level ($\text{a.m.s.l.}$), with terrain slopes ranging from $0^\circ$ to $80.5^\circ$.
-* **Climate:** Characterized by two distinct tropical seasons—a wet season from **April to October** and a dry season from **November to March**—with annual rainfall ranging between $1,290\text{ mm}$ and $2,200\text{ mm}$.
-* **Socio-Economic & Land Use Context:** The basin supports diverse communities (including Yoruba and Edo populations), with higher urban population densities in centers such as **Ile-Ife** and **Akure**. Agriculture is the dominant economic activity, centered on the cultivation of cocoa, cassava, maize, and yams, alongside fishing, irrigation farming, trading, and small-scale manufacturing.
+1. **Ilejemeje**
+2. **Ido-Osi**
+3. **Oye**
+4. **Ikole**
+5. **Irepodun/Ifelodun**
+
+* **Geographic Coordinates:** Approximately latitudes $7^\circ 31'\text{ N}$ to $8^\circ 10'\text{ N}$ and longitudes $5^\circ 3'\text{ E}$ to $5^\circ 42'\text{ E}$.
+* **Total Study Area Extent:** `[Information to be provided — e.g., total area in km² or hectares]`
+* **Agro-Ecological & Agricultural Context:** The region supports rain-fed arable agriculture in which cassava (*Manihot esculenta*) is a primary staple crop, alongside forested zones, shrublands, and rural-to-peri-urban settlements.
 
 ### Study Area Reference Map
-![Location Map of the Study Area](maps/01_study_area_location_map.png)
-*Figure 1: Geographical location of the Lower Ogun-Osun Basin across Southwestern Nigeria and Edo State, showing major river networks and road infrastructure.*
+![Study Area Map](maps/01_study_area_location_map.png)
+*Figure 1: Geographical location of the five-LGA study area (Ilejemeje, Ido-Osi, Oye, Ikole, and Irepodun/Ifelodun) within Ekiti State and Nigeria.*
 
 ---
 
 ## Data Sources and Datasets
 
-All spatial datasets were projected to **WGS 1984 UTM Zone 31N** and standardized to a $30\text{ m} \times 30\text{ m}$ raster grid resolution for spatial modeling.
+All satellite imagery and meteorological datasets utilized in this study were obtained from authoritative international repositories:
 
 | Dataset | Source | Acquisition Year / Period | Spatial Resolution | Application in the Research |
-| :--- | :--- | :--- | :--- | :--- |
-| **SRTM Digital Elevation Model (DEM)** | United States Geological Survey (USGS EarthExplorer) | `[Information to be provided]` | $30\text{ m}$ | Hydrological terrain processing (sink filling, flow direction, flow accumulation), slope gradient derivation, and computation of the Topographic ($LS$) factor. |
-| **Landsat 8 OLI Satellite Imagery** | United States Geological Survey (USGS EarthExplorer) | December 28, 2022 | $30\text{ m} \times 30\text{ m}$ | Supervised Land Use and Land Cover (LULC) classification and assignment of the Cover and Management ($C$) factor. |
-| **Monthly Average Rainfall Data** | Tropical Applications of Meteorology using Satellite data and ground-based observations (TAMSAT) | 2022 | $0.5^\circ \times 0.5^\circ$ (interpolated to $30\text{ m}$) | Spatial rainfall distribution mapping via IDW interpolation and estimation of the Rainfall-Runoff Erosivity ($R$) factor. |
-| **Digital Soil Map** | FAO Harmonized World Soil Database (HWSD) | `[Information to be provided]` | $30'' \times 30''$ | Delineation of major soil groups and derivation of topsoil textural and organic carbon parameters for the Soil Erodibility ($K$) factor. |
+| :--- | :--- | :---: | :---: | :--- |
+| **Landsat 8 OLI / TIRS Satellite Imagery** | United States Geological Survey (USGS EarthExplorer) | $2014$ | $30\text{ m}$ | Baseline computation of Normalized Difference Vegetation Index (NDVI), Enhanced Vegetation Index (EVI), and Land Surface Temperature (LST). |
+| **Landsat 9 OLI-2 / TIRS-2 Satellite Imagery** | United States Geological Survey (USGS EarthExplorer) | $2024$ | $30\text{ m}$ | Decadal comparison of NDVI, EVI, and LST to detect vegetation stress, canopy changes, and surface warming trends. |
+| **ERA-Interim Reanalysis Climatic Data** | European Centre for Medium-Range Weather Forecasts (ECMWF) | $1990\text{--}2024$ ($34\text{ years}$) | `[Information to be provided]` | Time-series and anomaly analysis of annual rainfall, minimum/maximum temperature, solar radiation, minimum/maximum relative humidity, and wind speed. |
+| **Cassava Cultivated Area Records** | `[Information to be provided — e.g., Ekiti State ADP / FAOSTAT / NBS]` | $1990\text{--}2024$ | LGA / State aggregate | Evaluation of multi-decadal volatility in land area allocated to cassava cultivation relative to climatic anomalies. |
+| **Administrative Boundary Shapefiles** | `[Information to be provided — e.g., OSGOF / DIVA-GIS]` | `[Information to be provided]` | Vector | Spatial delineation and clipping of Ekiti State and the five target LGAs. |
 
 ---
 
 ## Software and Technologies
 
-The geospatial processing, statistical computations, and cartographic visualization workflows were executed using the following tools:
+The geospatial processing, thermal/spectral index modeling, and hydroclimatic statistical visualizations were conducted using the following tools:
 
-* **ArcGIS 10.7.1:** Core GIS and remote sensing environment used for georeferencing, clipping, DEM hydrological conditioning, Inverse Distance Weighted (IDW) interpolation, supervised image classification, raster-to-vector conversions, Raster Calculator map algebra, and cartographic map layout production.
-* **Microsoft Excel:** Used for tabular computation of soil erodibility ($K$) sub-factors and statistical area summaries.
-* **Microsoft Word:** Used for technical research reporting and documentation.
+* **ArcGIS 10.7:** Core GIS and remote sensing platform used for radiometric processing, band math calculations (NDVI, EVI, and thermal LST retrieval), raster clipping, spatial overlay analysis, and cartographic map layout design.
+* **Microsoft Excel:** Used for organizing $34$-year ECMWF ERA-Interim meteorological records and cassava cultivation data, calculating climatic anomalies relative to long-term means, and generating time-series charts.
 
 ---
 
@@ -91,80 +100,64 @@ The geospatial processing, statistical computations, and cartographic visualizat
 
 ```mermaid
 flowchart TD
-    A[TAMSAT Rainfall Data 2022] --> B[IDW Interpolation 30m]
-    B --> C["R = 0.5 * P"]
-    C --> R[Rainfall Erosivity Factor - R]
+    A["Landsat 8 OLI (2014) & Landsat 9 OLI (2024) - 30m"] --> B["Spatial Clipping to 5 Ekiti LGAs"]
+    B --> C["Spectral Vegetation Indices"]
+    B --> D["Thermal Radiometric Calibration"]
 
-    D[FAO HWSD Soil Map] --> E[Soil Texture & Organic Carbon Extraction]
-    E --> F["K_usle = f_csand * f_cl-si * f_orgc * f_hisand"]
-    F --> K[Soil Erodibility Factor - K]
+    C --> E["NDVI Calculation"]
+    C --> F["EVI Calculation"]
 
-    G[SRTM 30m DEM] --> H[Fill Sinks]
-    H --> I[Flow Direction & Flow Accumulation]
-    H --> J[Slope Gradient]
-    I & J --> LS[Topographic Factor - LS]
+    D --> G["At-Sensor Spectral Radiance (L_lambda)"]
+    G --> H["At-Sensor Brightness Temperature (T in K)"]
+    H --> I["LST Conversion to Celsius (T - 273.15)"]
 
-    L[Landsat 8 OLI - Dec 28, 2022] --> M[Supervised Classification - Maximum Likelihood]
-    M --> N[LULC Map]
-    N --> C_FAC[Cover Management Factor - C]
+    J["ECMWF ERA-Interim Data (1990-2024)"] --> K["Excel Time-Series & Anomaly Analysis"]
+    K --> L["Rainfall, Temp, Solar Radiation, RH & Wind Charts"]
 
-    O[Field / Literature Assessment] --> P[Support Practice Factor - P = 1.0]
+    M["Cassava Cultivation Records (1990-2024)"] --> N["Cultivated Area Volatility Analysis"]
 
-    R & K & LS & C_FAC & P --> Q["RUSLE Raster Overlay: A = R * K * LS * C * P"]
-    Q --> S[Annual Soil Loss Raster - t/ha/yr]
-    S --> T[Risk Reclassification & Zonal Statistics]
+    E & F & I --> O["Decadal Spatial Change Comparison (2014 vs. 2024)"]
+    O & L & N --> P["Integrated Assessment of Climate Impacts & Farmer Coping Strategies"]
 ```
 
 ### 1. Data Acquisition and Preprocessing
-All datasets were acquired from authoritative repositories (USGS, TAMSAT, and FAO HWSD), clipped to the Lower Ogun-Osun Basin boundary, and projected to **WGS 1984 UTM Zone 31N**. Continuous raster surfaces were resampled to a uniform spatial resolution of $30\text{ m} \times 30\text{ m}$ to ensure exact cell-by-cell alignment during map algebra overlay.
+Multispectral and thermal satellite scenes from **Landsat 8 OLI ($2014$)** and **Landsat 9 OLI ($2024$)** at $30\text{ m}$ spatial resolution were acquired from the USGS EarthExplorer portal (`www.earthexplorer.usgs.gov`) and subsetted to the administrative boundary of the five target LGAs in Ekiti State. Multi-decadal meteorological variables ($1990\text{--}2024$) were retrieved from the ECMWF ERA-Interim archive and structured in Microsoft Excel for inter-annual trend and anomaly analysis.
 
-### 2. Rainfall and Runoff Erosivity Factor ($R$)
-The $R$ factor quantifies the kinetic energy and erosive force of rainfall and surface runoff. Using 2022 annual precipitation data ($P$) from TAMSAT, rainfall erosivity was estimated using the empirical equation formulated by Roose (1976):
+### 2. Normalized Difference Vegetation Index (NDVI)
+NDVI was computed in **ArcGIS 10.7** to quantify vegetation greenness, photosynthetic activity, and spatial variations in plant health across the $2014$ and $2024$ epochs:
 
-$$R = 0.5 \times P$$
+$$\text{NDVI} = \frac{\text{NIR} - \text{Red}}{\text{NIR} + \text{Red}}$$
 
-Point/grid values were interpolated across the basin using the **Inverse Distance Weighted (IDW)** interpolation tool in ArcGIS 10.7.1 and converted into a $30\text{ m} \times 30\text{ m}$ raster layer.
+where $\text{NIR}$ is reflectance in the near-infrared band ($0.7\text{--}1.1\ \mu\text{m}$) and $\text{Red}$ is reflectance in the visible red band ($0.6\text{--}0.7\ \mu\text{m}$). Output values range from $-1$ to $+1$, interpreted across four standard biophysical thresholds:
+* **$\text{NDVI} < 0$:** Non-vegetated surfaces (water bodies or barren surfaces).
+* **$\text{NDVI} \approx 0\text{--}0.2$:** Barren land or sparsely vegetated/built-up areas.
+* **$\text{NDVI} \approx 0.2\text{--}0.5$:** Moderate vegetation cover (grasslands, shrublands, or stressed crops).
+* **$\text{NDVI} \approx 0.5\text{--}1.0$:** Dense, actively photosynthesizing vegetation (forests and healthy peak-season croplands).
 
-### 3. Soil Erodibility Factor ($K$)
-The $K$ factor represents the inherent susceptibility of soil particles to detachment and transport by rainfall and runoff. Using topsoil properties (sand, silt, clay, and organic carbon fractions) extracted from the FAO Harmonized World Soil Database (HWSD), $K$ values were computed using the equations defined by Neitsch et al. (2011):
+### 3. Enhanced Vegetation Index (EVI)
+To complement NDVI and reduce atmospheric aerosol interference and soil background noise in high-biomass agricultural canopies, the **Enhanced Vegetation Index (EVI)** was calculated for both $2014$ and $2024$:
 
-$$K_{\text{usle}} = f_{\text{csand}} \times f_{\text{cl-si}} \times f_{\text{orgc}} \times f_{\text{hisand}}$$
+$$\text{EVI} = 2.5 \times \frac{\text{NIR} - \text{Red}}{\text{NIR} + 6 \times \text{Red} - 7.5 \times \text{Blue} + 1}$$
 
-where:
+where $\text{Blue}$ represents surface reflectance in the visible blue band. EVI provides heightened sensitivity to canopy structural parameters such as leaf area index (LAI) and canopy vigor.
 
-$$f_{\text{csand}} = 0.2 + 0.3 \times \exp\left[-0.256 \times m_s \times \left(1 - \frac{m_{\text{silt}}}{100}\right)\right]$$
+### 4. Land Surface Temperature (LST) Retrieval
+Land Surface Temperature was extracted from the Landsat thermal infrared bands in ArcGIS 10.7 through a sequential radiometric conversion workflow:
+1. **Radiometric Calibration (At-Sensor Spectral Radiance):** Conversion of quantized calibrated pixel values ($Q_{\text{cal}}$) to at-sensor spectral radiance ($L_\lambda$, in $\text{W m}^{-2}\text{ sr}^{-1}\ \mu\text{m}^{-1}$).
+2. **Top-of-Atmosphere (TOA) Reflectance Conversion:** Conversion of optical bands to TOA planetary reflectance ($\rho_\lambda$).
+3. **At-Sensor Brightness Temperature ($T$):** Conversion of thermal spectral radiance ($L_\lambda$) to effective at-sensor brightness temperature in Kelvin ($\text{K}$) using band-specific metadata thermal constants ($K_1$ and $K_2$):
 
-$$f_{\text{cl-si}} = \left(\frac{m_{\text{silt}}}{m_c + m_{\text{silt}}}\right)^{0.3}$$
+$$T = \frac{K_2}{\ln\left(\frac{K_1}{L_\lambda} + 1\right)}$$
 
-$$f_{\text{orgc}} = 1 - \frac{0.25 \times \text{orgC}}{\text{orgC} + \exp(3.72 - 2.95 \times \text{orgC})}$$
+4. **Conversion to Degrees Celsius ($^\circ\text{C}$):** Brightness temperatures were converted from Kelvin to Celsius:
 
-*(where $m_s$ is percent sand content, $m_{\text{silt}}$ is percent silt content, $m_c$ is percent clay content, and $\text{orgC}$ is percent organic carbon content).*
+$$T(^\circ\text{C}) = T(\text{K}) - 273.15$$
 
-### 4. Slope Length and Steepness Factor ($LS$)
-The topographic $LS$ factor captures the combined effect of slope length ($L$) and slope steepness ($S$) on surface runoff velocity and sediment transport. The $30\text{ m}$ SRTM DEM was hydrologically conditioned using the **Fill** tool in ArcGIS 10.7.1, followed by **Flow Direction**, **Flow Accumulation**, and **Slope** generation. The $LS$ raster was derived in Raster Calculator following Wischmeier and Smith (1978):
+### 5. Hydroclimatic Time-Series and Anomaly Analysis
+Using Microsoft Excel, $34$-year records ($1990\text{--}2024$) of annual rainfall, annual minimum temperature ($T_{\min}$), annual maximum temperature ($T_{\max}$), solar radiation, annual minimum relative humidity ($\text{RH}_{\min}$), annual maximum relative humidity ($\text{RH}_{\max}$), and average wind speed were plotted alongside normalized anomalies (deviations from the $1990\text{--}2024$ long-term mean) to identify dry/wet episodes and secular warming or drying trends.
 
-$$LS = \left(\frac{\text{Flow Accumulation} \times \text{Cell Size}}{22.13}\right)^{0.4} \times \left(\frac{\sin(\text{Slope})}{0.0896}\right)^{1.3}$$
-
-### 5. Satellite Image Processing and Cover Management Factor ($C$)
-A cloud-free **Landsat 8 OLI** scene acquired on **December 28, 2022** ($30\text{ m}$ resolution) was processed in ArcGIS 10.7.1 using **Supervised Classification** with the **Maximum Likelihood (MLH)** algorithm. Six Land Use and Land Cover (LULC) classes were delineated:
-1. Water Body
-2. Sparse Vegetation
-3. Dense Vegetation
-4. Built-Up Area
-5. Bare Surface
-6. Bare Rock
-
-Literature-based $C$ factor coefficients ($0$, $0.03$, $0.25$, $0.6$, and $1.0$) were assigned to the classified LULC categories and converted into a $30\text{ m}$ raster layer.
-
-### 6. Conservation / Support Practice Factor ($P$)
-The $P$ factor accounts for structural erosion-control practices such as terracing, contour bunding, and strip cropping, ranging from $0$ (complete erosion control) to $1$ (absence of conservation practices). Due to the lack of widespread documented structural soil conservation practices across the basin, a uniform value of **$P = 1.0$** was applied.
-
-### 7. Spatial Modeling, Classification, and Map Production
-All five factor rasters ($R$, $K$, $LS$, $C$, and $P$) were multiplied cell-by-cell in ArcGIS Raster Calculator using the RUSLE equation (Renard et al., 1997):
-
-$$A = R \times K \times LS \times C \times P$$
-
-where $A$ is the estimated average annual soil loss ($\text{t ha}^{-1}\text{ yr}^{-1}$). The resulting continuous soil loss raster was reclassified into six erosion severity categories (`Slight`, `Moderate`, `High`, `Very High`, `Severe`, and `Very Severe`) and exported as standardized cartographic maps.
+### 6. Cartographic Output Production
+All spatial indices ($\text{NDVI}$, $\text{EVI}$, and $\text{LST}$) for $2014$ and $2024$ were symbolized using standardized continuous color ramps, coordinate grids, north arrows, and metric scale bars in ArcGIS 10.7 to produce comparative decadal maps.
 
 ---
 
@@ -174,207 +167,159 @@ where $A$ is the estimated average annual soil loss ($\text{t ha}^{-1}\text{ yr}
 
 | No. | Map Title | Suggested Filename | Category |
 | :---: | :--- | :--- | :--- |
-| 1 | Location Map of the Study Area | `01_study_area_location_map.png` | Reference |
-| 2 | Annual Rainfall Distribution Map | `02_annual_rainfall_map.png` | Thematic (Climatic) |
-| 3 | Rainfall Erosivity ($R$) Factor Map | `03_rusle_r_factor_map.png` | RUSLE Factor |
-| 4 | Soil Classification Map | `04_soil_classification_map.png` | Thematic (Pedological) |
-| 5 | Soil Erodibility ($K$) Factor Map | `05_rusle_k_factor_map.png` | RUSLE Factor |
-| 6 | Slope Gradient Map | `06_slope_gradient_map.png` | Thematic (Topographic) |
-| 7 | Topographic ($LS$) Factor Map | `07_rusle_ls_factor_map.png` | RUSLE Factor |
-| 8 | Land Use and Land Cover (LULC) Map | `08_lulc_classification_map.png` | Thematic (Land Cover) |
-| 9 | Cover Management ($C$) Factor Map | `09_rusle_c_factor_map.png` | RUSLE Factor |
-| 10 | Classified Soil Loss Potential Map | `10_classified_soil_loss_map.png` | Analytical Synthesis |
+| 1 | Study Area Location Map (Five Selected LGAs in Ekiti State) | `01_study_area_location_map.png` | Reference |
+| 2 | 2014 Normalized Difference Vegetation Index (NDVI) Map | `02_ndvi_2014_map.png` | Thematic (Vegetation Vigor) |
+| 3 | 2024 Normalized Difference Vegetation Index (NDVI) Map | `03_ndvi_2024_map.png` | Thematic (Vegetation Vigor) |
+| 4 | 2014 Enhanced Vegetation Index (EVI) Map | `04_evi_2014_map.png` | Thematic (Canopy Health) |
+| 5 | 2024 Enhanced Vegetation Index (EVI) Map | `05_evi_2024_map.png` | Thematic (Canopy Health) |
+| 6 | 2014 Land Surface Temperature (LST) Map | `06_lst_2014_map.png` | Thematic (Thermal Regime) |
+| 7 | 2024 Land Surface Temperature (LST) Map | `07_lst_2024_map.png` | Thematic (Thermal Regime) |
 
 ---
 
 ### Cartographic Gallery & Technical Descriptions
 
-#### 1. Annual Rainfall Distribution Map
-* **Technical Description:** Interpolated annual rainfall surface ($\text{mm}$) generated via IDW from 2022 TAMSAT precipitation data across five rainfall classes ($1,290\text{--}2,200\text{ mm}$).
-* **Purpose:** Illustrates the spatial gradient of precipitation across the basin as an input to rainfall erosivity modeling.
-* **Interpretation:** Rainfall exhibits a distinct latitudinal gradient, increasing progressively from the northern sector ($1,290\text{--}1,570\text{ mm}$) toward the southern coastal-influenced zone ($1,990\text{--}2,200\text{ mm}$).
+#### 1. 2014 Normalized Difference Vegetation Index (NDVI) Map
+* **Technical Description:** Spatial distribution of baseline NDVI derived from $2014$ Landsat 8 OLI imagery at $30\text{ m}$ resolution, spanning values from $-0.067279$ to $0.663877$.
+* **Purpose:** Establishes the $2014$ spatial baseline of vegetation greenness and photosynthetic vigor across Ilejemeje, Ido-Osi, Oye, Ikole, and Irepodun/Ifelodun LGAs.
+* **Interpretation:** Extensive portions of the central and southwestern zones exhibit moderate-to-high NDVI values (greens and yellows), indicative of healthy forests and thriving agricultural lands, while localized low-NDVI patches (reds and oranges) occur in parts of the northern and southern sectors.
 
-![Annual Rainfall Distribution Map](maps/02_annual_rainfall_map.png)
-
----
-
-#### 2. Rainfall Erosivity ($R$) Factor Map
-* **Technical Description:** Spatial distribution of the RUSLE $R$ factor ($\text{MJ mm ha}^{-1}\text{ h}^{-1}\text{ yr}^{-1}$) derived from $R = 0.5 \times P$ at $30\text{ m}$ resolution.
-* **Purpose:** Quantifies the spatial variation in rainfall kinetic energy and runoff erosive potential.
-* **Interpretation:** $R$ values range from $640$ to $1,100\text{ MJ mm ha}^{-1}\text{ h}^{-1}\text{ yr}^{-1}$ (mean: $880$, SD: $88$). Erosivity is highest in the southern portion of the basin ($1,000\text{--}1,100$) and lowest in the northern portion ($640\text{--}780$).
-
-![Rainfall Erosivity (R) Factor Map](maps/03_rusle_r_factor_map.png)
+![2014 NDVI Map](maps/02_ndvi_2014_map.png)
 
 ---
 
-#### 3. Soil Classification Map
-* **Technical Description:** Vector-to-raster pedological map extracted from the FAO Harmonized World Soil Database (HWSD) showing major soil units within the basin.
-* **Purpose:** Identifies distinct soil groups to parameterize soil texture and organic matter properties.
-* **Interpretation:** Six major soil groups occur across the study area: **Ferric Luvisols** (dominating the central and northern sectors), **Dystric Nitosols** (forming a broad east-west belt in the south), **Eutric Nitosols**, **Lithosols**, **Dystric Regosols**, and **Gleysols**, alongside minor surface water bodies.
+#### 2. 2024 Normalized Difference Vegetation Index (NDVI) Map
+* **Technical Description:** Decadal follow-up NDVI raster derived from $2024$ Landsat 9 OLI imagery at $30\text{ m}$ resolution, ranging from $-0.024948$ to $0.660064$.
+* **Purpose:** Evaluates decadal changes in vegetation vigor and identifies spatial zones experiencing declining crop/vegetation health relative to $2014$.
+* **Interpretation:** Although maximum NDVI remained virtually unchanged ($\approx 0.66$), low-to-moderate-low NDVI zones (reds and oranges) expanded and intensified substantially across the northern sector (notably Ikole, Oye, and Ilejemeje) and southern fringes, signaling heightened vegetation stress or land degradation.
 
-![Soil Classification Map](maps/04_soil_classification_map.png)
-
----
-
-#### 4. Soil Erodibility ($K$) Factor Map
-* **Technical Description:** Continuous spatial surface of soil erodibility ($K$, in $\text{t ha h ha}^{-1}\text{ MJ}^{-1}\text{ mm}^{-1}$) grouped into five susceptibility intervals from $0$ to $0.34$.
-* **Purpose:** Represents the differential vulnerability of basin soils to detachment by raindrop splash and overland flow.
-* **Interpretation:** $K$ values range from $0$ to $0.34\text{ t ha h ha}^{-1}\text{ MJ}^{-1}\text{ mm}^{-1}$, reflecting low to moderate overall erodibility. Lower erodibility ($0\text{--}0.068$) characterizes the southern Dystric Nitosol belt and central Lithosol strip, whereas higher erodibility ($0.204\text{--}0.34$) occurs predominantly across Ferric Luvisol and Gleysol zones.
-
-![Soil Erodibility (K) Factor Map](maps/05_rusle_k_factor_map.png)
+![2024 NDVI Map](maps/03_ndvi_2024_map.png)
 
 ---
 
-#### 5. Slope Gradient Map
-* **Technical Description:** Terrain slope map (in degrees) derived from the $30\text{ m}$ SRTM DEM, classified into five slope intervals ($0^\circ\text{--}3.47^\circ$, $3.48^\circ\text{--}6.95^\circ$, $6.96^\circ\text{--}12.6^\circ$, $12.7^\circ\text{--}21.8^\circ$, and $21.9^\circ\text{--}80.5^\circ$).
-* **Purpose:** Characterizes basin relief and identifies steep escarpments and hilly terrain that accelerate surface runoff velocity.
-* **Interpretation:** Gentle slopes ($0^\circ\text{--}6.95^\circ$) dominate the southern and western lowlands, while steep slopes ($12.7^\circ\text{--}80.5^\circ$) are concentrated in the northern and east-central highlands.
+#### 3. 2014 Enhanced Vegetation Index (EVI) Map
+* **Technical Description:** Baseline $2014$ EVI raster derived from Landsat 8 OLI ($30\text{ m}$), with pixel values ranging from $-0.0543399$ to $0.786884$.
+* **Purpose:** Quantifies baseline canopy density and structural vigor while minimizing atmospheric and soil background influences.
+* **Interpretation:** High EVI values (greens) dominate the central and southern agricultural and forested belt, whereas lower EVI values (reds and oranges) are concentrated primarily in the northern sector.
 
-![Slope Gradient Map](maps/06_slope_gradient_map.png)
-
----
-
-#### 6. Topographic ($LS$) Factor Map
-* **Technical Description:** Dimensionless slope length and steepness ($LS$) raster computed from DEM flow accumulation and slope gradient, classified into five intervals up to $51.7$.
-* **Purpose:** Captures the combined topographic control of overland flow accumulation and slope angle on sediment transport capacity.
-* **Interpretation:** $LS$ values span from $0$ to $51.7$ (mean: $0.047$, SD: $1.095$). Low values ($0\text{--}0.31$) prevail across flat plains, whereas elevated $LS$ values ($> 2.3$) align with steep ridges and concentrated drainage pathways in the north and east-central uplands.
-
-![Topographic (LS) Factor Map](maps/07_rusle_ls_factor_map.png)
+![2014 EVI Map](maps/04_evi_2014_map.png)
 
 ---
 
-#### 7. Land Use and Land Cover (LULC) Map
-* **Technical Description:** Supervised Maximum Likelihood classification of 2022 Landsat 8 OLI imagery ($30\text{ m}$) depicting six land cover classes: `Water Body`, `Sparse Vegetation`, `Dense Vegetation`, `Built-Up Area`, `Bare Surface`, and `Bare Rock`.
-* **Purpose:** Maps surface land cover conditions to evaluate vegetative protection against raindrop impact and runoff.
-* **Interpretation:** Dense and sparse vegetation cover substantial portions of the central and southwestern basin, while built-up settlements, bare surfaces, and exposed bare rock are prominent in the northern, eastern, and urbanized corridors.
+#### 4. 2024 Enhanced Vegetation Index (EVI) Map
+* **Technical Description:** Decadal $2024$ EVI raster derived from Landsat 9 OLI ($30\text{ m}$), spanning values from $-0.0204979$ to $0.80266$.
+* **Purpose:** Detects decadal shifts in crop and vegetation canopy structure across the study area.
+* **Interpretation:** While localized peak EVI increased slightly ($0.787 \rightarrow 0.803$), low-to-moderate-low EVI zones expanded markedly across the northern and central-northern sectors compared to $2014$, corroborating NDVI evidence of canopy thinning and moisture/heat stress.
 
-![Land Use and Land Cover (LULC) Map](maps/08_lulc_classification_map.png)
-
----
-
-#### 8. Cover Management ($C$) Factor Map
-* **Technical Description:** Dimensionless RUSLE $C$ factor raster ($0$ to $1$) derived from the 2022 LULC map and classified into five intervals ($0\text{--}0.2$, $0.2\text{--}0.4$, $0.4\text{--}0.6$, $0.6\text{--}0.8$, and $0.8\text{--}1.0$).
-* **Purpose:** Quantifies the protective effect of canopy and surface cover relative to bare, continuously tilled land.
-* **Interpretation:** Areas with dense vegetative canopy exhibit low $C$ values ($0\text{--}0.2$), providing strong soil protection, whereas bare surfaces, exposed rock, and disturbed urban fringes exhibit high $C$ values ($0.6\text{--}1.0$), indicating heightened erosion susceptibility.
-
-![Cover Management (C) Factor Map](maps/09_rusle_c_factor_map.png)
+![2024 EVI Map](maps/05_evi_2024_map.png)
 
 ---
 
-#### 9. Classified Soil Loss Potential Map
-* **Technical Description:** Final composite RUSLE annual soil loss map ($A = R \times K \times LS \times C \times P$) categorized into six agronomic erosion risk classes (`Slight` to `Very Severe`) at $30\text{ m}$ spatial resolution.
-* **Purpose:** Synthesizes all five erosion-controlling factors to delineate spatial soil loss intensity and prioritize high-risk zones for conservation intervention.
-* **Interpretation:** While $59.07\%$ of the basin experiences slight erosion ($0\text{--}5\text{ t ha}^{-1}\text{ yr}^{-1}$), $22.26\%$ falls under the **Very Severe** category ($> 80\text{ t ha}^{-1}\text{ yr}^{-1}$), concentrated particularly in the northern, eastern, and southern sectors where steep terrain, sparse cover/bare surfaces, and high rainfall erosivity intersect.
+#### 5. 2014 Land Surface Temperature (LST) Map
+* **Technical Description:** Baseline thermal infrared surface temperature map ($^\circ\text{C}$) derived from $2014$ Landsat 8 thermal data ($30\text{ m}$), ranging from $27.8087^\circ\text{C}$ to $31.3111^\circ\text{C}$.
+* **Purpose:** Maps spatial variations in surface thermal load to establish baseline heat exposure across cassava-producing areas.
+* **Interpretation:** Cooler surface temperatures (blues) prevail across densely vegetated central and southern areas, whereas elevated surface temperatures (oranges and browns) concentrate in the northern sector, exhibiting a strong inverse spatial relationship with NDVI and EVI.
 
-![Classified Soil Loss Potential Map](maps/10_classified_soil_loss_map.png)
+![2014 LST Map](maps/06_lst_2014_map.png)
+
+---
+
+#### 6. 2024 Land Surface Temperature (LST) Map
+* **Technical Description:** Decadal thermal infrared surface temperature map ($^\circ\text{C}$) derived from $2024$ Landsat 9 thermal data ($30\text{ m}$), ranging from $29.6099^\circ\text{C}$ to $31.7113^\circ\text{C}$.
+* **Purpose:** Quantifies decadal surface warming and delineates emerging thermal stress hotspots across the five LGAs.
+* **Interpretation:** The entire thermal distribution shifted upward between $2014$ and $2024$: minimum LST rose by approximately $+1.80^\circ\text{C}$ ($27.81^\circ\text{C} \rightarrow 29.61^\circ\text{C}$) and maximum LST increased by $+0.40^\circ\text{C}$ ($31.31^\circ\text{C} \rightarrow 31.71^\circ\text{C}$), with persistent thermal hotspots in the north and expanding warm zones across central and southwestern corridors.
+
+![2024 LST Map](maps/07_lst_2024_map.png)
 
 ---
 
 ## Results and Key Findings
 
-### Summary of RUSLE Factor Parameters
+### 1. Decadal Remote Sensing Indices ($2014$ vs. $2024$)
 
-| RUSLE Factor | Unit | Minimum | Maximum | Mean | Standard Deviation |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| **Rainfall Erosivity ($R$)** | $\text{MJ mm ha}^{-1}\text{ h}^{-1}\text{ yr}^{-1}$ | $640$ | $1,100$ | $880$ | $88$ |
-| **Soil Erodibility ($K$)** | $\text{t ha h ha}^{-1}\text{ MJ}^{-1}\text{ mm}^{-1}$ | $0$ | $0.34$ | `[Not reported]` | `[Not reported]` |
-| **Topographic Factor ($LS$)** | Dimensionless | $0$ | $51.7$ | $0.047$ | $1.095$ |
-| **Cover Management ($C$)** | Dimensionless | $0$ | $1.0$ | `[Not reported]` | `[Not reported]` |
-| **Support Practice ($P$)** | Dimensionless | $1.0$ | $1.0$ | $1.0$ | $0$ |
+| Spectral / Thermal Parameter | Sensor & Resolution | $2014$ Minimum | $2014$ Maximum | $2024$ Minimum | $2024$ Maximum | Decadal Change & Spatial Pattern |
+| :--- | :--- | :---: | :---: | :---: | :---: | :--- |
+| **NDVI** | Landsat 8/9 ($30\text{ m}$) | $-0.0673$ | $0.6639$ | $-0.0249$ | $0.6601$ | Peak NDVI stable ($\approx 0.66$); notable spatial expansion of low-to-moderate-low NDVI zones in the northern and southern sectors. |
+| **EVI** | Landsat 8/9 ($30\text{ m}$) | $-0.0543$ | $0.7869$ | $-0.0205$ | $0.8027$ | Slight peak increase ($+0.0158$); pronounced expansion of low-EVI canopy-stressed zones in the northern sector. |
+| **LST ($^\circ\text{C}$)** | Landsat 8/9 ($30\text{ m}$) | $27.81^\circ\text{C}$ | $31.31^\circ\text{C}$ | $29.61^\circ\text{C}$ | $31.71^\circ\text{C}$ | Minimum LST increased by **$+1.80^\circ\text{C}$** and maximum LST increased by **$+0.40^\circ\text{C}$**, demonstrating basin-wide surface warming. |
 
-### Estimated Annual Soil Loss and Risk Classification
+---
 
-* **Mean Annual Soil Loss Rate:** $70.17\text{ t ha}^{-1}\text{ yr}^{-1}$
-* **Estimated Total Annual Soil Loss:** Approximately $3.4\text{ million tonnes yr}^{-1}$ across the basin
+### 2. Multi-Decadal Agro-Climatic & Cassava Cultivation Trends ($1990\text{--}2024$)
 
-| Soil Loss Range ($\text{t ha}^{-1}\text{ yr}^{-1}$) | Erosion Risk Intensity | Area ($\text{ha}$) | Area Coverage ($\%$) |
-| :---: | :--- | :---: | :---: |
-| $0\text{--}5$ | Slight | $928,381$ | $59.07\%$ |
-| $5\text{--}10$ | Moderate | $78,819$ | $5.01\%$ |
-| $10\text{--}25$ | High | $108,668$ | $6.91\%$ |
-| $25\text{--}50$ | Very High | $61,331$ | $3.90\%$ |
-| $50\text{--}80$ | Severe | $44,747$ | $2.85\%$ |
-| $> 80$ | Very Severe | $349,807$ | $22.26\%$ |
-| **Total** | — | **$1,571,753$** | **$100.00\%$** |
-
-### Key Analytical Takeaways
-1. **Bimodal Risk Distribution:** Nearly three-fifths ($59.07\%$) of the Lower Ogun-Osun Basin exhibits slight erosion ($0\text{--}5\text{ t ha}^{-1}\text{ yr}^{-1}$), primarily in well-vegetated and low-gradient terrain. However, a substantial proportion ($22.26\%$, or $349,807\text{ ha}$) experiences **Very Severe** soil loss ($> 80\text{ t ha}^{-1}\text{ yr}^{-1}$), elevating the basin-wide mean to $70.17\text{ t ha}^{-1}\text{ yr}^{-1}$.
-2. **Compound Environmental Drivers:** High-risk erosion zones are driven by the spatial coincidence of steep slopes (elevated $LS$ values in the north and east-central highlands), exposed surfaces/reduced canopy cover (high $C$ factors), and high southern rainfall erosivity ($R$ up to $1,100\text{ MJ mm ha}^{-1}\text{ h}^{-1}\text{ yr}^{-1}$).
-3. **Combined High-to-Very-Severe Exposure:** Collectively, $35.92\%$ of the basin ($564,553\text{ ha}$) experiences erosion rates exceeding $10\text{ t ha}^{-1}\text{ yr}^{-1}$ (`High` to `Very Severe` classes), signaling urgent need for targeted watershed intervention.
+| Climatic / Agricultural Variable | Record Period | Observed Trend & Key Temporal Milestones | Implications for Cassava (*Manihot esculenta*) Production |
+| :--- | :---: | :--- | :--- |
+| **Annual Rainfall & Anomalies** | $1990\text{--}2024$ | High inter-annual variability with no monotonic long-term trend. Pronounced wet anomalies in **$1991, 1998, 2019$**; severe drought anomalies in **$2001, 2015, 2021$**. | Drought years induce moisture stress and depress tuber yields; excessive rainfall years risk waterlogging, root rot, soil erosion, and nutrient leaching. |
+| **Annual Minimum Temperature ($T_{\min}$)** | $1990\text{--}2024$ | Discernible upward warming trend; anomalies shifted from predominantly negative (early $1990\text{s}$) to consistently positive from the mid-$2000\text{s}$ onward. | Warmer nighttime/minimum temperatures favor the survival and proliferation of cassava pests and diseases. |
+| **Annual Maximum Temperature ($T_{\max}$)** | $1990\text{--}2024$ | Pronounced upward warming trend accelerating from circa **$2014$** onward, with consistently positive anomalies over the last decade. | Increases daytime heat stress, impairs photosynthetic efficiency, and reduces tuber development and water use efficiency. |
+| **Solar Radiation** | $1990\text{--}2024$ | Fluctuating without trend from $1990\text{--}2019$, followed by a marked increase from **$2020\text{--}2024$**, peaking in **$2022$**. | Potential photosynthetic gains from higher irradiance are offset by concurrent high LST and elevated evaporative demand. |
+| **Minimum Relative Humidity ($\text{RH}_{\min}$)** | $1990\text{--}2024$ | Stable between **$48\%\text{--}55\%$** ($1990\text{--}2019$), followed by a sharp post-$2019$ decline below **$50\%$**, reaching 34-year lows of **$\approx 45\%$** ($2021\text{--}2024$). | Elevated Vapour Pressure Deficit (VPD) intensifies leaf transpiration, forcing stomatal closure and inducing severe water stress. |
+| **Maximum Relative Humidity ($\text{RH}_{\max}$)** | $1990\text{--}2024$ | High inter-annual variability with a slight post-$2015/2018$ downward tendency (dipping toward **$85\%$** vs. earlier peaks of **$95\%\text{--}96\%$**). | Slightly reduced frequency of near-saturated nighttime atmospheric conditions compared to earlier decades. |
+| **Annual Average Wind Speed** | $1990\text{--}2024$ | No monotonic long-term trend; fluctuates around a stable long-term mean of **$2.20\text{--}2.25\text{ m s}^{-1}$** (higher in $1992, 1998, 2001, 2005, 2015$; lower in $1996, 2009, 2019$). | Acts as a secondary, fluctuating contributor to evaporative demand rather than a primary driver of long-term stress. |
+| **Cassava Cultivated Area** | $1990\text{--}2024$ | Minimal pre-$1998$; rapid expansion ($1999\text{--}2003/2004$); decline ($2005\text{--}2012$); sharp secondary peak ($2015\text{--}2016$); rapid contraction to a low ($2021\text{--}2022$), with early recovery toward **$2024$**. | High cultivated area volatility compounds yield instability; e.g., the $2015\text{--}2016$ area peak coincided with the $2015$ drought anomaly, likely suppressing per-hectare yields. |
 
 ---
 
 ## Discussion
 
-The spatial pattern of soil erosion in the Lower Ogun-Osun Basin demonstrates how topography, land cover dynamics, and tropical rainfall regimes interact to control land degradation:
+The convergence of satellite-derived biophysical indicators ($2014\text{--}2024$) and $34$-year ERA-Interim meteorological records ($1990\text{--}2024$) provides coherent evidence of intensifying hydroclimatic stress across northern and central Ekiti State:
 
-* **Agricultural Productivity & Food Security:** Because cocoa, cassava, maize, and yam cultivation underpin local livelihoods across Ogun, Osun, Ekiti, Ondo, and Edo States, severe topsoil loss ($> 50\text{ t ha}^{-1}\text{ yr}^{-1}$ across $25.10\%$ of the basin) threatens soil organic matter, nutrient retention, and long-term crop yields.
-* **Watershed & Reservoir Sedimentation:** Accelerated sheet and rill erosion on unprotected slopes increases sediment delivery into rivers and streams, elevating risks of channel siltation, degraded water quality, and reduced storage capacity in downstream water infrastructure.
-* **Spatial Planning Utility:** Identifying exact spatial hotspots allows state ministries of agriculture, river basin development authorities (such as the Ogun-Osun River Basin Development Authority), and environmental planners to concentrate limited conservation funding on the $22.26\%$ very-severe risk zones rather than applying uniform basin-wide measures.
+* **Synergistic Thermal and Moisture Stress:** The $+1.80^\circ\text{C}$ rise in minimum LST and $+0.40^\circ\text{C}$ rise in maximum LST between $2014$ and $2024$ align directly with the post-$2014$ acceleration in $T_{\max}$, elevated solar radiation ($2020\text{--}2024$), and sharp drop in $\text{RH}_{\min}$ ($\approx 45\%$ in $2021\text{--}2024$). Together, higher temperatures and lower daytime humidity substantially increase Vapour Pressure Deficit (VPD) and evapotranspiration, placing rain-fed cassava under acute physiological water stress even during years without extreme rainfall deficits.
+* **Spatial Diagnostics of Farmer Coping Efficacy:** Multi-temporal NDVI and EVI maps serve as an indirect spatial diagnostic of adaptation outcomes. Zones in central and southwestern Ekiti State that retained high NDVI ($> 0.5$) and EVI ($> 0.6$) between $2014$ and $2024$ indicate resilient agro-ecosystems or effective adoption of adaptive management practices. Conversely, the expansion of degraded/stressed NDVI and EVI zones in the northern sector (Ikole, Oye, and Ilejemeje LGAs)—coinciding with the highest LST values—highlights areas where existing coping strategies are insufficient to buffer intensifying heat and atmospheric dryness.
 
 ---
 
 ## Research Limitations
 
-No formal section on study limitations was explicitly documented in the source thesis. However, the following methodological scope parameters are noted directly from the research design:
+While no dedicated limitations section was included in the uploaded manuscript excerpt, the following methodological scope constraints are noted directly from the research design:
 
-* **Erosion Process Scope:** In accordance with standard RUSLE formulation, the model estimates long-term average annual soil loss from **sheet and rill erosion** and does not explicitly simulate gully erosion, channel bank collapse, or sediment deposition processes.
-* **Support Practice ($P$) Assumption:** Due to the absence of basin-wide spatial records on structural conservation practices, $P$ was parameterized uniformly as $1.0$.
-* **Field Calibration / Accuracy Metrics:** `[Information to be provided — e.g., LULC classification confusion matrix / Kappa coefficient or field sediment validation records, if available]`
+* **Decadal Snapshot Comparison:** Remote sensing change detection relied on two temporal endpoints ($2014$ and $2024$) rather than dense annual satellite time-series composites, which may capture seasonal or phenological variations alongside long-term land degradation.
+* **Visual & Descriptive Trend Assessment:** As explicitly noted in Chapter 4, long-term hydroclimatic trends (such as the post-$2019$ $\text{RH}_{\min}$ decline and wind speed fluctuations) were evaluated via visual inspection of time-series and anomaly charts and remain subject to formal non-parametric statistical significance testing (e.g., Mann-Kendall test).
+* **Indirect Inference of Coping Strategies:** In the uploaded chapters, the effectiveness of farmers' coping strategies was inferred indirectly from spatial-temporal NDVI, EVI, and LST dynamics rather than direct farm-level yield or survey measurements (`[Information to be provided — add survey/field methodology details if documented in other chapters]`).
 
 ---
 
 ## Conclusion and Recommendations
 
 ### Conclusion
-Integrating the Revised Universal Soil Loss Equation (RUSLE) with Remote Sensing and ArcGIS 10.7.1 provides a practical, reproducible framework for quantifying spatial soil erosion susceptibility across the $16,135\text{ km}^2$ Lower Ogun-Osun Basin. While $59.07\%$ of the basin undergoes slight erosion ($0\text{--}5\text{ t ha}^{-1}\text{ yr}^{-1}$), the $22.26\%$ experiencing very severe soil loss ($> 80\text{ t ha}^{-1}\text{ yr}^{-1}$) drives an overall mean erosion rate of $70.17\text{ t ha}^{-1}\text{ yr}^{-1}$ ($\approx 3.4\text{ million tonnes yr}^{-1}$), underscoring the necessity for immediate, spatially targeted soil conservation interventions.
+Multi-temporal Landsat analysis ($2014\text{--}2024$) and $34$-year ECMWF ERA-Interim climatic records ($1990\text{--}2024$) demonstrate that agricultural landscapes in northern and central Ekiti State are experiencing measurable surface warming (minimum LST up by $+1.80^\circ\text{C}$, maximum LST up by $+0.40^\circ\text{C}$), rising maximum and minimum air temperatures, increased post-$2020$ solar radiation, and significantly drier daytime atmospheric conditions ($\text{RH}_{\min}$ dropping to $\approx 45\%$). Corresponding expansions in low-NDVI and low-EVI zones—most pronounced in the northern LGAs—underscore growing climate vulnerability for rain-fed cassava production and highlight the uneven buffering capacity of current farmer coping strategies.
 
-### Recommendations
-1. **Enact Targeted Soil Conservation in High-Risk Zones:**
-   * Implement **contour farming and terracing** on steep slopes to slow overland flow velocity and promote infiltration.
-   * Promote **cover cropping** (e.g., legumes and grasses) and **mulching** during off-seasons to shield topsoil from raindrop impact.
-   * Establish **vegetative buffer strips, riparian buffers, and grassed waterways** along stream banks and concentrated runoff pathways to trap sediment and prevent gully initiation.
-2. **Promote Sustainable Land Management (SLM) Practices:**
-   * Encourage **no-till or reduced-till agriculture** to preserve soil structure and surface organic matter.
-   * Integrate **agroforestry systems** and **crop rotation/diversification** (alternating deep-rooted and shallow-rooted crops) to reinforce soil binding.
-   * Maintain **permanent perennial vegetation** on highly erodible slopes and riparian margins.
-3. **Formulate and Enforce Land-Use and Stormwater Policies:**
-   * Establish **zoning regulations** restricting agricultural expansion or deforestation in identified very-severe erosion zones.
-   * Mandate **Environmental Impact Assessments (EIAs)** prior to major land-use conversions and enforce **reforestation/afforestation** on degraded lands.
-   * Implement **urban stormwater management regulations** (permeable pavements, rain gardens, and detention basins) in rapidly urbanizing hubs such as Akure and Ile-Ife to control impervious surface runoff.
+*(Note: `[Information to be provided — insert verbatim Conclusions and Recommendations from Chapter Five of the manuscript if available]`)*
+
+### Actionable Recommendations (Derived from Chapter 4 Findings)
+1. **Promote Drought- and Heat-Tolerant Cassava Varieties:** Prioritize the dissemination and adoption of improved, climate-resilient *Manihot esculenta* cultivars in northern Ekiti State (Ikole, Oye, and Ilejemeje LGAs), where elevated LST and declining NDVI/EVI converge.
+2. **Strengthen Soil Moisture Conservation Practices:** Scale up agronomic water-conservation techniques—including **mulching**, **reduced/minimum tillage**, and **organic matter management**—to reduce soil evaporation and mitigate elevated Vapour Pressure Deficit (VPD) during dry spells.
+3. **Optimize Planting Calendars and Spatial Planning:** Align cassava planting dates and planting densities with updated rainfall onset patterns and use spatial LST/NDVI vulnerability maps to target agricultural extension services toward high-stress farming communities.
 
 ---
 
 ## Repository Structure
 
 ```text
-lower-ogun-osun-rusle-soil-erosion/
-├── README.md                                  # Complete technical project documentation
-├── maps/                                      # Exported cartographic outputs (300 DPI PNGs)
-│   ├── 01_study_area_location_map.png         # Fig 1.7: Study area reference map
-│   ├── 02_annual_rainfall_map.png             # Fig 4.1.1.1: Annual rainfall map (2022)
-│   ├── 03_rusle_r_factor_map.png              # Fig 4.1.1.2: Rainfall erosivity (R) factor map
-│   ├── 04_soil_classification_map.png         # Fig 4.1.2.1: FAO HWSD soil groups map
-│   ├── 05_rusle_k_factor_map.png              # Fig 4.1.2.2: Soil erodibility (K) factor map
-│   ├── 06_slope_gradient_map.png              # Fig 4.1.3.1: SRTM DEM slope map (degrees)
-│   ├── 07_rusle_ls_factor_map.png             # Fig 4.1.3.2: Topographic (LS) factor map
-│   ├── 08_lulc_classification_map.png         # Fig 4.1.4.1: Landsat 8 LULC map (2022)
-│   ├── 09_rusle_c_factor_map.png              # Fig 4.1.4.2: Cover management (C) factor map
-│   └── 10_classified_soil_loss_map.png        # Fig 4.3: Classified annual soil loss potential map
-└── docs/                                      # Supporting research documentation
-    └── ADEBISI_PAUL_UPDATED_2-1.docx          # B.Tech Thesis Manuscript (October 2024)
+ekiti-cassava-climate-change-gis/
+├── README.md                                  # Complete project documentation
+├── maps/                                      # Exported cartographic map layouts (PNG)
+│   ├── 01_study_area_location_map.png         # Fig 1: Study area map (5 LGAs in Ekiti State)
+│   ├── 02_ndvi_2014_map.png                   # Fig 4.1a: 2014 NDVI spatial distribution map
+│   ├── 03_ndvi_2024_map.png                   # Fig 4.1b: 2024 NDVI spatial distribution map
+│   ├── 04_evi_2014_map.png                    # Fig 4.2a: 2014 EVI spatial distribution map
+│   ├── 05_evi_2024_map.png                    # Fig 4.2b: 2024 EVI spatial distribution map
+│   ├── 06_lst_2014_map.png                    # Fig 4.3a: 2014 Land Surface Temperature map
+│   └── 07_lst_2024_map.png                    # Fig 4.3b: 2024 Land Surface Temperature map
+├── charts/                                    # Climatic & agricultural time-series charts (optional)
+│   └── [Information to be provided]           # Excel charts (1990-2024 Rainfall, Temp, RH, etc.)
+└── docs/                                      # Supporting manuscript documentation
+    └── olowoniyi_olumide_richard_research.docx # Source research document
 ```
 
 ---
 
 ## Author and Project Information
 
-* **Author:** Adebisi Paul Oluwasegun
-* **Academic Qualification:** B.Tech in Remote Sensing and Geoscience Information System (GIS)
-* **Department & Institution:** Department of Remote Sensing and Geoscience Information System, School of Earth and Mineral Science, Federal University of Technology, Akure (FUTA), Ondo State, Nigeria
-* **Research Supervisor:** Prof. Suleiman A. Adegboyega
-* **Completion Date:** October 2024
-* **Project Category:** Watershed Hydrology, Soil Erosion Modeling (RUSLE), Remote Sensing & GIS
+* **Author:** Olowoniyi Olumide Richard
+* **Academic / Professional Background:** `[Information to be provided — e.g., B.Tech / M.Sc. in Remote Sensing and GIS / Geography / Agricultural Meteorology]`
+* **Department & Institution:** `[Information to be provided]`
+* **Project Category:** Agro-Climatology, Vegetation Monitoring, Thermal Remote Sensing & GIS
 * **GitHub Profile:** `[Information to be provided — e.g., https://github.com/yourusername]`
 * **LinkedIn / Portfolio:** `[Information to be provided]`
 * **Contact Email:** `[Information to be provided]`
@@ -382,4 +327,4 @@ lower-ogun-osun-rusle-soil-erosion/
 ---
 
 ### Citation
-> Adebisi, P. O. (2024). *Assessment of Soil Erosion Potential with Integrated RUSLE Model and GIS in Lower Ogun-Osun Basin, Nigeria*. B.Tech Thesis, Department of Remote Sensing and Geoscience Information System, Federal University of Technology, Akure (FUTA), Nigeria.
+> Olowoniyi, O. R. (`[Year]`). *Assessing the Impacts of Climate Change on Cassava Production and Farmers' Coping Strategies in Ekiti State, Nigeria*. `[Institution / Department — Information to be provided]`.
