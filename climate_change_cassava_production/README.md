@@ -1,26 +1,21 @@
 # Assessing the Impacts of Climate Change on Cassava Production and Farmers' Coping Strategies in Ekiti State, Nigeria
 
-[![Project Category](https://img.shields.io/badge/Domain-Remote%20Sensing%20%26%20GIS-2E7D32)](#)
-[![Application](https://img.shields.io/badge/Focus-Agro--Climatology%20%26%20Crop%20Monitoring-1565C0)](#)
-[![Software](https://img.shields.io/badge/GIS%20Platform-ArcGIS%2010.7-6A1B9A)](#)
-[![Study Area](https://img.shields.io/badge/Location-Ekiti%20State%2C%20Nigeria-EF6C00)](#)
-
----
-
 ## Table of Contents
-- [Project Overview](#project-overview)
-- [Research Objectives](#research-objectives)
-- [Study Area](#study-area)
-- [Data Sources and Datasets](#data-sources-and-datasets)
-- [Software and Technologies](#software-and-technologies)
-- [Methodology](#methodology)
-- [Maps and Cartographic Outputs](#maps-and-cartographic-outputs)
-- [Results and Key Findings](#results-and-key-findings)
-- [Discussion](#discussion)
-- [Research Limitations](#research-limitations)
-- [Conclusion and Recommendations](#conclusion-and-recommendations)
-- [Repository Structure](#repository-structure)
-- [Author and Project Information](#author-and-project-information)
+
+* [Project Overview](#project-overview)
+* [Research Objectives](#research-objectives)
+* [Study Area](#study-area)
+* [Data Sources and Datasets](#data-sources-and-datasets)
+* [Software and Technologies](#software-and-technologies)
+* [Methodology](#methodology)
+* [Maps and Cartographic Outputs](#maps-and-cartographic-outputs)
+* [Hydroclimatic and Agricultural Charts](#hydroclimatic-and-agricultural-charts)
+* [Results and Key Findings](#results-and-key-findings)
+* [Discussion](#discussion)
+* [Research Limitations](#research-limitations)
+* [Conclusion and Recommendations](#conclusion-and-recommendations)
+* [Repository Structure](#repository-structure)
+* [Author and Project Information](#author-and-project-information)
 
 ---
 
@@ -39,7 +34,8 @@ The primary purpose of this analysis is to provide spatially explicit evidence o
 > **Note:** The introductory chapter containing the verbatim thesis aim and itemized objectives was not included in the uploaded manuscript excerpt. Below is a structured summary derived directly from the analytical scope in Chapters 3 and 4, alongside placeholders for your exact Chapter 1 wording.
 
 **Research Aim:**  
-`[Information to be provided — insert exact Research Aim from Chapter One of the manuscript]`  
+`[Information to be provided — insert exact Research Aim from Chapter One of the manuscript]`
+
 *(Operational summary: To assess the spatial-temporal impacts of climate change on vegetation vigor, thermal regime, and cassava production in northern and central Ekiti State, Nigeria, and evaluate implications for farmers' coping strategies using Remote Sensing, GIS, and multi-decadal climatic data.)*
 
 **Specific Objectives:**
@@ -66,7 +62,8 @@ The research was conducted across **five contiguous Local Government Areas (LGAs
 * **Agro-Ecological & Agricultural Context:** The region supports rain-fed arable agriculture in which cassava (*Manihot esculenta*) is a primary staple crop, alongside forested zones, shrublands, and rural-to-peri-urban settlements.
 
 ### Study Area Reference Map
-![Study Area Map](maps/01_study_area_location_map.png)
+
+![Study Area Location Map](maps/01_study_area_location_map.png)  
 *Figure 1: Geographical location of the five-LGA study area (Ilejemeje, Ido-Osi, Oye, Ikole, and Irepodun/Ifelodun) within Ekiti State and Nigeria.*
 
 ---
@@ -76,7 +73,7 @@ The research was conducted across **five contiguous Local Government Areas (LGAs
 All satellite imagery and meteorological datasets utilized in this study were obtained from authoritative international repositories:
 
 | Dataset | Source | Acquisition Year / Period | Spatial Resolution | Application in the Research |
-| :--- | :--- | :---: | :---: | :--- |
+| :--- | :--- | :--- | :--- | :--- |
 | **Landsat 8 OLI / TIRS Satellite Imagery** | United States Geological Survey (USGS EarthExplorer) | $2014$ | $30\text{ m}$ | Baseline computation of Normalized Difference Vegetation Index (NDVI), Enhanced Vegetation Index (EVI), and Land Surface Temperature (LST). |
 | **Landsat 9 OLI-2 / TIRS-2 Satellite Imagery** | United States Geological Survey (USGS EarthExplorer) | $2024$ | $30\text{ m}$ | Decadal comparison of NDVI, EVI, and LST to detect vegetation stress, canopy changes, and surface warming trends. |
 | **ERA-Interim Reanalysis Climatic Data** | European Centre for Medium-Range Weather Forecasts (ECMWF) | $1990\text{--}2024$ ($34\text{ years}$) | `[Information to be provided]` | Time-series and anomaly analysis of annual rainfall, minimum/maximum temperature, solar radiation, minimum/maximum relative humidity, and wind speed. |
@@ -90,7 +87,7 @@ All satellite imagery and meteorological datasets utilized in this study were ob
 The geospatial processing, thermal/spectral index modeling, and hydroclimatic statistical visualizations were conducted using the following tools:
 
 * **ArcGIS 10.7:** Core GIS and remote sensing platform used for radiometric processing, band math calculations (NDVI, EVI, and thermal LST retrieval), raster clipping, spatial overlay analysis, and cartographic map layout design.
-* **Microsoft Excel:** Used for organizing $34$-year ECMWF ERA-Interim meteorological records and cassava cultivation data, calculating climatic anomalies relative to long-term means, and generating time-series charts.
+* **Microsoft Excel:** Used for organizing $34$-year ECMWF ERA-Interim meteorological records and cassava cultivation data, calculating climatic anomalies relative to long-term means, and generating time-series and anomaly charts.
 
 ---
 
@@ -129,10 +126,11 @@ NDVI was computed in **ArcGIS 10.7** to quantify vegetation greenness, photosynt
 $$\text{NDVI} = \frac{\text{NIR} - \text{Red}}{\text{NIR} + \text{Red}}$$
 
 where $\text{NIR}$ is reflectance in the near-infrared band ($0.7\text{--}1.1\ \mu\text{m}$) and $\text{Red}$ is reflectance in the visible red band ($0.6\text{--}0.7\ \mu\text{m}$). Output values range from $-1$ to $+1$, interpreted across four standard biophysical thresholds:
-* **$\text{NDVI} < 0$:** Non-vegetated surfaces (water bodies or barren surfaces).
-* **$\text{NDVI} \approx 0\text{--}0.2$:** Barren land or sparsely vegetated/built-up areas.
-* **$\text{NDVI} \approx 0.2\text{--}0.5$:** Moderate vegetation cover (grasslands, shrublands, or stressed crops).
-* **$\text{NDVI} \approx 0.5\text{--}1.0$:** Dense, actively photosynthesizing vegetation (forests and healthy peak-season croplands).
+
+* $\text{NDVI} < 0$**:** Non-vegetated surfaces (water bodies or barren surfaces).
+* $\text{NDVI} \approx 0\text{--}0.2$**:** Barren land or sparsely vegetated/built-up areas.
+* $\text{NDVI} \approx 0.2\text{--}0.5$**:** Moderate vegetation cover (grasslands, shrublands, or stressed crops).
+* $\text{NDVI} \approx 0.5\text{--}1.0$**:** Dense, actively photosynthesizing vegetation (forests and healthy peak-season croplands).
 
 ### 3. Enhanced Vegetation Index (EVI)
 To complement NDVI and reduce atmospheric aerosol interference and soil background noise in high-biomass agricultural canopies, the **Enhanced Vegetation Index (EVI)** was calculated for both $2014$ and $2024$:
@@ -143,6 +141,7 @@ where $\text{Blue}$ represents surface reflectance in the visible blue band. EVI
 
 ### 4. Land Surface Temperature (LST) Retrieval
 Land Surface Temperature was extracted from the Landsat thermal infrared bands in ArcGIS 10.7 through a sequential radiometric conversion workflow:
+
 1. **Radiometric Calibration (At-Sensor Spectral Radiance):** Conversion of quantized calibrated pixel values ($Q_{\text{cal}}$) to at-sensor spectral radiance ($L_\lambda$, in $\text{W m}^{-2}\text{ sr}^{-1}\ \mu\text{m}^{-1}$).
 2. **Top-of-Atmosphere (TOA) Reflectance Conversion:** Conversion of optical bands to TOA planetary reflectance ($\rho_\lambda$).
 3. **At-Sensor Brightness Temperature ($T$):** Conversion of thermal spectral radiance ($L_\lambda$) to effective at-sensor brightness temperature in Kelvin ($\text{K}$) using band-specific metadata thermal constants ($K_1$ and $K_2$):
@@ -167,15 +166,13 @@ All spatial indices ($\text{NDVI}$, $\text{EVI}$, and $\text{LST}$) for $2014$ a
 
 | No. | Map Title | Suggested Filename | Category |
 | :---: | :--- | :--- | :--- |
-| 1 | Study Area Location Map (Five Selected LGAs in Ekiti State) | `01_study_area_location_map.png` | Reference |
-| 2 | 2014 Normalized Difference Vegetation Index (NDVI) Map | `02_ndvi_2014_map.png` | Thematic (Vegetation Vigor) |
-| 3 | 2024 Normalized Difference Vegetation Index (NDVI) Map | `03_ndvi_2024_map.png` | Thematic (Vegetation Vigor) |
-| 4 | 2014 Enhanced Vegetation Index (EVI) Map | `04_evi_2014_map.png` | Thematic (Canopy Health) |
-| 5 | 2024 Enhanced Vegetation Index (EVI) Map | `05_evi_2024_map.png` | Thematic (Canopy Health) |
-| 6 | 2014 Land Surface Temperature (LST) Map | `06_lst_2014_map.png` | Thematic (Thermal Regime) |
-| 7 | 2024 Land Surface Temperature (LST) Map | `07_lst_2024_map.png` | Thematic (Thermal Regime) |
-
----
+| 1 | Study Area Location Map (Five Selected LGAs in Ekiti State) | `maps/01_study_area_location_map.png` | Reference |
+| 2 | 2014 Normalized Difference Vegetation Index (NDVI) Map | `maps/02_ndvi_2014_map.png` | Thematic (Vegetation Vigor) |
+| 3 | 2024 Normalized Difference Vegetation Index (NDVI) Map | `maps/03_ndvi_2024_map.png` | Thematic (Vegetation Vigor) |
+| 4 | 2014 Enhanced Vegetation Index (EVI) Map | `maps/04_evi_2014_map.png` | Thematic (Canopy Health) |
+| 5 | 2024 Enhanced Vegetation Index (EVI) Map | `maps/05_evi_2024_map.png` | Thematic (Canopy Health) |
+| 6 | 2014 Land Surface Temperature (LST) Map | `maps/06_lst_2014_map.png` | Thematic (Thermal Regime) |
+| 7 | 2024 Land Surface Temperature (LST) Map | `maps/07_lst_2024_map.png` | Thematic (Thermal Regime) |
 
 ### Cartographic Gallery & Technical Descriptions
 
@@ -184,7 +181,7 @@ All spatial indices ($\text{NDVI}$, $\text{EVI}$, and $\text{LST}$) for $2014$ a
 * **Purpose:** Establishes the $2014$ spatial baseline of vegetation greenness and photosynthetic vigor across Ilejemeje, Ido-Osi, Oye, Ikole, and Irepodun/Ifelodun LGAs.
 * **Interpretation:** Extensive portions of the central and southwestern zones exhibit moderate-to-high NDVI values (greens and yellows), indicative of healthy forests and thriving agricultural lands, while localized low-NDVI patches (reds and oranges) occur in parts of the northern and southern sectors.
 
-![2014 NDVI Map](maps/02_ndvi_2014_map.png)
+![2014 Normalized Difference Vegetation Index (NDVI) Map](maps/02_ndvi_2014_map.png)
 
 ---
 
@@ -193,7 +190,7 @@ All spatial indices ($\text{NDVI}$, $\text{EVI}$, and $\text{LST}$) for $2014$ a
 * **Purpose:** Evaluates decadal changes in vegetation vigor and identifies spatial zones experiencing declining crop/vegetation health relative to $2014$.
 * **Interpretation:** Although maximum NDVI remained virtually unchanged ($\approx 0.66$), low-to-moderate-low NDVI zones (reds and oranges) expanded and intensified substantially across the northern sector (notably Ikole, Oye, and Ilejemeje) and southern fringes, signaling heightened vegetation stress or land degradation.
 
-![2024 NDVI Map](maps/03_ndvi_2024_map.png)
+![2024 Normalized Difference Vegetation Index (NDVI) Map](maps/03_ndvi_2024_map.png)
 
 ---
 
@@ -202,7 +199,7 @@ All spatial indices ($\text{NDVI}$, $\text{EVI}$, and $\text{LST}$) for $2014$ a
 * **Purpose:** Quantifies baseline canopy density and structural vigor while minimizing atmospheric and soil background influences.
 * **Interpretation:** High EVI values (greens) dominate the central and southern agricultural and forested belt, whereas lower EVI values (reds and oranges) are concentrated primarily in the northern sector.
 
-![2014 EVI Map](maps/04_evi_2014_map.png)
+![2014 Enhanced Vegetation Index (EVI) Map](maps/04_evi_2014_map.png)
 
 ---
 
@@ -211,7 +208,7 @@ All spatial indices ($\text{NDVI}$, $\text{EVI}$, and $\text{LST}$) for $2014$ a
 * **Purpose:** Detects decadal shifts in crop and vegetation canopy structure across the study area.
 * **Interpretation:** While localized peak EVI increased slightly ($0.787 \rightarrow 0.803$), low-to-moderate-low EVI zones expanded markedly across the northern and central-northern sectors compared to $2014$, corroborating NDVI evidence of canopy thinning and moisture/heat stress.
 
-![2024 EVI Map](maps/05_evi_2024_map.png)
+![2024 Enhanced Vegetation Index (EVI) Map](maps/05_evi_2024_map.png)
 
 ---
 
@@ -220,7 +217,7 @@ All spatial indices ($\text{NDVI}$, $\text{EVI}$, and $\text{LST}$) for $2014$ a
 * **Purpose:** Maps spatial variations in surface thermal load to establish baseline heat exposure across cassava-producing areas.
 * **Interpretation:** Cooler surface temperatures (blues) prevail across densely vegetated central and southern areas, whereas elevated surface temperatures (oranges and browns) concentrate in the northern sector, exhibiting a strong inverse spatial relationship with NDVI and EVI.
 
-![2014 LST Map](maps/06_lst_2014_map.png)
+![2014 Land Surface Temperature (LST) Map](maps/06_lst_2014_map.png)
 
 ---
 
@@ -229,7 +226,96 @@ All spatial indices ($\text{NDVI}$, $\text{EVI}$, and $\text{LST}$) for $2014$ a
 * **Purpose:** Quantifies decadal surface warming and delineates emerging thermal stress hotspots across the five LGAs.
 * **Interpretation:** The entire thermal distribution shifted upward between $2014$ and $2024$: minimum LST rose by approximately $+1.80^\circ\text{C}$ ($27.81^\circ\text{C} \rightarrow 29.61^\circ\text{C}$) and maximum LST increased by $+0.40^\circ\text{C}$ ($31.31^\circ\text{C} \rightarrow 31.71^\circ\text{C}$), with persistent thermal hotspots in the north and expanding warm zones across central and southwestern corridors.
 
-![2024 LST Map](maps/07_lst_2024_map.png)
+![2024 Land Surface Temperature (LST) Map](maps/07_lst_2024_map.png)
+
+---
+
+## Hydroclimatic and Agricultural Charts
+
+### Chart Inventory
+
+| No. | Chart Title | Suggested Filename | Parameter / Domain | Record Period |
+| :---: | :--- | :--- | :--- | :---: |
+| 1 | Annual Rainfall and Rainfall Anomaly Chart | `charts/01_annual_rainfall_anomaly_chart.png` | Precipitation (ECMWF ERA-Interim) | $1990\text{--}2024$ |
+| 2 | Annual Lowest Temperatures ($T_{\min}$) and Anomaly Chart | `charts/02_annual_lowest_temperature_chart.png` | Minimum Air Temperature | $1990\text{--}2024$ |
+| 3 | Annual Highest Temperatures ($T_{\max}$) and Anomaly Chart | `charts/03_annual_highest_temperature_chart.png` | Maximum Air Temperature | $1990\text{--}2024$ |
+| 4 | Annual Solar Radiation Chart | `charts/04_annual_solar_radiation_chart.png` | Surface Solar Irradiance | $1990\text{--}2024$ |
+| 5 | Annual Lowest Relative Humidity ($\text{RH}_{\min}$) Chart | `charts/05_annual_lowest_rh_chart.png` | Minimum Relative Humidity | $1990\text{--}2024$ |
+| 6 | Annual Highest Relative Humidity ($\text{RH}_{\max}$) Chart | `charts/06_annual_highest_rh_chart.png` | Maximum Relative Humidity | $1990\text{--}2024$ |
+| 7 | Annual Average Wind Speed Chart | `charts/07_annual_wind_speed_chart.png` | Near-Surface Wind Speed | $1990\text{--}2024$ |
+| 8 | Cassava Cultivated Area Dynamics Chart | `charts/08_cassava_cultivated_area_chart.png` | Agricultural Land Allocation | $1990\text{--}2024$ |
+
+### Chart Gallery & Technical Descriptions
+
+#### 1. Annual Rainfall and Rainfall Anomaly Chart ($1990\text{--}2024$)
+* **Technical Description:** Time-series and standardized deviation chart generated in Microsoft Excel depicting annual total precipitation and annual rainfall anomalies relative to the $34$-year ($1990\text{--}2024$) long-term mean.
+* **Purpose:** Quantifies inter-annual hydroclimatic variability and identifies historical wet and drought episodes affecting rain-fed agriculture.
+* **Interpretation:** Annual rainfall exhibits pronounced inter-annual fluctuations oscillating around the zero anomaly line without a monotonic long-term trend. Exceptionally wet positive anomalies occurred in **$1991$, $1998$, and $2019$** (posing waterlogging, root rot, and nutrient leaching risks), while severe negative drought anomalies occurred in **$2001$, $2015$, and $2021$** (inducing soil moisture deficits and yield suppression).
+
+![Annual Rainfall and Rainfall Anomaly Chart](charts/01_annual_rainfall_anomaly_chart.png)
+
+---
+
+#### 2. Annual Lowest Temperatures ($T_{\min}$) and Anomaly Chart ($1990\text{--}2024$)
+* **Technical Description:** $34$-year time-series and anomaly chart illustrating annual minimum air temperatures and deviations from the $1990\text{--}2024$ mean.
+* **Purpose:** Evaluates long-term warming in baseline/nighttime thermal conditions across the study area.
+* **Interpretation:** The chart demonstrates a discernible upward trend in $T_{\min}$, with anomalies shifting from predominantly negative (cooler-than-average lows) in the early $1990\text{s}$ to predominantly positive (warmer-than-average lows) from the mid-$2000\text{s}$ onward—creating warmer conditions favorable for cassava pest and disease survival.
+
+![Annual Lowest Temperatures Chart](charts/02_annual_lowest_temperature_chart.png)
+
+---
+
+#### 3. Annual Highest Temperatures ($T_{\max}$) and Anomaly Chart ($1990\text{--}2024$)
+* **Technical Description:** $34$-year time-series and anomaly chart tracking annual peak air temperatures and corresponding temperature anomalies.
+* **Purpose:** Quantifies daytime thermal extremes and heat stress trends impacting crop physiology.
+* **Interpretation:** Reveals a clear, pronounced upward warming trend in $T_{\max}$ that accelerates markedly from circa **$2014$ onward**, shifting from negative anomalies in the early record to consistently positive, rising anomalies over the most recent decade.
+
+![Annual Highest Temperatures Chart](charts/03_annual_highest_temperature_chart.png)
+
+---
+
+#### 4. Annual Solar Radiation Chart ($1990\text{--}2024$)
+* **Technical Description:** $34$-year Excel time-series chart of annual surface solar radiation derived from ECMWF ERA-Interim reanalysis data.
+* **Purpose:** Assesses temporal variations in incoming solar irradiance driving photosynthesis and surface energy balance.
+* **Interpretation:** Solar radiation fluctuated without a consistent trend between $1990$ and $2019$, followed by a marked upward surge from **$2020$ onward** that peaked in **$2022$**—amplifying land surface heating and evaporative demand.
+
+![Annual Solar Radiation Chart](charts/04_annual_solar_radiation_chart.png)
+
+---
+
+#### 5. Annual Lowest Relative Humidity ($\text{RH}_{\min}$) Chart ($1990\text{--}2024$)
+* **Technical Description:** $34$-year time-series chart depicting annual minimum relative humidity ($\text{RH}_{\min}$, $\%$), representing peak daytime and dry-season atmospheric dryness.
+* **Purpose:** Tracks changes in atmospheric moisture deficit and Vapour Pressure Deficit (VPD) affecting crop transpiration.
+* **Interpretation:** $\text{RH}_{\min}$ remained relatively stable between **$48\%$ and $55\%$** from $1990$ to $2019$, before declining sharply post-$2019$ below $50\%$ to reach 34-year record lows of approximately **$45\%$ between $2021$ and $2024$**—substantially increasing transpirational water stress in cassava.
+
+![Annual Lowest Relative Humidity Chart](charts/05_annual_lowest_rh_chart.png)
+
+---
+
+#### 6. Annual Highest Relative Humidity ($\text{RH}_{\max}$) Chart ($1990\text{--}2024$)
+* **Technical Description:** $34$-year time-series chart tracking annual maximum relative humidity ($\text{RH}_{\max}$, $\%$), indicative of near-saturated nighttime or wet-period atmospheric conditions.
+* **Purpose:** Evaluates upper-bound atmospheric moisture dynamics over the $1990\text{--}2024$ period.
+* **Interpretation:** Displays considerable inter-annual variability with a subtle post-$2015/2018$ downward tendency, occasionally dipping toward **$85\%$** compared to earlier peaks of **$95\%\text{--}96\%$**.
+
+![Annual Highest Relative Humidity Chart](charts/06_annual_highest_rh_chart.png)
+
+---
+
+#### 7. Annual Average Wind Speed Chart ($1990\text{--}2024$)
+* **Technical Description:** $34$-year time-series chart of mean annual near-surface wind speed ($\text{m s}^{-1}$) generated in Microsoft Excel.
+* **Purpose:** Examines whether long-term shifts in wind velocity contributed to changes in crop evapotranspiration demand.
+* **Interpretation:** Exhibits no monotonic long-term trend, fluctuating around a stable long-term mean of **$2.20\text{--}2.25\text{ m s}^{-1}$** (with slightly higher averages in $1992, 1998, 2001, 2005, 2015$ and lower averages around $1996, 2009, 2019$).
+
+![Annual Average Wind Speed Chart](charts/07_annual_wind_speed_chart.png)
+
+---
+
+#### 8. Cassava Cultivated Area Dynamics Chart ($1990\text{--}2024$)
+* **Technical Description:** Multi-decadal time-series chart illustrating inter-annual fluctuations in agricultural land area allocated to cassava cultivation.
+* **Purpose:** Contextualizes supply-side cultivation dynamics alongside climatic anomalies to distinguish area-driven shifts from climate-induced yield impacts.
+* **Interpretation:** Reveals pronounced multi-phase volatility: minimal cultivated area prior to $1998$, rapid expansion between **$1999$ and $2003/2004$**, general decline from the mid-$2000\text{s}$ to $2012$, a sharp secondary peak around **$2015\text{--}2016$** (coinciding with the $2015$ negative rainfall anomaly), rapid contraction to a trough circa **$2021\text{--}2022$**, and early signs of recovery toward **$2024$**.
+
+![Cassava Cultivated Area Dynamics Chart](charts/08_cassava_cultivated_area_chart.png)
 
 ---
 
@@ -241,22 +327,20 @@ All spatial indices ($\text{NDVI}$, $\text{EVI}$, and $\text{LST}$) for $2014$ a
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
 | **NDVI** | Landsat 8/9 ($30\text{ m}$) | $-0.0673$ | $0.6639$ | $-0.0249$ | $0.6601$ | Peak NDVI stable ($\approx 0.66$); notable spatial expansion of low-to-moderate-low NDVI zones in the northern and southern sectors. |
 | **EVI** | Landsat 8/9 ($30\text{ m}$) | $-0.0543$ | $0.7869$ | $-0.0205$ | $0.8027$ | Slight peak increase ($+0.0158$); pronounced expansion of low-EVI canopy-stressed zones in the northern sector. |
-| **LST ($^\circ\text{C}$)** | Landsat 8/9 ($30\text{ m}$) | $27.81^\circ\text{C}$ | $31.31^\circ\text{C}$ | $29.61^\circ\text{C}$ | $31.71^\circ\text{C}$ | Minimum LST increased by **$+1.80^\circ\text{C}$** and maximum LST increased by **$+0.40^\circ\text{C}$**, demonstrating basin-wide surface warming. |
-
----
+| **LST ($^\circ\text{C}$)** | Landsat 8/9 ($30\text{ m}$) | $27.81^\circ\text{C}$ | $31.31^\circ\text{C}$ | $29.61^\circ\text{C}$ | $31.71^\circ\text{C}$ | Minimum LST increased by $+1.80^\circ\text{C}$ and maximum LST increased by $+0.40^\circ\text{C}$, demonstrating basin-wide surface warming. |
 
 ### 2. Multi-Decadal Agro-Climatic & Cassava Cultivation Trends ($1990\text{--}2024$)
 
 | Climatic / Agricultural Variable | Record Period | Observed Trend & Key Temporal Milestones | Implications for Cassava (*Manihot esculenta*) Production |
-| :--- | :---: | :--- | :--- |
-| **Annual Rainfall & Anomalies** | $1990\text{--}2024$ | High inter-annual variability with no monotonic long-term trend. Pronounced wet anomalies in **$1991, 1998, 2019$**; severe drought anomalies in **$2001, 2015, 2021$**. | Drought years induce moisture stress and depress tuber yields; excessive rainfall years risk waterlogging, root rot, soil erosion, and nutrient leaching. |
+| :--- | :--- | :--- | :--- |
+| **Annual Rainfall & Anomalies** | $1990\text{--}2024$ | High inter-annual variability with no monotonic long-term trend. Pronounced wet anomalies in $1991, 1998, 2019$; severe drought anomalies in $2001, 2015, 2021$. | Drought years induce moisture stress and depress tuber yields; excessive rainfall years risk waterlogging, root rot, soil erosion, and nutrient leaching. |
 | **Annual Minimum Temperature ($T_{\min}$)** | $1990\text{--}2024$ | Discernible upward warming trend; anomalies shifted from predominantly negative (early $1990\text{s}$) to consistently positive from the mid-$2000\text{s}$ onward. | Warmer nighttime/minimum temperatures favor the survival and proliferation of cassava pests and diseases. |
-| **Annual Maximum Temperature ($T_{\max}$)** | $1990\text{--}2024$ | Pronounced upward warming trend accelerating from circa **$2014$** onward, with consistently positive anomalies over the last decade. | Increases daytime heat stress, impairs photosynthetic efficiency, and reduces tuber development and water use efficiency. |
-| **Solar Radiation** | $1990\text{--}2024$ | Fluctuating without trend from $1990\text{--}2019$, followed by a marked increase from **$2020\text{--}2024$**, peaking in **$2022$**. | Potential photosynthetic gains from higher irradiance are offset by concurrent high LST and elevated evaporative demand. |
-| **Minimum Relative Humidity ($\text{RH}_{\min}$)** | $1990\text{--}2024$ | Stable between **$48\%\text{--}55\%$** ($1990\text{--}2019$), followed by a sharp post-$2019$ decline below **$50\%$**, reaching 34-year lows of **$\approx 45\%$** ($2021\text{--}2024$). | Elevated Vapour Pressure Deficit (VPD) intensifies leaf transpiration, forcing stomatal closure and inducing severe water stress. |
-| **Maximum Relative Humidity ($\text{RH}_{\max}$)** | $1990\text{--}2024$ | High inter-annual variability with a slight post-$2015/2018$ downward tendency (dipping toward **$85\%$** vs. earlier peaks of **$95\%\text{--}96\%$**). | Slightly reduced frequency of near-saturated nighttime atmospheric conditions compared to earlier decades. |
-| **Annual Average Wind Speed** | $1990\text{--}2024$ | No monotonic long-term trend; fluctuates around a stable long-term mean of **$2.20\text{--}2.25\text{ m s}^{-1}$** (higher in $1992, 1998, 2001, 2005, 2015$; lower in $1996, 2009, 2019$). | Acts as a secondary, fluctuating contributor to evaporative demand rather than a primary driver of long-term stress. |
-| **Cassava Cultivated Area** | $1990\text{--}2024$ | Minimal pre-$1998$; rapid expansion ($1999\text{--}2003/2004$); decline ($2005\text{--}2012$); sharp secondary peak ($2015\text{--}2016$); rapid contraction to a low ($2021\text{--}2022$), with early recovery toward **$2024$**. | High cultivated area volatility compounds yield instability; e.g., the $2015\text{--}2016$ area peak coincided with the $2015$ drought anomaly, likely suppressing per-hectare yields. |
+| **Annual Maximum Temperature ($T_{\max}$)** | $1990\text{--}2024$ | Pronounced upward warming trend accelerating from circa $2014$ onward, with consistently positive anomalies over the last decade. | Increases daytime heat stress, impairs photosynthetic efficiency, and reduces tuber development and water use efficiency. |
+| **Solar Radiation** | $1990\text{--}2024$ | Fluctuating without trend from $1990\text{--}2019$, followed by a marked increase from $2020\text{--}2024$, peaking in $2022$. | Potential photosynthetic gains from higher irradiance are offset by concurrent high LST and elevated evaporative demand. |
+| **Minimum Relative Humidity ($\text{RH}_{\min}$)** | $1990\text{--}2024$ | Stable between $48\%\text{--}55\%$ ($1990\text{--}2019$), followed by a sharp post-$2019$ decline below $50\%$, reaching 34-year lows of $\approx 45\%$ ($2021\text{--}2024$). | Elevated Vapour Pressure Deficit (VPD) intensifies leaf transpiration, forcing stomatal closure and inducing severe water stress. |
+| **Maximum Relative Humidity ($\text{RH}_{\max}$)** | $1990\text{--}2024$ | High inter-annual variability with a slight post-$2015/2018$ downward tendency (dipping toward $85\%$ vs. earlier peaks of $95\%\text{--}96\%$). | Slightly reduced frequency of near-saturated nighttime atmospheric conditions compared to earlier decades. |
+| **Annual Average Wind Speed** | $1990\text{--}2024$ | No monotonic long-term trend; fluctuates around a stable long-term mean of $2.20\text{--}2.25\text{ m s}^{-1}$ (higher in $1992, 1998, 2001, 2005, 2015$; lower in $1996, 2009, 2019$). | Acts as a secondary, fluctuating contributor to evaporative demand rather than a primary driver of long-term stress. |
+| **Cassava Cultivated Area** | $1990\text{--}2024$ | Minimal pre-$1998$; rapid expansion ($1999\text{--}2003/2004$); decline ($2005\text{--}2012$); sharp secondary peak ($2015\text{--}2016$); rapid contraction to a low ($2021\text{--}2022$), with early recovery toward $2024$. | High cultivated area volatility compounds yield instability; e.g., the $2015\text{--}2016$ area peak coincided with the $2015$ drought anomaly, likely suppressing per-hectare yields. |
 
 ---
 
@@ -297,19 +381,26 @@ Multi-temporal Landsat analysis ($2014\text{--}2024$) and $34$-year ECMWF ERA-In
 
 ```text
 ekiti-cassava-climate-change-gis/
-├── README.md                                  # Complete project documentation
-├── maps/                                      # Exported cartographic map layouts (PNG)
-│   ├── 01_study_area_location_map.png         # Fig 1: Study area map (5 LGAs in Ekiti State)
-│   ├── 02_ndvi_2014_map.png                   # Fig 4.1a: 2014 NDVI spatial distribution map
-│   ├── 03_ndvi_2024_map.png                   # Fig 4.1b: 2024 NDVI spatial distribution map
-│   ├── 04_evi_2014_map.png                    # Fig 4.2a: 2014 EVI spatial distribution map
-│   ├── 05_evi_2024_map.png                    # Fig 4.2b: 2024 EVI spatial distribution map
-│   ├── 06_lst_2014_map.png                    # Fig 4.3a: 2014 Land Surface Temperature map
-│   └── 07_lst_2024_map.png                    # Fig 4.3b: 2024 Land Surface Temperature map
-├── charts/                                    # Climatic & agricultural time-series charts (optional)
-│   └── [Information to be provided]           # Excel charts (1990-2024 Rainfall, Temp, RH, etc.)
-└── docs/                                      # Supporting manuscript documentation
-    └── olowoniyi_olumide_richard_research.docx # Source research document
+├── README.md                                       # Complete technical project documentation
+├── maps/                                           # Exported ArcGIS 10.7 cartographic map layouts (PNG)
+│   ├── 01_study_area_location_map.png              # Fig 1: Study area map (5 LGAs in Ekiti State)
+│   ├── 02_ndvi_2014_map.png                        # Fig 4.1a: 2014 NDVI spatial distribution map
+│   ├── 03_ndvi_2024_map.png                        # Fig 4.1b: 2024 NDVI spatial distribution map
+│   ├── 04_evi_2014_map.png                         # Fig 4.2a: 2014 EVI spatial distribution map
+│   ├── 05_evi_2024_map.png                         # Fig 4.2b: 2024 EVI spatial distribution map
+│   ├── 06_lst_2014_map.png                         # Fig 4.3a: 2014 Land Surface Temperature map
+│   └── 07_lst_2024_map.png                         # Fig 4.3b: 2024 Land Surface Temperature map
+├── charts/                                         # Exported Microsoft Excel time-series & anomaly charts (PNG)
+│   ├── 01_annual_rainfall_anomaly_chart.png        # 1990-2024 Annual rainfall & anomaly chart
+│   ├── 02_annual_lowest_temperature_chart.png      # 1990-2024 Annual minimum temperature & anomaly chart
+│   ├── 03_annual_highest_temperature_chart.png     # 1990-2024 Annual maximum temperature & anomaly chart
+│   ├── 04_annual_solar_radiation_chart.png         # 1990-2024 Annual solar radiation chart
+│   ├── 05_annual_lowest_rh_chart.png               # 1990-2024 Annual minimum relative humidity chart
+│   ├── 06_annual_highest_rh_chart.png              # 1990-2024 Annual maximum relative humidity chart
+│   ├── 07_annual_wind_speed_chart.png              # 1990-2024 Annual average wind speed chart
+│   └── 08_cassava_cultivated_area_chart.png        # 1990-2024 Cassava cultivated area dynamics chart
+└── docs/                                           # Supporting manuscript documentation
+    └── olowoniyi_olumide_richard_research.docx     # Source research document
 ```
 
 ---
