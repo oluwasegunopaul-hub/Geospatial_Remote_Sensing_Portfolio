@@ -14,7 +14,7 @@ Beyond single-topic research projects, a strong Remote Sensing and GIS portfolio
 - Compute and visualize optical spectral indices (**NDVI** and **NDWI**) for vegetation vigor and surface water delineation.
 
 
-## 4. Data Sources (Illustrative Examples / Placeholders)
+## 4. Data Sources 
 - **Optical Multispectral Imagery:** Sentinel-2 Level-2A (10m) & Landsat 8/9 OLI (30m)
 - **Elevation Dataset:** SRTM 1 Arc-Second Global (30m) Digital Elevation Model
 - **Administrative & Reference Vectors:** Grid3
@@ -40,22 +40,22 @@ Beyond single-topic research projects, a strong Remote Sensing and GIS portfolio
 
 ## 8. Map Preview Gallery
 
-### Study Area Location & Administrative Context Map (Illustrative Sample)
+### Study Area Location & Administrative Context Map
 ![Study Area Map](Study_Area_Maps/study_area_location_map.png)
 
-### Land Use / Land Cover (LULC) Classification Map (Illustrative Sample)
+### Land Use / Land Cover (LULC) Classification Map 
 ![LULC Map](LULC_Maps/lulc_supervised_classification.png)
 
-### Digital Elevation Model (DEM) & Hypsometric Relief (Illustrative Sample)
+### Digital Elevation Model (DEM) & Hypsometric Relief 
 ![DEM Map](Terrain_Maps/dem_elevation_model.png)
 
-### Terrain Slope Gradient Classification (Illustrative Sample)
+### Terrain Slope Gradient Classification 
 ![Slope Map](Terrain_Maps/terrain_slope_degrees.png)
 
-### Normalized Difference Vegetation Index (NDVI) (Illustrative Sample)
+### Normalized Difference Vegetation Index (NDVI) 
 ![NDVI Map](Vegetation_Maps/ndvi_vegetation_vigor.png)
 
-### Normalized Difference Water Index (NDWI) (Illustrative Sample)
+### Normalized Difference Water Index (NDWI) 
 ![NDWI Map](Vegetation_Maps/ndwi_surface_water_index.png)
 
 
