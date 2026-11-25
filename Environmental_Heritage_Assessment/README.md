@@ -230,10 +230,5 @@ Between 2002 and 2024, the Osun-Osogbo Sacred Grove experienced measurable canop
   2. **Targeted Reforestation & Microclimate Restoration:** Prioritize native canopy restoration within the identified 2002–2024 deforestation patches and eastern thermal hotspots to restore the grove's cooling buffer around vulnerable landmarks (*Busanyin Grove* and *Ijumu*).
   3. **Drainage & Flood Mitigation:** Implement stormwater runoff controls along adjacent urban roads and reinforce riverbank erosion protection near riverine shrines and visitor pathways.
 
----
 
-
-```
-
----
 
