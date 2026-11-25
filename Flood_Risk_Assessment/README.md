@@ -317,39 +317,3 @@ Integrating Satellite Remote Sensing, GIS spatial analysis, and the Analytic Hie
 2. **Wetland Conservation and Watershed Reforestation:** Protect existing floodplain wetlands as natural flood-attenuation buffers and promote afforestation/vegetative cover restoration in degraded, low-NDVI upland catchments to enhance rainfall infiltration and reduce peak runoff.
 3. **Early Warning Systems and Targeted Structural Mitigation:** Prioritize communities located within the delineated inundation corridor (Fig. 19) for community-based flood early warning systems, elevated evacuation routes, and improved drainage infrastructure.
 
----
-
-## 12. Repository Structure
-
-```text
-flood-risk-lower-niger/
-├── README.md                                       # Main project documentation
-├── maps/                                           # High-resolution cartographic outputs (PNG)
-│   ├── 00_study_area_location_map.png              # Optional regional location inset map
-│   ├── 01_distance_from_river_map.png              # Distance from river proximity map (Fig. 8)
-│   ├── 02_distance_from_road_map.png               # Distance from road proximity map (Fig. 9)
-│   ├── 03_dem_elevation_map.png                    # SRTM 90m Digital Elevation Model map (Fig. 10)
-│   ├── 04_drainage_density_map.png                 # Drainage density map (Fig. 11)
-│   ├── 05_lulc_map.png                             # 2022 Land Use / Land Cover map (Fig. 12)
-│   ├── 06_ndvi_map.png                             # Normalized Difference Vegetation Index map (Fig. 13)
-│   ├── 07_rainfall_map.png                         # Rainfall distribution map (Fig. 14)
-│   ├── 08_slope_map.png                            # Terrain slope gradient map (Fig. 15)
-│   ├── 09_soil_hsg_map.png                         # Hydrologic Soil Groups (HSG) map (Fig. 16)
-│   ├── 10_topographic_wetness_index_twi_map.png    # Topographic Wetness Index (TWI) map (Fig. 17)
-│   ├── 11_flood_risk_map.png                       # 5-class AHP-GIS flood risk map (Fig. 18)
-│   └── 12_flood_inundation_map.png                 # Flood inundation & settlement exposure map (Fig. 19)
-└── docs/                                           # Supporting technical report
-    └── A_TECHNICAL_REPORT.docx                     # Original SIWES technical report
-```
-
----
-
-## 13. Author and Project Information
-
-* **Author:** Adebisi Paul Oluwasegun
-* **Academic Background:** B.Tech. in Remote Sensing and GIS, Department of Remote Sensing and GIS, School of Earth and Mineral Sciences, Federal University of Technology, Akure (FUTA), Nigeria
-* **Research / Internship Affiliation:** Centre for Space Research and Applications (CESRA), FUTA, Akure, Ondo State, Nigeria
-* **Industry-Based Supervisors:** Dr. Samuel Olumide Akande & Mrs. Folasade Caroline Akinwonmi
-* **Project Category:** Flood Risk Modelling, Multi-Criteria Decision Analysis (AHP-GIS), Hydrological Remote Sensing
-* **GitHub Profile:** `[Information to be provided — e.g., https://github.com/your-username]`
-* **Contact / LinkedIn / Email:** `[Information to be provided]`
