@@ -1,5 +1,3 @@
-# [Exact Research Title — Information to be provided]
-
 **Remote Sensing and GIS-Based Assessment of Poaching and Trafficking Incidents in Okomu National Park, Edo State, Nigeria**
 
 ---
