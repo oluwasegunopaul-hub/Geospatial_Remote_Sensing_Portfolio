@@ -15,8 +15,6 @@
 - [10. Discussion](#10-discussion)
 - [11. Research Limitations](#11-research-limitations)
 - [12. Conclusion and Recommendations](#12-conclusion-and-recommendations)
-- [13. Repository Structure](#13-repository-structure)
-- [14. Author and Project Information](#14-author-and-project-information)
 
 ---
 
@@ -24,14 +22,11 @@
 
 This project investigates the spatial and spectral impacts of illegal wildlife poaching and trafficking activities on forest vegetation and land surface conditions in **Okomu National Park, Edo State, Nigeria**. Using multi-temporal Landsat 8 Operational Land Imager (OLI) satellite imagery and field-recorded poaching hotspot coordinates, the study evaluates pre-incident and post-incident environmental changes surrounding a documented poaching and trafficking event on **26 January 2022**.
 
-Illegal wildlife poaching and trafficking pose direct threats not only to endangered fauna but also to forest habitat integrity through vegetation trampling, ground clearing, vehicle movement, and temporary encampments. By integrating multispectral remote sensing indices—**Normalized Difference Vegetation Index (NDVI)**, **Soil-Adjusted Vegetation Index (SAVI)**, **Normalized Difference Built-up Index (NDBI)**, and **Normalized Difference Tillage Index (NDTI)**—with **2023 Land Use / Land Cover (LULC)** mapping in a Geographic Information System (GIS) environment, this analysis detects surface disturbances, identifies high-risk zones, and supports evidence-based protected-area monitoring and habitat restoration planning.
+Illegal wildlife poaching and trafficking pose direct threats not only to endangered fauna but also to forest habitat integrity through vegetation trampling, ground clearing, vehicle movement, and temporary encampments. By integrating multispectral remote sensing indices **Normalized Difference Vegetation Index (NDVI)**, **Soil-Adjusted Vegetation Index (SAVI)**, **Normalized Difference Built-up Index (NDBI)**, and **Normalized Difference Tillage Index (NDTI)** with **2023 Land Use / Land Cover (LULC)** mapping in a Geographic Information System (GIS) environment, this analysis detects surface disturbances, identifies high-risk zones, and supports evidence-based protected-area monitoring and habitat restoration planning.
 
 ---
 
 ## 2. Research Objectives
-
-**Primary Aim:**  
-[Formal Research Aim — Information to be provided if explicitly stated in the full manuscript]
 
 **Specific Objectives (Derived from the Research Analysis):**
 1. **Acquire and Integrate Geospatial Datasets:** Combine multi-temporal Landsat 8 OLI imagery (pre-incident and post-incident) with field-verified poaching and trafficking hotspot coordinates recorded by park rangers.
@@ -45,12 +40,12 @@ Illegal wildlife poaching and trafficking pose direct threats not only to endang
 
 The study was conducted in **Okomu National Park**, located in **Edo State, Nigeria**. Based on the coordinate graticule of the cartographic outputs, the park boundary spans approximately between longitudes **$5^\circ 01'\text{E}$ and $5^\circ 28'\text{E}$** and latitudes **$6^\circ 10'\text{N}$ and $6^\circ 30'\text{N}$**.
 
-- **Administrative Context:** Edo State, Nigeria (`[Local Government Area and gazetted park area in sq. km — Information to be provided]`).
-- **Environmental & Ecological Characteristics:** Dominated by dense forest vegetation interspersed with bare land, minor water bodies, and localized built-up/disturbed patches (`[Detailed climatic, topographic, and biodiversity description — Information to be provided]`).
+- **Administrative Context:** Edo State, Nigeria 
+- **Environmental & Ecological Characteristics:** Dominated by dense forest vegetation interspersed with bare land, minor water bodies, and localized built-up/disturbed patches
 
 ### Study Area Map
 ![Study Area Map of Okomu National Park](maps/01_okomu_study_area_map.png)
-*Figure 1: Location of Okomu National Park within Edo State and Nigeria (`maps/01_okomu_study_area_map.png`).*
+*Figure 1: Location of Okomu National Park within Edo State and Nigeria 
 
 ---
 
@@ -60,9 +55,8 @@ The study was conducted in **Okomu National Park**, located in **Edo State, Nige
 | :--- | :--- | :--- | :--- | :--- |
 | **Landsat 8 OLI Multispectral Imagery (Pre-Incident)** | United States Geological Survey (USGS) EarthExplorer (`earthexplorer.usgs.gov`) | 1 November 2021 | $30 \times 30\text{ m}$ | Extraction of Red, NIR, and SWIR bands to derive pre-incident NDVI, SAVI, NDBI, and NDTI baseline surfaces. |
 | **Landsat 8 OLI Multispectral Imagery (Post-Incident)** | United States Geological Survey (USGS) EarthExplorer (`earthexplorer.usgs.gov`) | 1 March 2022 | $30 \times 30\text{ m}$ | Extraction of Red, NIR, and SWIR bands to derive post-incident NDVI, SAVI, NDBI, and NDTI surfaces for change detection. |
-| **Landsat / Satellite Imagery (LULC Classification)** | `[Sensor and source — Information to be provided]` | 2023 (`[Exact date to be provided]`) | $30\text{ m}$ (`[Confirm resolution]`) | Generation of the 2023 Land Use / Land Cover map (Water Body, Vegetation, Bare land, Built-Up Area). |
 | **Poaching and Trafficking Incident Coordinates** | Forest Reserve Guards, Okomu National Park | 26 January 2022 | Point vector data | Spatial overlay of documented poaching/trafficking hotspots across spectral index and LULC maps. |
-| **Administrative Boundary Shapefiles** | `[Boundary dataset source — Information to be provided]` | `[Year — Information to be provided]` | Vector polygon | Delineation of Okomu National Park, Edo State, and Nigerian state boundaries for the study area map. |
+| **Administrative Boundary Shapefiles** | GRID3 | 2023 | Vector polygon | Delineation of Okomu National Park, Edo State, and Nigerian state boundaries for the study area map. |
 
 ---
 
@@ -99,8 +93,6 @@ A **2023 Land Use / Land Cover (LULC)** map of Okomu National Park was produced 
 - **Vegetation**
 - **Bare land**
 - **Built-Up Area**
-
-`[Classification algorithm (e.g., Supervised Maximum Likelihood) and accuracy assessment metrics — Information to be provided]`
 
 ### 6.5 Spatial Overlay and Cartographic Production
 The recorded poaching and trafficking hotspot layer was overlaid onto all pre- and post-incident spectral index rasters as well as the 2023 LULC layer to evaluate spatial patterns of disturbance and produce standardized thematic maps with scale bars, north arrows, coordinate graticules, and legends.
@@ -152,7 +144,6 @@ All cartographic outputs produced in the research document are cataloged below. 
 | Pre-Incident NDVI (1 November 2021) | Post-Incident NDVI (1 March 2022) |
 | :---: | :---: |
 | ![Pre-Incident NDVI Map](maps/02_okomu_ndvi_pre_incident.png) | ![Post-Incident NDVI Map](maps/03_okomu_ndvi_post_incident.png) |
-| *Expected file: `maps/02_okomu_ndvi_pre_incident.png`* | *Expected file: `maps/03_okomu_ndvi_post_incident.png`* |
 
 ---
 
@@ -164,7 +155,6 @@ All cartographic outputs produced in the research document are cataloged below. 
 | Pre-Incident SAVI (1 November 2021) | Post-Incident SAVI (1 March 2022) |
 | :---: | :---: |
 | ![Pre-Incident SAVI Map](maps/04_okomu_savi_pre_incident.png) | ![Post-Incident SAVI Map](maps/05_okomu_savi_post_incident.png) |
-| *Expected file: `maps/04_okomu_savi_pre_incident.png`* | *Expected file: `maps/05_okomu_savi_post_incident.png`* |
 
 ---
 
@@ -176,7 +166,6 @@ All cartographic outputs produced in the research document are cataloged below. 
 | Pre-Incident NDBI (1 November 2021) | Post-Incident NDBI (1 March 2022) |
 | :---: | :---: |
 | ![Pre-Incident NDBI Map](maps/06_okomu_ndbi_pre_incident.png) | ![Post-Incident NDBI Map](maps/07_okomu_ndbi_post_incident.png) |
-| *Expected file: `maps/06_okomu_ndbi_pre_incident.png`* | *Expected file: `maps/07_okomu_ndbi_post_incident.png`* |
 
 ---
 
@@ -188,7 +177,6 @@ All cartographic outputs produced in the research document are cataloged below. 
 | Pre-Incident NDTI (1 November 2021) | Post-Incident NDTI (1 March 2022) |
 | :---: | :---: |
 | ![Pre-Incident NDTI Map](maps/08_okomu_ndti_pre_incident.png) | ![Post-Incident NDTI Map](maps/09_okomu_ndti_post_incident.png) |
-| *Expected file: `maps/08_okomu_ndti_pre_incident.png`* | *Expected file: `maps/09_okomu_ndti_post_incident.png`* |
 
 ---
 
@@ -198,7 +186,6 @@ All cartographic outputs produced in the research document are cataloged below. 
 - **Interpretation:** Vegetation forms the dominant land cover matrix across Okomu National Park, with bare land patches concentrated primarily along the northern and northeastern margins and smaller built-up/disturbed patches scattered internally. Recorded poaching hotspots predominantly cluster across the central-to-eastern forest interior.
 
 ![Land Use / Land Cover Map 2023](maps/10_okomu_lulc_2023_map.png)
-*Expected file: `maps/10_okomu_lulc_2023_map.png`*
 
 ---
 
@@ -217,7 +204,7 @@ All cartographic outputs produced in the research document are cataloged below. 
 - **Vegetation Canopy Degradation:** Both NDVI and SAVI recorded notable reductions in maximum index values following the 26 January 2022 incident, indicating measurable stress and thinning in previously dense forest zones.
 - **Increased Ground and Structural Disturbance:** Both NDBI and NDTI exhibited higher upper-bound values post-incident, aligning with localized ground clearing, trail creation, vehicle movement, or temporary encampments.
 - **Spatial Distribution of Hotspots:** Field-recorded poaching and trafficking hotspots are distributed along a southwest-to-northeast corridor across the central and eastern sections of Okomu National Park, providing spatial reference points for targeted ranger surveillance.
-- **2023 Land Cover Composition:** Four primary LULC classes were delineated (*Water Body*, *Vegetation*, *Bare land*, and *Built-Up Area*). `[Quantitative area statistics in sq. km and % per LULC class — Information to be provided]`
+- **2023 Land Cover Composition:** Four primary LULC classes were delineated (*Water Body*, *Vegetation*, *Bare land*, and *Built-Up Area*). 
 
 ---
 
@@ -233,12 +220,7 @@ The multi-temporal comparison of spectral indices demonstrates how satellite rem
 ---
 
 ## 11. Research Limitations
-
-`[Formal Research Limitations — Information to be provided if explicitly stated in the full manuscript]`
-
-*Note based on available documentation:*
-- The provided research excerpt does not report formal thematic classification accuracy metrics (e.g., overall accuracy or Kappa coefficient) for the 2023 LULC map.
-- Because the pre-incident (1 November 2021) and post-incident (1 March 2022) imagery span the transition from the late wet/early dry season into the late dry season in southern Nigeria, seasonal vegetation phenology may also contribute to observed spectral differences alongside anthropogenic disturbance.
+- The pre-incident (1 November 2021) and post-incident (1 March 2022) imagery span the transition from the late wet/early dry season into the late dry season in southern Nigeria, seasonal vegetation phenology may also contribute to observed spectral differences alongside anthropogenic disturbance.
 
 ---
 
@@ -251,35 +233,3 @@ Integrating Landsat 8 OLI spectral indices (NDVI, SAVI, NDBI, and NDTI) with fie
 1. **Continuous Remote Sensing Monitoring:** Institutionalize routine multi-temporal satellite monitoring (NDVI, SAVI, NDBI, and NDTI) as an early warning tool for detecting unauthorized forest clearing and encroachment in Okomu National Park.
 2. **Intelligence-Led Ranger Patrols:** Concentrate anti-poaching patrols and monitoring stations along the central-to-eastern hotspot corridor and northern boundary zones exhibiting elevated NDBI/NDTI disturbance signals.
 3. **Targeted Habitat Restoration:** Prioritize degraded forest patches showing pronounced post-incident declines in NDVI and SAVI for ecological recovery and ongoing vegetation monitoring.
-
----
-
-## 13. Repository Structure
-
-```text
-okomu-national-park-poaching-remote-sensing/
-├── README.md                                  # Complete project documentation
-├── maps/                                      # Exported cartographic outputs (PNG)
-│   ├── 01_okomu_study_area_map.png
-│   ├── 02_okomu_ndvi_pre_incident.png
-│   ├── 03_okomu_ndvi_post_incident.png
-│   ├── 04_okomu_savi_pre_incident.png
-│   ├── 05_okomu_savi_post_incident.png
-│   ├── 06_okomu_ndbi_pre_incident.png
-│   ├── 07_okomu_ndbi_post_incident.png
-│   ├── 08_okomu_ndti_pre_incident.png
-│   ├── 09_okomu_ndti_post_incident.png
-│   └── 10_okomu_lulc_2023_map.png
-└── docs/                                      # Supporting research materials (optional)
-    └── [Research_Paper_or_Summary.pdf]
-```
-
----
-
-## 14. Author and Project Information
-
-- **Author:** `[Your Full Name]`
-- **Academic / Professional Background:** `[e.g., M.Sc. / B.Sc. in Remote Sensing & GIS / Geography / Environmental Management]`
-- **GitHub Profile:** `[https://github.com/your-username]`
-- **Contact Information:** `[your.email@example.com | LinkedIn URL]`
-- **Project Category:** Remote Sensing, GIS Spatial Analysis, Wildlife Conservation & Protected Area Monitoring
