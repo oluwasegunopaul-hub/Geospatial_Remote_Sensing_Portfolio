@@ -226,46 +226,13 @@ The findings demonstrate that the ecological integrity and cultural heritage val
 Between 2002 and 2024, the Osun-Osogbo Sacred Grove experienced measurable canopy degradation (`peak NDVI` drop from `0.602` to `0.515`), progressive urban encirclement (`peak NDBI` rise from `0.208` to `0.550`), and intensifying surface heat stress (`LST` reaching `30.31°C`). While the central core remains a **Low Risk** ecological and cultural refuge, **High Risk** urban and thermal pressures have breached the eastern buffer zone, and hydro-climatic fluctuations expose the site to alternating wetland drought stress and upstream-driven flooding.
 
 ### Recommendations
-- [Information to be provided — Note: Your uploaded document contained Chapters 3 and 4; if you have a Chapter 5 with specific management recommendations, insert them here. Based directly on the Chapter 4 findings, recommended actions include:]
   1. **Strict Buffer Zone Enforcement:** Halt residential/commercial encroachment and illegal tree felling along the northern, eastern, and southern High Risk buffer boundaries.
   2. **Targeted Reforestation & Microclimate Restoration:** Prioritize native canopy restoration within the identified 2002–2024 deforestation patches and eastern thermal hotspots to restore the grove's cooling buffer around vulnerable landmarks (*Busanyin Grove* and *Ijumu*).
   3. **Drainage & Flood Mitigation:** Implement stormwater runoff controls along adjacent urban roads and reinforce riverbank erosion protection near riverine shrines and visitor pathways.
 
 ---
 
-## 12. Repository Structure
-Organize your GitHub repository using the following directory layout so that all relative image paths in this `README.md` render properly:
 
-```text
-osun-osogbo-heritage-threat-assessment/
-├── README.md                                              # Main project documentation
-├── docs/
-│   └── Deborah(5).docx                                    # Research manuscript / thesis chapters
-└── maps/
-    ├── 01_study_area_map.png
-    ├── 02_ndvi_2002.png
-    ├── 03_ndvi_2014.png
-    ├── 04_ndvi_2024.png
-    ├── 05_deforestation_2002_2024.png
-    ├── 06_lst_2002.png
-    ├── 07_lst_2014.png
-    ├── 08_lst_2024.png
-    ├── 09_ndbi_2002.png
-    ├── 10_ndbi_2014.png
-    ├── 11_ndbi_2024.png
-    ├── 12_mndwi_2002.png
-    ├── 13_mndwi_2014.png
-    ├── 14_mndwi_2024.png
-    ├── 15_rainfall_2002.png
-    ├── 16_rainfall_2014.png
-    ├── 17_rainfall_2024.png
-    ├── 18_lst_2002_ecotourism_infrastructure.png
-    ├── 19_lst_2014_ecotourism_infrastructure.png
-    ├── 20_lst_2024_ecotourism_infrastructure.png
-    ├── 21_rainfall_2002_ecotourism_infrastructure.png
-    ├── 22_rainfall_2014_ecotourism_infrastructure.png
-    ├── 23_rainfall_2024_ecotourism_infrastructure.png
-    └── 24_environmental_risk_index.png
 ```
 
 ---
