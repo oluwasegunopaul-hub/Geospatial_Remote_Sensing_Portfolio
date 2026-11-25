@@ -24,8 +24,8 @@ Beyond single-topic research projects, a strong Remote Sensing and GIS portfolio
 
 ## 6. Methodology
 1. **Base Cartography (Study Area):** Hierarchical symbolization of administrative boundaries, hydrological features, reference stations, and regional locator insets.
-2. **LULC Classification:** Training sample collection, Random Forest classification, post-classification majority filtering, and confusion matrix accuracy assessment.
-3. **Terrain Analysis:** DEM sink filling, hypsometric color ramp styling, and planar/geodesic slope computation in degrees.
+2. **LULC Classification:** Training sample collection
+3. **Terrain Analysis:** DEM sink filling, and planar/geodesic slope computation in degrees.
 4. **Spectral Index Modelling:** Band arithmetic ($NDVI = (NIR - Red)/(NIR + Red)$; $NDWI = (Green - NIR)/(Green + NIR)$) with standardized diverging color ramps.
 
 ## 7. Maps Produced
@@ -46,7 +46,7 @@ Beyond single-topic research projects, a strong Remote Sensing and GIS portfolio
 ### Land Use / Land Cover (LULC) Classification Map 
 ![LULC Map](LULC_Maps/lulc_supervised_classification.png)
 
-### Digital Elevation Model (DEM) & Hypsometric Relief 
+### Digital Elevation Model (DEM)
 ![DEM Map](Terrain_Maps/dem_elevation_model.png)
 
 ### Terrain Slope Gradient Classification 
