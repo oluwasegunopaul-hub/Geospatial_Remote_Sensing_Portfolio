@@ -61,7 +61,7 @@ All spatial datasets were standardized and processed at a uniform **$90\text{ m}
 | **Landsat 8 OLI Multispectral Imagery** | United States Geological Survey (USGS) — Path 189, Row 55 | 2022 | $30\text{ m}$ | Supervised Maximum-Likelihood classification for Land Use/Land Cover (LULC) mapping and Normalized Difference Vegetation Index (NDVI) calculation. |
 | **Shuttle Radar Topography Mission (SRTM) DEM** | United States Geological Survey (USGS) | 2007 | $30\text{ m}$ | Derivation of elevation zones, terrain slope (degrees), flow accumulation, drainage density ($1\text{ km}^2$ grid), draining capability, and Topographic Wetness Index (TWI). |
 | **Rainfall Dataset** | Tropical Applications of Meteorology using Satellite data and ground-based observations (TAMSAT) | 2023 | 4km | Mapping spatial distribution of average annual rainfall across the basin. |
-| **Soil Dataset** | Food and Agriculture Organization of the United Nations (FAO) | `[Version year not specified]` | Processed at $90\text{ m}$ | Classification of Hydrologic Soil Groups (HSG B and HSG C) representing infiltration capacity and runoff propensity. |
+| **Soil Dataset** | Food and Agriculture Organization of the United Nations (FAO) | 2023 | 1km | Classification of Hydrologic Soil Groups (HSG B and HSG C) representing infiltration capacity and runoff propensity. |
 | **Hydrography, Road Network, LGA & Settlement Layers** | GRID3 | 2023 | Processed at $30\text{ m}$ (rasterized proximity) / Vector | Generation of Euclidean distance from river and distance from road layers, plus overlay of inundated areas with LGA boundaries and settlements. |
 
 ---
