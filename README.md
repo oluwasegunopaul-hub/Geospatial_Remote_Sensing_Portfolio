@@ -8,7 +8,7 @@
 
 ## Overview
 
-Welcome to my **Remote Sensing & Geographic Information Systems (GIS) Portfolio**. This repository is structured specifically around **high-resolution static PNG map exports** produced in **ArcGIS Pro** and **ARCMAP**, eliminating the need to upload large raw shapefiles, geodatabases, or multi-gigabyte GeoTIFF rasters to GitHub.
+Welcome to my **Remote Sensing & Geographic Information Systems (GIS) Portfolio**. This repository is structured specifically around **high-resolution static PNG map exports** produced in **ArcGIS Pro** and **ARCMAP**.
 
 
 
