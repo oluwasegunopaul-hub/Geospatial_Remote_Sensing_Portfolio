@@ -259,9 +259,9 @@ flowchart TD
 | **Topographic Wetness Index (TWI)** | $4.672$ | $32.97$ | 5 classes | Higher TWI values ($16.22 - 32.97$) along river valleys indicate high saturation and flood accumulation. |
 | **Drainage Density** | $0.241$ | $4.754$ | 5 classes | Higher densities ($2.95 - 4.754$) concentrate rapid surface runoff along central channels. |
 | **NDVI** | $-0.106$ | $0.3644$ | 5 classes | Lower NDVI values ($-0.106 - 0.1098$) indicate water/bare/sparse surfaces with higher runoff. |
-| **Rainfall** | $667\text{ mm}$ *(text)* / $1,240$ *(legend)* | $1,495\text{ mm}$ *(text)* / $1,896$ *(legend)* | 5 classes | Higher precipitation zones increase runoff volume and river discharge. |
+| **Rainfall** |  $1,240$  | $1,896$ | 5 classes | Higher precipitation zones increase runoff volume and river discharge. |
 | **Distance from River** | $0$ | $0.2332$ | 5 classes | Closest proximity tier ($0 - 0.04665$) experiences the highest overbank flood vulnerability. |
-| **Distance from Road** | $0$ | $0.2387$ *(legend)* / $0.2332$ *(text)* | 5 classes | Closest proximity tier ($0 - 0.04773$) reflects higher imperviousness and flow obstruction. |
+| **Distance from Road** | $0$ | $0.2387$ | 5 classes | Closest proximity tier ($0 - 0.04773$) reflects higher imperviousness and flow obstruction. |
 | **Soil (HSG)** | HSG B | HSG C | 2 classes | HSG C soils (slow infiltration) dominate the northern/central basin, increasing runoff risk. |
 | **Land Use / Land Cover (LULC)** | — | — | 6 classes | Built-up areas, bare land, water bodies, and wetlands exhibit highest flood exposure/runoff. |
 
