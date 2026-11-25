@@ -13,8 +13,6 @@
 - [Discussion](#discussion)
 - [Research Limitations](#research-limitations)
 - [Conclusion and Recommendations](#conclusion-and-recommendations)
-- [Repository Structure](#repository-structure)
-- [Author and Project Information](#author-and-project-information)
 
 ---
 
@@ -371,55 +369,3 @@ The following methodological considerations and data limitations are noted from 
 
 ### Recommendations
 `[Information to be provided — insert the specific agronomic, climate adaptation, and land-use policy recommendations from Chapter Five of your manuscript]`
-
----
-
-## Repository Structure
-
-```text
-ekiti-oil-palm-climate-change-gis/
-├── README.md                                  # Complete project technical documentation
-├── maps/                                      # Exported cartographic outputs (PNG)
-│   ├── 01_study_area_map.png                  # Study area map (Ado-Ekiti & Ikere LGAs)
-│   ├── 02_ndvi_2014_map.png                   # Fig. 4.1a: 2014 NDVI map
-│   ├── 03_ndvi_2024_map.png                   # Fig. 4.1b: 2024 NDVI map
-│   ├── 04_evi_2014_map.png                    # Fig. 4.2a: 2014 EVI map
-│   ├── 05_evi_2024_map.png                    # Fig. 4.2b: 2024 EVI map
-│   ├── 06_lst_2014_map.png                    # Fig. 4.3a: 2014 Land Surface Temperature map
-│   ├── 07_lst_2024_map.png                    # Fig. 4.3b: 2024 Land Surface Temperature map
-│   ├── 08_ndwi_2014_map.png                   # Fig. 4.4a: 2014 NDWI map
-│   ├── 09_ndwi_2024_map.png                   # Fig. 4.4b: 2024 NDWI map
-│   ├── 10_rainfall_2014_map.png               # Fig. 4.5a: 2014 Spatial rainfall map
-│   ├── 11_rainfall_2024_map.png               # Fig. 4.5b: 2024 Spatial rainfall map
-│   ├── 12_lulc_2014_map.png                   # Fig. 4.6a: 2014 Land Use / Land Cover map
-│   └── 13_lulc_2024_map.png                   # Fig. 4.6b: 2024 Land Use / Land Cover map
-├── charts/                                    # Exported climatic time-series charts (PNG)
-│   ├── 01_annual_rainfall_anomaly_chart.png   # Rainfall Chart (1994–2024)
-│   ├── 02_tmax_anomaly_chart.png              # Tmax Chart (1994–2024)
-│   ├── 03_tmin_anomaly_chart.png              # Tmin Chart (1994–2024)
-│   ├── 04_solar_radiation_chart.png           # Solar Radiation Chart (1994–2024)
-│   ├── 05_lowest_rh_chart.png                 # Lowest RH Chart (1994–2024)
-│   ├── 06_highest_rh_chart.png                # Highest RH Chart (1994–2024)
-│   └── 07_annual_windspeed_chart.png          # Windspeed Chart (1994–2024)
-└── docs/                                      # Supporting research manuscript
-    └── oseni_emmanuel_oluwatobi_2.docx        # Source research document
-```
-
----
-
-## Author and Project Information
-
-* **Author:** Oseni Emmanuel Oluwatobi
-* **Academic Qualification:** `[Information to be provided — e.g., B.Tech / B.Sc. / M.Tech in Remote Sensing & GIS / Geography]`
-* **Department & Institution:** `[Information to be provided]`
-* **Research Supervisor:** `[Information to be provided]`
-* **Completion Date:** `[Information to be provided]`
-* **Project Category:** Agro-Climatology, Land Use / Land Cover Change, Remote Sensing & GIS
-* **GitHub Profile:** `[Information to be provided — e.g., https://github.com/yourusername]`
-* **LinkedIn / Portfolio:** `[Information to be provided]`
-* **Contact Email:** `[Information to be provided]`
-
----
-
-### Citation
-> Oseni, E. O. (`[Year]`). *Impacts of Climate Change and Public Perception on Oil Palm Production in Ekiti State, Nigeria*. `[Degree / Institution Information to be provided]`.
