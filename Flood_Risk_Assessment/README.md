@@ -14,8 +14,6 @@
 - [9. Discussion](#9-discussion)
 - [10. Research Limitations](#10-research-limitations)
 - [11. Conclusion and Recommendations](#11-conclusion-and-recommendations)
-- [12. Repository Structure](#12-repository-structure)
-- [13. Author and Project Information](#13-author-and-project-information)
 
 ---
 
