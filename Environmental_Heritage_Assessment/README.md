@@ -10,7 +10,7 @@ Covering a 22-year period (**2002, 2014, and 2024**), the study integrates multi
 ---
 
 ## 2. Research Objectives
-- **Identify Environmental Risk Factors:** Assess multi-temporal environmental threats associated with climate variability and land-cover change—specifically vegetation degradation, deforestation, habitat heat stress, urban encroachment, wetland fluctuations, and flood susceptibility—and evaluate their impacts on ecotourism potential at the Osun-Osogbo Sacred Grove.
+- **Identify Environmental Risk Factors:** Assess multi-temporal environmental threats associated with climate variability and land-cover change specifically vegetation degradation, deforestation, habitat heat stress, urban encroachment, wetland fluctuations, and flood susceptibility and evaluate their impacts on ecotourism potential at the Osun-Osogbo Sacred Grove.
 - **Evaluate Spatial Relationships:** Examine the spatial and temporal relationships between climate change indicators and environmental threats across the study area (specifically **LST vs. NDVI** and **Rainfall vs. MNDWI**).
 - **Assess Infrastructure and Habitat Vulnerability:** Evaluate the impacts of climate-induced thermal and hydrological hazards on wildlife habitats, sacred cultural artefacts, and ecotourism infrastructure.
 - **Develop an Environmental Risk Index:** Classify the Sacred Grove and its buffer zone into spatial risk zones (**Low, Moderate, and High Risk**) to prioritize conservation and mitigation interventions.
