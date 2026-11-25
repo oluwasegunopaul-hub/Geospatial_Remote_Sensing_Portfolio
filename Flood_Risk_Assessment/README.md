@@ -168,7 +168,6 @@ flowchart TD
 * **Interpretation:** Zones closest to the active river channels ($0 - 0.04665$, red) face the highest probability of overbank submergence, while risk diminishes progressively outward toward green zones ($0.1867 - 0.2332$), though distal areas remain susceptible to localized flash flooding.
 
 ![Distance from River Map](maps/01_distance_from_river_map.png)
-*Expected file path: `maps/01_distance_from_river_map.png`*
 
 #### 2. Distance from Road Map 
 * **Technical Description:** Five-class proximity surface ranging on the map legend from $0 - 0.04773$ (red) to $0.191 - 0.2387$ (green) *(narrative text notes $0 - 0.04665$ to $0.1867 - 0.2332$)*.
@@ -176,7 +175,6 @@ flowchart TD
 * **Interpretation:** Areas immediately adjacent to road networks ($0 - 0.04773$, red) experience heightened flood susceptibility due to higher impervious surface concentration and flow constriction, whereas remote zones ($0.191 - 0.2387$, green) experience lower direct infrastructure-induced runoff impacts.
 
 ![Distance from Road Map](maps/02_distance_from_road_map.png)
-*Expected file path: `maps/02_distance_from_road_map.png`*
 
 #### 3. Digital Elevation Model (DEM) Map 
 * **Technical Description:** $90\text{ m}$ SRTM elevation surface classified into five elevation tiers: $-8 - 94\text{ m}$ (red), $94.01 - 175\text{ m}$ (orange), $175.1 - 262\text{ m}$ (yellow), $262.1 - 370\text{ m}$ (light green), and $370.1 - 657\text{ m}$ (dark green).
@@ -184,7 +182,6 @@ flowchart TD
 * **Interpretation:** Low-elevation valley floors ($-8\text{ m}$ to $94\text{ m}$, symbolized in red for flood susceptibility) along the central and southern Niger floodplain are highly susceptible to inundation as runoff drains downhill, whereas elevated uplands ($370.1\text{ m}$ to $657\text{ m}$) shed runoff downward without pooling.
 
 ![Digital Elevation Model (DEM) Map](maps/03_dem_elevation_map.png)
-*Expected file path: `maps/03_dem_elevation_map.png`*
 
 #### 4. Drainage Density Map 
 * **Technical Description:** Interpolated stream network density ($1\text{ km}^2$ grid basis) divided into five classes from $0.241 - 1.143$ (dark green) to $3.852 - 4.754$ (red).
@@ -192,7 +189,6 @@ flowchart TD
 * **Interpretation:** High drainage density zones ($2.95 - 4.754$, orange and red) along the central axial corridor and northern confluence rapidly concentrate overland flow, increasing peak discharge and downstream channel overflow risk, whereas low-density zones ($0.241 - 1.143$, dark green) promote slower runoff collection and greater infiltration.
 
 ![Drainage Density Map](maps/04_drainage_density_map.png)
-*Expected file path: `maps/04_drainage_density_map.png`*
 
 #### 5. Land Use / Land Cover (LULC) Map 
 * **Technical Description:** Maximum-Likelihood supervised classification of 2022 Landsat 8 OLI imagery delineating six land cover categories: *Water Body*, *Dense Vegetation*, *Sparse Vegetation*, *Built-up Area*, *Bare Land*, and *Wetland*.
@@ -200,7 +196,6 @@ flowchart TD
 * **Interpretation:** *Water Bodies* and riparian *Wetlands* represent active inundation zones and natural flood-retention sponges; *Built-up Areas* and *Bare Land* (prominent in the north and along river crossings) generate high surface runoff due to imperviousness and soil exposure, while *Dense Vegetation* in the south enhances rainfall interception.
 
 ![Land Use / Land Cover (LULC) Map](maps/05_lulc_map.png)
-*Expected file path: `maps/05_lulc_map.png`*
 
 #### 6. Normalized Difference Vegetation Index (NDVI) Map 
 * **Technical Description:** Five-class vegetation vigor surface derived from 2022 Landsat 8 OLI imagery, spanning $-0.106 - 0.02127$ (red) to $0.1966 - 0.3644$ (dark green).
@@ -208,7 +203,6 @@ flowchart TD
 * **Interpretation:** Higher NDVI values ($0.1966 - 0.3644$, dark green) in the southern and eastern flanks indicate healthy, dense vegetation that retards overland flow, whereas low and negative NDVI values ($-0.106 - 0.1098$, red and orange) along the river channel and northern/central sectors reflect water surfaces, bare ground, and sparse cover with higher runoff generation.
 
 ![NDVI Map](maps/06_ndvi_map.png)
-*Expected file path: `maps/06_ndvi_map.png`*
 
 #### 7. Rainfall Distribution Map 
 * **Technical Description:** Five-class spatial rainfall distribution categorized on the map legend from $1,240 - 1,371$ (light blue) to $1,766 - 1,896$ (dark blue) *(narrative text reports average annual rainfall ranging from $667\text{ mm}$ to $1,495\text{ mm}$)*.
@@ -216,7 +210,6 @@ flowchart TD
 * **Interpretation:** Higher precipitation zones (dark blue classes in the southern and northwestern sectors) experience greater rainfall intensity and volume, amplifying flood generation potential compared to lower-rainfall central/northeastern pockets.
 
 ![Rainfall Map](maps/07_rainfall_map.png)
-*Expected file path: `maps/07_rainfall_map.png`*
 
 #### 8. Terrain Slope Map 
 * **Technical Description:** DEM-derived slope gradient raster in degrees ($0^\circ$ to $41.23^\circ$) grouped into five intervals: $0 - 2.102^\circ$ (red), $2.103 - 5.174^\circ$ (orange), $5.175 - 10.02^\circ$ (yellow), $10.03 - 16.98^\circ$ (light green), and $16.99 - 41.23^\circ$ (dark green).
@@ -224,7 +217,6 @@ flowchart TD
 * **Interpretation:** Flat to gently sloping plains ($0^\circ - 2.102^\circ$, red) across the central floodplain and northern lowlands exhibit the highest flood susceptibility because water pools readily, whereas steeper slopes ($16.99^\circ - 41.23^\circ$, green) shed surface water rapidly downhill.
 
 ![Slope Map](maps/08_slope_map.png)
-*Expected file path: `maps/08_slope_map.png`*
 
 #### 9. Soil Map — Hydrologic Soil Groups 
 * **Technical Description:** Spatial distribution of FAO-derived Hydrologic Soil Groups classified into **HSG C** (red) and **HSG B** (yellow).
@@ -232,7 +224,6 @@ flowchart TD
 * **Interpretation:** **HSG C soils** (red), which cover the majority of the northern and central basin, possess fine textures or impeding layers with slow infiltration rates, generating high surface runoff and elevated flood risk; **HSG B soils** (yellow) in the southwest exhibit moderate infiltration rates and lower runoff propensity.
 
 ![Soil Map](maps/09_soil_hsg_map.png)
-*Expected file path: `maps/09_soil_hsg_map.png`*
 
 #### 10. Topographic Wetness Index (TWI) Map 
 * **Technical Description:** Five-class hydrological wetness surface ranging from $4.672 - 8.001$ (dark green) to $16.22 - 32.97$ (red).
@@ -240,7 +231,6 @@ flowchart TD
 * **Interpretation:** High TWI corridors ($12.45 - 32.97$, orange and red) trace the main Niger River valley and tributary floodplains, pinpointing areas of persistent saturation and high flood propensity, while lower TWI uplands ($4.672 - 8.001$, dark green) are well-drained.
 
 ![Topographic Wetness Index (TWI) Map](maps/10_topographic_wetness_index_twi_map.png)
-*Expected file path: `maps/10_topographic_wetness_index_twi_map.png`*
 
 #### 11. Multi-Criteria Flood Risk Map 
 * **Technical Description:** Composite AHP-GIS weighted overlay map classifying the Lower Niger River Basin into five flood susceptibility zones: **Very Low** (dark green), **Low** (light green), **Moderate** (yellow), **High** (orange), and **Very High** (red).
@@ -248,7 +238,6 @@ flowchart TD
 * **Interpretation:** **Very High** and **High** flood risk zones form a continuous, broad corridor along the central Niger River axis, the northern confluence zone, and the broad southern alluvial floodplain where low elevation, flat slopes, high TWI, HSG C soils, and proximity to drainage channels coincide.
 
 ![Flood Risk Map](maps/11_flood_risk_map.png)
-*Expected file path: `maps/11_flood_risk_map.png`*
 
 #### 12. Flood Inundation and Settlement Exposure Map 
 * **Technical Description:** Spatial inundation extent map displaying **Inundated Area** (blue), **LGA Boundaries** (green outlines), and **Settlement** point locations (red markers).
@@ -256,7 +245,6 @@ flowchart TD
 * **Interpretation:** Extensive flood inundation (blue) concentrates along the north–south Niger River channel, the northeastern tributary confluence, and the wide southwestern/southern confluence floodplains, directly intersecting numerous riparian settlements (red markers) across multiple LGAs.
 
 ![Flood Inundation Map](maps/12_flood_inundation_map.png)
-*Expected file path: `maps/12_flood_inundation_map.png`*
 
 ---
 
