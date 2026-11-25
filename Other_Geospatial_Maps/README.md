@@ -4,10 +4,10 @@
 
 ---
 
-## 1. Project Overview
+## 1. Overview
 Beyond single-topic research projects, a strong Remote Sensing and GIS portfolio demonstrates mastery of core cartographic, terrain, land-cover, and spectral index workflows. This directory organizes foundational spatial outputs into dedicated thematic subfolders.
 
-## 2. Research Objectives
+## 2. Objectives
 - Demonstrate clean cartographic design for **Study Area Location & Context Maps**.
 - Showcase supervised multispectral classification workflows for **Land Use / Land Cover (LULC)** mapping.
 - Derive geomorphometric terrain parameters (**DEM** and **Slope**) from elevation datasets.
@@ -33,7 +33,7 @@ Beyond single-topic research projects, a strong Remote Sensing and GIS portfolio
 |---|---|---|
 | `Study_Area_Maps/` | `study_area_location_map.png` | Study Area Location & Administrative Context Map |
 | `LULC_Maps/` | `lulc_supervised_classification.png` | Supervised Land Use / Land Cover Classification |
-| `Terrain_Maps/` | `dem_elevation_model.png` | Digital Elevation Model (DEM) & Hypsometric Relief |
+| `Terrain_Maps/` | `dem_elevation_model.png` | Digital Elevation Model (DEM) |
 | `Terrain_Maps/` | `terrain_slope_degrees.png` | Terrain Slope Gradient Classification (Degrees) |
 | `Vegetation_Maps/` | `ndvi_vegetation_vigor.png` | Normalized Difference Vegetation Index (NDVI) |
 | `Vegetation_Maps/` | `ndwi_surface_water_index.png` | Normalized Difference Water Index (NDWI) |
@@ -58,14 +58,4 @@ Beyond single-topic research projects, a strong Remote Sensing and GIS portfolio
 ### Normalized Difference Water Index (NDWI) (Illustrative Sample)
 ![NDWI Map](Vegetation_Maps/ndwi_surface_water_index.png)
 
-## 9. Key Findings (Editable Placeholders)
-- *[Editable Placeholder — Replace with your actual summary]:* Supervised LULC classification achieved an overall accuracy of `[XX.X%]` (Kappa = `[0.XX]`), highlighting `[dominant land cover class]` across `[XX%]` of the study area.
-- *[Editable Placeholder]:* Mean elevation ranged from `[XX] m` to `[XXX] m` a.s.l., while NDVI values clearly differentiated dense riparian forest (`> 0.65`) from built-up and bare surfaces (`< 0.15`).
 
-## 10. Limitations
-- Current PNGs are **illustrative portfolio templates** designed for layout demonstration.
-- Optical indices (NDVI/NDWI) are sensitive to seasonal phenology and atmospheric haze; specify wet/dry season acquisition dates when uploading your real maps.
-
-## 11. Author Information
-- **Author:** `[Your Full Name]`
-- **Portfolio Home:** [Back to Main Repository](../README.md)
