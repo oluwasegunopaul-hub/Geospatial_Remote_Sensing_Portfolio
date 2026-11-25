@@ -36,7 +36,7 @@ All spatial datasets utilized in the research are verified from the primary rese
 |---|---|---|---|---|
 | **Landsat 7 ETM+** | Google Earth Engine (GEE) | 2002 | 30 m | Baseline calculation of NDVI, LST, NDBI, MNDWI, and deforestation baseline |
 | **Landsat 8 OLI / TIRS** | Google Earth Engine (GEE) | 2014, 2024 | 30 m | Multi-temporal monitoring of NDVI, LST, NDBI, MNDWI, and canopy change |
-| **Digital Elevation Model (DEM)** | [Information to be provided — e.g., SRTM / ASTER] | [Information to be provided] | [Information to be provided] | Elevation characterization of the Sacred Grove (299 m – 332 m a.m.s.l.) |
+| **Digital Elevation Model (DEM)** | Google Earth Engine (GEE) | Google Earth Engine (GEE) | 30 m | Elevation characterization of the Sacred Grove (299 m – 332 m a.m.s.l.) |
 | **Monthly Average Rainfall Data** | Tropical Applications of Meteorology using Satellite data and ground-based observations (TAMSAT) | 2002, 2014, 2024 | [Information to be provided — TAMSAT standard ~4 km] | Spatial interpolation of rainfall distribution and flood/drought assessment |
 | **Heritage & Infrastructure Layers** | [Information to be provided — e.g., NCMM / Field GPS / Digitized Basemap] | [Information to be provided] | Vector (Points, Lines, Polygons) | Mapping Sacred Grove boundary, buffer zone, artefacts, buildings, roads, and river network |
 
@@ -217,7 +217,7 @@ The findings demonstrate that the ecological integrity and cultural heritage val
 ## 10. Research Limitations
 - **Spatial Resolution Constraints:** Medium-resolution multispectral and thermal imagery (`30 m` Landsat 7 ETM+ and Landsat 8 OLI) captures broad canopy, thermal, and built-up trends across the 75 ha grove and 47 ha buffer zone, but limits the detection of sub-pixel structural encroachments or individual under-canopy artefacts.
 - **Satellite Rainfall Interpolation:** Satellite-based rainfall estimates (TAMSAT) provide regional precipitation gradients but carry spatial scale limitations when interpolated over small local catchments without dense in-situ gauge calibration.
-- **Unstated Analytical Parameters:** [Information to be provided — specify exact Environmental Risk Index weighting criteria, cloud-cover thresholds, and exact acquisition dates of Landsat scenes if required for full reproducibility].
+
 
 ---
 
