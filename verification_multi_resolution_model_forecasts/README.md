@@ -19,8 +19,6 @@
 - [Discussion](#discussion)
 - [Research Limitations](#research-limitations)
 - [Conclusion and Recommendations](#conclusion-and-recommendations)
-- [Repository Structure](#repository-structure)
-- [Author and Project Information](#author-and-project-information)
 
 ---
 
@@ -326,59 +324,3 @@ Based on the 12-month spatial verification across Nigeria in 2024, multi-resolut
 
 ### Recommendations
 * `[Information to be provided — insert formal recommendations from Chapter Five of the manuscript, such as multi-model ensemble calibration, bias correction for hydrological modeling, or operational integration with NiMet ground gauge networks]`
-
----
-
-## Repository Structure
-
-```text
-nigeria-2024-rainfall-forecast-verification/
-├── README.md                                        # Complete technical project documentation
-├── maps/                                            # Exported ArcGIS 10.8 cartographic outputs (PNG)
-│   ├── 01_study_area_map.png                        # Fig 1: Federal Republic of Nigeria study area map
-│   ├── 02_historical_rainfall_january_2024.png      # Fig 2: Historical TAMSAT rainfall (Jan 2024)
-│   ├── 03_forecast_rainfall_january_2024.png        # Fig 3: Multi-model forecast rainfall (Jan 2024)
-│   ├── 04_historical_rainfall_february_2024.png     # Fig 4: Historical TAMSAT rainfall (Feb 2024)
-│   ├── 05_forecast_rainfall_february_2024.png       # Fig 5: Multi-model forecast rainfall (Feb 2024)
-│   ├── 06_historical_rainfall_march_2024.png        # Fig 6: Historical TAMSAT rainfall (Mar 2024)
-│   ├── 07_forecast_rainfall_march_2024.png          # Fig 7: Multi-model forecast rainfall (Mar 2024)
-│   ├── 08_historical_rainfall_april_2024.png        # Fig 8: Historical TAMSAT rainfall (Apr 2024)
-│   ├── 09_forecast_rainfall_april_2024.png          # Fig 9: Multi-model forecast rainfall (Apr 2024)
-│   ├── 10_historical_rainfall_may_2024.png          # Fig 10: Historical TAMSAT rainfall (May 2024)
-│   ├── 11_forecast_rainfall_may_2024.png            # Fig 11: Multi-model forecast rainfall (May 2024)
-│   ├── 12_historical_rainfall_june_2024.png         # Fig 12: Historical TAMSAT rainfall (Jun 2024)
-│   ├── 13_forecast_rainfall_june_2024.png           # Fig 13: Multi-model forecast rainfall (Jun 2024)
-│   ├── 14_historical_rainfall_july_2024.png         # Fig 14: Historical TAMSAT rainfall (Jul 2024)
-│   ├── 15_forecast_rainfall_july_2024.png           # Fig 15: Multi-model forecast rainfall (Jul 2024)
-│   ├── 16_historical_rainfall_august_2024.png       # Fig 16: Historical TAMSAT rainfall (Aug 2024)
-│   ├── 17_forecast_rainfall_august_2024.png         # Fig 17: Multi-model forecast rainfall (Aug 2024)
-│   ├── 18_historical_rainfall_september_2024.png    # Fig 18: Historical TAMSAT rainfall (Sep 2024)
-│   ├── 19_forecast_rainfall_september_2024.png      # Fig 19: Multi-model forecast rainfall (Sep 2024)
-│   ├── 20_historical_rainfall_october_2024.png      # Fig 20: Historical TAMSAT rainfall (Oct 2024)
-│   ├── 21_forecast_rainfall_october_2024.png        # Fig 21: Multi-model forecast rainfall (Oct 2024)
-│   ├── 22_historical_rainfall_november_2024.png     # Fig 22: Historical TAMSAT rainfall (Nov 2024)
-│   ├── 23_forecast_rainfall_november_2024.png       # Fig 23: Multi-model forecast rainfall (Nov 2024)
-│   ├── 24_historical_rainfall_december_2024.png     # Fig 24: Historical TAMSAT rainfall (Dec 2024)
-│   └── 25_forecast_rainfall_december_2024.png       # Fig 25: Multi-model forecast rainfall (Dec 2024)
-└── docs/                                            # Supporting research manuscript
-    └── Momadelo_Adeleye_Blessing_1.docx             # Research paper manuscript (Chapters 3 & 4)
-```
-
----
-
-## Author and Project Information
-
-* **Author:** Momadelo Adeleye Blessing *(extracted from manuscript filename — please confirm full name order)*
-* **Academic Qualification:** `[Information to be provided — e.g., B.Tech / M.Tech in Remote Sensing and GIS / Meteorology]`
-* **Department & Institution:** `[Information to be provided — e.g., Federal University of Technology, Akure (FUTA), Nigeria]`
-* **Research Supervisor:** `[Information to be provided]`
-* **Completion Year:** 2024 / `[Information to be provided]`
-* **Project Category:** Hydrometeorology, Numerical Weather Forecast Verification, Remote Sensing & GIS
-* **GitHub Profile:** `[Information to be provided — e.g., https://github.com/yourusername]`
-* **LinkedIn / Portfolio:** `[Information to be provided]`
-* **Contact Email:** `[Information to be provided]`
-
----
-
-### Citation
-> Momadelo, A. B. (`[Year]`). *Verification of Multi-Resolution Model Forecasts of Heavy Rainfall Events in 2024 over Nigeria*. `[Degree/Project Type]`, `[Department and Institution]`.
