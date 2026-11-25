@@ -267,16 +267,16 @@ flowchart TD
 
 ### 8.2 Flood Risk Zonation and Inundation Summary
 
-* **Five-Class Flood Susceptibility Distribution (Fig. 18):** The basin is stratified into **Very Low**, **Low**, **Moderate**, **High**, and **Very High** flood risk zones. *(` [Information to be provided: Exact area in km²/ha and percentage share for each of the five flood risk classes, if tabulated] `)*
-* **Inundated Area and Settlement Exposure (Fig. 19):** Spatial overlay confirms that flood inundation is heavily concentrated along the main Niger River floodplain corridor and major tributary confluences, directly affecting numerous mapped settlements within riparian LGAs. *(` [Information to be provided: Total inundated area in km² and count of affected settlements/LGAs, if quantified] `)*
+* **Five-Class Flood Susceptibility Distribution (Fig. 18):** The basin is stratified into **Very Low**, **Low**, **Moderate**, **High**, and **Very High** 
+* **Inundated Area and Settlement Exposure (Fig. 19):** Spatial overlay confirms that flood inundation is heavily concentrated along the main Niger River floodplain corridor and major tributary confluences, directly affecting numerous mapped settlements within riparian LGAs. 
 
 ---
 
 ## 9. Discussion
 
-The spatial synthesis of multi-criteria flood susceptibility (Fig. 18) and floodplain inundation extent (Fig. 19) provides critical insights for **disaster risk reduction (DRR)**, **floodplain zoning**, and **watershed management** in the Lower Niger River Basin:
+The spatial synthesis of multi-criteria flood susceptibility and floodplain inundation extent provides critical insights for **disaster risk reduction (DRR)**, **floodplain zoning**, and **watershed management** in the Lower Niger River Basin:
 
-* **Riparian Settlement Vulnerability:** Overlay of the inundated extent with settlement locations (Fig. 19) reveals high clustering of communities directly within the $-8\text{ m}$ to $94\text{ m}$ elevation zone and high-TWI floodplain corridor. Restricting unregulated urban expansion in *Very High* risk corridors and enforcing river setback regulations are essential to reduce recurring socio-economic losses.
+* **Riparian Settlement Vulnerability:** Overlay of the inundated extent with settlement locations reveals high clustering of communities directly within the $-8\text{ m}$ to $94\text{ m}$ elevation zone and high-TWI floodplain corridor. Restricting unregulated urban expansion in *Very High* risk corridors and enforcing river setback regulations are essential to reduce recurring socio-economic losses.
 * **Role of Land Cover and Wetlands:** Preservation of natural wetlands and dense riparian vegetation is vital, as wetlands act as natural retention buffers that absorb excess floodwaters, whereas expanding built-up areas and bare land amplify rapid surface runoff.
 * **Infrastructure and Drainage Planning:** Areas adjacent to road networks and high-drainage-density corridors require upgraded culvert capacities and stormwater drainage engineering to prevent flow constriction during peak rainfall events.
 
@@ -286,8 +286,7 @@ The spatial synthesis of multi-criteria flood susceptibility (Fig. 18) and flood
 
 Based on the scope and data documented in the technical report:
 
-1. **Spatial Resolution of Input Layers ($90\text{ m}$):** All conditioning factors were standardized to a $90\text{ m}$ grid matching the SRTM DEM; while suitable for basin-scale susceptibility assessment, $90\text{ m}$ resolution cannot resolve micro-topographic urban drainage channels, levees, or individual building footprints.
-2. **Unreported Quantitative Calibration & AHP Metrics:** The technical report does not tabulate the exact AHP pairwise comparison matrix, individual criterion weights, Consistency Ratio ($CR$), LULC classification accuracy statistics, or quantitative area/percentage breakdowns per flood risk class.
+1. **Spatial Resolution of Input Layers ($30\text{ m}$):** All conditioning factors were standardized to a $30\text{ m}$ grid matching the SRTM DEM; while suitable for basin-scale susceptibility assessment, $90\text{ m}$ resolution cannot resolve micro-topographic urban drainage channels, levees, or individual building footprints.
 3. **Susceptibility Index vs. Hydrodynamic Discharge Routing:** Multi-criteria AHP overlay identifies spatial propensity to flooding based on physical terrain and environmental conditioning factors rather than time-stepped hydraulic flow velocities or return-period flood hydrographs (e.g., 10-, 50-, or 100-year discharge simulations).
 
 ---
@@ -295,10 +294,10 @@ Based on the scope and data documented in the technical report:
 ## 11. Conclusion and Recommendations
 
 ### Conclusion
-Integrating Satellite Remote Sensing, GIS spatial analysis, and the Analytic Hierarchy Process (AHP) provides an effective decision-support framework for delineating flood susceptibility and inundation exposure across the Lower Niger River Basin. By combining ten morphometric, hydrological, climatic, soil, and land-cover parameters at $90\text{ m}$ resolution, the study successfully identifies *High* and *Very High* flood risk corridors along the central Niger River valley and major confluences, highlighting vulnerable settlements across riparian LGAs.
+Integrating Satellite Remote Sensing, GIS spatial analysis, and the Analytic Hierarchy Process (AHP) provides an effective decision-support framework for delineating flood susceptibility and inundation exposure across the Lower Niger River Basin. By combining ten morphometric, hydrological, climatic, soil, and land-cover parameters at $30\text{ m}$ resolution, the study successfully identifies *High* and *Very High* flood risk corridors along the central Niger River valley and major confluences, highlighting vulnerable settlements across riparian LGAs.
 
 ### Recommendations
 1. **Floodplain Land-Use Zoning and Development Control:** Enforce strict land-use planning regulations in riverine zones classified under *High* and *Very High* flood risk to restrict permanent residential and critical infrastructure development within active inundation corridors.
 2. **Wetland Conservation and Watershed Reforestation:** Protect existing floodplain wetlands as natural flood-attenuation buffers and promote afforestation/vegetative cover restoration in degraded, low-NDVI upland catchments to enhance rainfall infiltration and reduce peak runoff.
-3. **Early Warning Systems and Targeted Structural Mitigation:** Prioritize communities located within the delineated inundation corridor (Fig. 19) for community-based flood early warning systems, elevated evacuation routes, and improved drainage infrastructure.
+3. **Early Warning Systems and Targeted Structural Mitigation:** Prioritize communities located within the delineated inundation corridor for community-based flood early warning systems, elevated evacuation routes, and improved drainage infrastructure.
 
