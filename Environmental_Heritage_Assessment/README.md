@@ -270,9 +270,3 @@ osun-osogbo-heritage-threat-assessment/
 
 ---
 
-## 13. Author and Project Information
-- **Author:** `[Information to be provided — Your Full Name]`
-- **Academic / Professional Background:** `[Information to be provided — e.g., B.Sc./M.Sc. in Remote Sensing & GIS / Geography / Environmental Management]`
-- **GitHub Profile:** `[Information to be provided — https://github.com/your-username]`
-- **Contact Information:** `[Information to be provided — your.email@example.com | LinkedIn URL]`
-- **Project Category:** Remote Sensing, GIS Spatial Analysis, Cultural & Natural Heritage Conservation, Climate Hazard Assessment
