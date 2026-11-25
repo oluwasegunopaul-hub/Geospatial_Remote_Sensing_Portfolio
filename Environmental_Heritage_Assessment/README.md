@@ -36,8 +36,8 @@ All spatial datasets utilized in the research are verified from the primary rese
 |---|---|---|---|---|
 | **Landsat 7 ETM+** | Google Earth Engine (GEE) | 2002 | 30 m | Baseline calculation of NDVI, LST, NDBI, MNDWI, and deforestation baseline |
 | **Landsat 8 OLI / TIRS** | Google Earth Engine (GEE) | 2014, 2024 | 30 m | Multi-temporal monitoring of NDVI, LST, NDBI, MNDWI, and canopy change |
-| **Digital Elevation Model (DEM)** | Google Earth Engine (GEE) | Google Earth Engine (GEE) | 30 m | Elevation characterization of the Sacred Grove (299 m – 332 m a.m.s.l.) |
-| **Monthly Average Rainfall Data** | Tropical Applications of Meteorology using Satellite data and ground-based observations (TAMSAT) | 2002, 2014, 2024 | [Information to be provided — TAMSAT standard ~4 km] | Spatial interpolation of rainfall distribution and flood/drought assessment |
+| **Digital Elevation Model (DEM)** | USGS | 2007 | 30 m | Elevation characterization of the Sacred Grove (299 m – 332 m a.m.s.l.) |
+| **Monthly Average Rainfall Data** | Tropical Applications of Meteorology using Satellite data and ground-based observations (TAMSAT) | 2002, 2014, 2024 | 4 km | Spatial interpolation of rainfall distribution and flood/drought assessment |
 | **Heritage & Infrastructure Layers** | [Information to be provided — e.g., NCMM / Field GPS / Digitized Basemap] | [Information to be provided] | Vector (Points, Lines, Polygons) | Mapping Sacred Grove boundary, buffer zone, artefacts, buildings, roads, and river network |
 
 ---
