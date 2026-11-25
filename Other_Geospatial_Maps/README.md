@@ -13,16 +13,14 @@ Beyond single-topic research projects, a strong Remote Sensing and GIS portfolio
 - Derive geomorphometric terrain parameters (**DEM** and **Slope**) from elevation datasets.
 - Compute and visualize optical spectral indices (**NDVI** and **NDWI**) for vegetation vigor and surface water delineation.
 
-## 3. Study Area
-Representative Regional Sub-Basin & Ecological Transition Zone in South-West Nigeria (Illustrative boundary shown in template maps; update with your actual study extents).
 
 ## 4. Data Sources (Illustrative Examples / Placeholders)
-- **Optical Multispectral Imagery:** Sentinel-2 Level-2A (10m) & Landsat 8/9 OLI (30m) — *(Placeholder)*
-- **Elevation Dataset:** SRTM 1 Arc-Second Global (30m) Digital Elevation Model — *(Placeholder)*
-- **Administrative & Reference Vectors:** OSGOF / OpenStreetMap / Field GPS Ground Control Points — *(Placeholder)*
+- **Optical Multispectral Imagery:** Sentinel-2 Level-2A (10m) & Landsat 8/9 OLI (30m)
+- **Elevation Dataset:** SRTM 1 Arc-Second Global (30m) Digital Elevation Model
+- **Administrative & Reference Vectors:** Grid3
 
 ## 5. Software Used
-- QGIS 3.34 LTR, ArcGIS Pro 3.x, Google Earth Engine (GEE), SNAP (Sentinel Application Platform)
+- Arcmap/ArcGIS Pro, Google Earth Engine (GEE)
 
 ## 6. Methodology
 1. **Base Cartography (Study Area):** Hierarchical symbolization of administrative boundaries, hydrological features, reference stations, and regional locator insets.
