@@ -19,16 +19,14 @@
 - [Discussion](#discussion)
 - [Research Limitations](#research-limitations)
 - [Conclusion and Recommendations](#conclusion-and-recommendations)
-- [Repository Structure](#repository-structure)
-- [Author and Project Information](#author-and-project-information)
 
 ---
 
 ## Project Overview
 
-Soil erosion is a major environmental and land degradation process that depletes fertile topsoil, reduces agricultural productivity, and increases sedimentation in surface water systems. In the **Lower Ogun-Osun Basin** of southern Nigeria—an agriculturally vital region—the spatial extent and severity of water-induced soil erosion have remained inadequately documented, limiting the implementation of targeted soil conservation measures.
+Soil erosion is a major environmental and land degradation process that depletes fertile topsoil, reduces agricultural productivity, and increases sedimentation in surface water systems. In the **Lower Ogun-Osun Basin** of southern Nigeria an agriculturally vital region the spatial extent and severity of water-induced soil erosion have remained inadequately documented, limiting the implementation of targeted soil conservation measures.
 
-This project integrates the **Revised Universal Soil Loss Equation (RUSLE)** with **Remote Sensing (RS)** and **Geographic Information System (GIS)** techniques to model, quantify, and map soil erosion susceptibility across the Lower Ogun-Osun Basin. Using multi-source geospatial datasets—including Landsat 8 Operational Land Imager (OLI) satellite imagery, Shuttle Radar Topography Mission (SRTM) Digital Elevation Model (DEM) data, TAMSAT satellite-gauge rainfall records, and the FAO Harmonized World Soil Database (HWSD)—five biophysical and management factors ($R$, $K$, $LS$, $C$, and $P$) were derived and combined within a raster GIS environment.
+This project integrates the **Revised Universal Soil Loss Equation (RUSLE)** with **Remote Sensing (RS)** and **Geographic Information System (GIS)** techniques to model, quantify, and map soil erosion susceptibility across the Lower Ogun-Osun Basin. Using multi-source geospatial datasets including Landsat 8 Operational Land Imager (OLI) satellite imagery, Shuttle Radar Topography Mission (SRTM) Digital Elevation Model (DEM) data, TAMSAT satellite-gauge rainfall records, and the FAO Harmonized World Soil Database (HWSD) five biophysical and management factors ($R$, $K$, $LS$, $C$, and $P$) were derived and combined within a raster GIS environment.
 
 The primary purpose of this analysis is to estimate spatially distributed annual soil loss rates ($\text{t ha}^{-1}\text{ yr}^{-1}$), classify erosion severity zones, and provide an empirical cartographic baseline to guide watershed management, agricultural sustainability, and erosion mitigation planning.
 
@@ -53,7 +51,7 @@ The **Lower Ogun-Osun Basin** is situated in southern Nigeria and spans parts of
 * **Geographic Coordinates:** Latitudes $6^\circ 36'\text{ N}$ to $7^\circ 38'\text{ N}$ and Longitudes $4^\circ 13'\text{ E}$ to $5^\circ 26'\text{ E}$
 * **Total Basin Area:** Approximately $16,135\text{ km}^2$ (total classified raster analysis extent: $1,571,753\text{ ha}$)
 * **Topography:** Elevation ranges from $-4\text{ m}$ to $1,072\text{ m}$ above mean sea level ($\text{a.m.s.l.}$), with terrain slopes ranging from $0^\circ$ to $80.5^\circ$.
-* **Climate:** Characterized by two distinct tropical seasons—a wet season from **April to October** and a dry season from **November to March**—with annual rainfall ranging between $1,290\text{ mm}$ and $2,200\text{ mm}$.
+* **Climate:** Characterized by two distinct tropical seasons a wet season from **April to October** and a dry season from **November to March** with annual rainfall ranging between $1,290\text{ mm}$ and $2,200\text{ mm}$.
 * **Socio-Economic & Land Use Context:** The basin supports diverse communities (including Yoruba and Edo populations), with higher urban population densities in centers such as **Ile-Ife** and **Akure**. Agriculture is the dominant economic activity, centered on the cultivation of cocoa, cassava, maize, and yams, alongside fishing, irrigation farming, trading, and small-scale manufacturing.
 
 ### Study Area Reference Map
@@ -68,10 +66,10 @@ All spatial datasets were projected to **WGS 1984 UTM Zone 31N** and standardize
 
 | Dataset | Source | Acquisition Year / Period | Spatial Resolution | Application in the Research |
 | :--- | :--- | :--- | :--- | :--- |
-| **SRTM Digital Elevation Model (DEM)** | United States Geological Survey (USGS EarthExplorer) | `[Information to be provided]` | $30\text{ m}$ | Hydrological terrain processing (sink filling, flow direction, flow accumulation), slope gradient derivation, and computation of the Topographic ($LS$) factor. |
+| **SRTM Digital Elevation Model (DEM)** | United States Geological Survey (USGS EarthExplorer) | 2007 | $30\text{ m}$ | Hydrological terrain processing (sink filling, flow direction, flow accumulation), slope gradient derivation, and computation of the Topographic ($LS$) factor. |
 | **Landsat 8 OLI Satellite Imagery** | United States Geological Survey (USGS EarthExplorer) | December 28, 2022 | $30\text{ m} \times 30\text{ m}$ | Supervised Land Use and Land Cover (LULC) classification and assignment of the Cover and Management ($C$) factor. |
 | **Monthly Average Rainfall Data** | Tropical Applications of Meteorology using Satellite data and ground-based observations (TAMSAT) | 2022 | $0.5^\circ \times 0.5^\circ$ (interpolated to $30\text{ m}$) | Spatial rainfall distribution mapping via IDW interpolation and estimation of the Rainfall-Runoff Erosivity ($R$) factor. |
-| **Digital Soil Map** | FAO Harmonized World Soil Database (HWSD) | `[Information to be provided]` | $30'' \times 30''$ | Delineation of major soil groups and derivation of topsoil textural and organic carbon parameters for the Soil Erodibility ($K$) factor. |
+| **Digital Soil Map** | FAO Harmonized World Soil Database (HWSD) | 2023 | $30'' \times 30''$ | Delineation of major soil groups and derivation of topsoil textural and organic carbon parameters for the Soil Erodibility ($K$) factor. |
 
 ---
 
@@ -272,16 +270,6 @@ where $A$ is the estimated average annual soil loss ($\text{t ha}^{-1}\text{ yr}
 
 ## Results and Key Findings
 
-### Summary of RUSLE Factor Parameters
-
-| RUSLE Factor | Unit | Minimum | Maximum | Mean | Standard Deviation |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| **Rainfall Erosivity ($R$)** | $\text{MJ mm ha}^{-1}\text{ h}^{-1}\text{ yr}^{-1}$ | $640$ | $1,100$ | $880$ | $88$ |
-| **Soil Erodibility ($K$)** | $\text{t ha h ha}^{-1}\text{ MJ}^{-1}\text{ mm}^{-1}$ | $0$ | $0.34$ | `[Not reported]` | `[Not reported]` |
-| **Topographic Factor ($LS$)** | Dimensionless | $0$ | $51.7$ | $0.047$ | $1.095$ |
-| **Cover Management ($C$)** | Dimensionless | $0$ | $1.0$ | `[Not reported]` | `[Not reported]` |
-| **Support Practice ($P$)** | Dimensionless | $1.0$ | $1.0$ | $1.0$ | $0$ |
-
 ### Estimated Annual Soil Loss and Risk Classification
 
 * **Mean Annual Soil Loss Rate:** $70.17\text{ t ha}^{-1}\text{ yr}^{-1}$
@@ -316,11 +304,8 @@ The spatial pattern of soil erosion in the Lower Ogun-Osun Basin demonstrates ho
 
 ## Research Limitations
 
-No formal section on study limitations was explicitly documented in the source thesis. However, the following methodological scope parameters are noted directly from the research design:
-
 * **Erosion Process Scope:** In accordance with standard RUSLE formulation, the model estimates long-term average annual soil loss from **sheet and rill erosion** and does not explicitly simulate gully erosion, channel bank collapse, or sediment deposition processes.
 * **Support Practice ($P$) Assumption:** Due to the absence of basin-wide spatial records on structural conservation practices, $P$ was parameterized uniformly as $1.0$.
-* **Field Calibration / Accuracy Metrics:** `[Information to be provided — e.g., LULC classification confusion matrix / Kappa coefficient or field sediment validation records, if available]`
 
 ---
 
@@ -342,44 +327,3 @@ Integrating the Revised Universal Soil Loss Equation (RUSLE) with Remote Sensing
    * Establish **zoning regulations** restricting agricultural expansion or deforestation in identified very-severe erosion zones.
    * Mandate **Environmental Impact Assessments (EIAs)** prior to major land-use conversions and enforce **reforestation/afforestation** on degraded lands.
    * Implement **urban stormwater management regulations** (permeable pavements, rain gardens, and detention basins) in rapidly urbanizing hubs such as Akure and Ile-Ife to control impervious surface runoff.
-
----
-
-## Repository Structure
-
-```text
-lower-ogun-osun-rusle-soil-erosion/
-├── README.md                                  # Complete technical project documentation
-├── maps/                                      # Exported cartographic outputs (300 DPI PNGs)
-│   ├── 01_study_area_location_map.png         # Fig 1.7: Study area reference map
-│   ├── 02_annual_rainfall_map.png             # Fig 4.1.1.1: Annual rainfall map (2022)
-│   ├── 03_rusle_r_factor_map.png              # Fig 4.1.1.2: Rainfall erosivity (R) factor map
-│   ├── 04_soil_classification_map.png         # Fig 4.1.2.1: FAO HWSD soil groups map
-│   ├── 05_rusle_k_factor_map.png              # Fig 4.1.2.2: Soil erodibility (K) factor map
-│   ├── 06_slope_gradient_map.png              # Fig 4.1.3.1: SRTM DEM slope map (degrees)
-│   ├── 07_rusle_ls_factor_map.png             # Fig 4.1.3.2: Topographic (LS) factor map
-│   ├── 08_lulc_classification_map.png         # Fig 4.1.4.1: Landsat 8 LULC map (2022)
-│   ├── 09_rusle_c_factor_map.png              # Fig 4.1.4.2: Cover management (C) factor map
-│   └── 10_classified_soil_loss_map.png        # Fig 4.3: Classified annual soil loss potential map
-└── docs/                                      # Supporting research documentation
-    └── ADEBISI_PAUL_UPDATED_2-1.docx          # B.Tech Thesis Manuscript (October 2024)
-```
-
----
-
-## Author and Project Information
-
-* **Author:** Adebisi Paul Oluwasegun
-* **Academic Qualification:** B.Tech in Remote Sensing and Geoscience Information System (GIS)
-* **Department & Institution:** Department of Remote Sensing and Geoscience Information System, School of Earth and Mineral Science, Federal University of Technology, Akure (FUTA), Ondo State, Nigeria
-* **Research Supervisor:** Prof. Suleiman A. Adegboyega
-* **Completion Date:** October 2024
-* **Project Category:** Watershed Hydrology, Soil Erosion Modeling (RUSLE), Remote Sensing & GIS
-* **GitHub Profile:** `[Information to be provided — e.g., https://github.com/yourusername]`
-* **LinkedIn / Portfolio:** `[Information to be provided]`
-* **Contact Email:** `[Information to be provided]`
-
----
-
-### Citation
-> Adebisi, P. O. (2024). *Assessment of Soil Erosion Potential with Integrated RUSLE Model and GIS in Lower Ogun-Osun Basin, Nigeria*. B.Tech Thesis, Department of Remote Sensing and Geoscience Information System, Federal University of Technology, Akure (FUTA), Nigeria.
