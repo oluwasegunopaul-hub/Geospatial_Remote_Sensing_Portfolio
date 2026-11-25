@@ -48,7 +48,7 @@ The **Lower Niger River Basin** is located in central-southern Nigeria, encompas
 
 ### Study Area Location Map
 ![Study Area Location Map](maps/00_study_area_location_map.png)
-*Placeholder: A dedicated standalone location inset map was not included in Section 3.2 of the technical report; the basin boundary and LGA subdivisions are depicted across the thematic maps below (e.g., `maps/12_flood_inundation_map.png`). Upload a regional location inset map here if desired.*
+
 
 ---
 
