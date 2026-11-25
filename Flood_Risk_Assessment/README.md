@@ -120,7 +120,7 @@ flowchart TD
 
 ### 6.3 Data Preprocessing and Thematic Layer Preparation
 
-1. **Spatial Standardization:** All raster and vector conditioning datasets were projected and resampled to a uniform **$90\text{ m}$ cell resolution** in ArcGIS 10.8.2.
+1. **Spatial Standardization:** All raster and vector conditioning datasets were projected and resampled to a uniform **$30\text{ m}$ cell resolution** in ArcGIS 10.8.2.
 2. **Terrain and Hydrological Modelling:**
    * **Elevation and Slope:** Elevation zones were reclassified directly from the $90\text{ m}$ SRTM DEM, and terrain slope (in degrees) was computed via the *Surface Analysis* tool in Spatial Analyst.
    * **Flow Accumulation and TWI:** Flow accumulation was derived using the *Hydrology* toolset in ArcGIS, and the **Topographic Wetness Index (TWI)** was computed from slope and upstream contributing area per unit contour length to identify zones of potential soil saturation and water pooling.
@@ -135,7 +135,6 @@ flowchart TD
 ### 6.4 AHP Weighting, Overlay, and Inundation Mapping
 
 * **AHP Weighting and Look-Up Ratings:** Relative criteria weights were determined via the **Analytic Hierarchy Process (AHP)** (Saaty, 1980) based on each criterion's physical contribution to flood generation. Standardized ratings/coefficients were assigned via a look-up table grounded in literature (Mahmoud, Mohammad, & Alazba, 2014).
-* *Parameter Note:* `[Information to be provided: Exact AHP pairwise comparison matrix, individual factor percentage weights, and Consistency Ratio (CR), if available]`.
 * **Flood Risk Zonation and Inundation Overlay:** Weighted integration of the conditioning layers produced a five-tier **Flood Risk Map** (*Very Low*, *Low*, *Moderate*, *High*, and *Very High*). Subsequently, the inundated floodplain extent was delineated and overlaid with **LGA boundaries** and **settlement point locations** to assess spatial exposure.
 
 ---
@@ -146,24 +145,24 @@ flowchart TD
 
 | No. | Map Title (Report Reference) | Suggested Filename | Category |
 | :--- | :--- | :--- | :--- |
-| 1 | Distance from River Map (Fig. 8) | `01_distance_from_river_map.png` | Conditioning Factor / Proximity |
-| 2 | Distance from Road Map (Fig. 9) | `02_distance_from_road_map.png` | Conditioning Factor / Proximity |
-| 3 | Digital Elevation Model (DEM) Map (Fig. 10) | `03_dem_elevation_map.png` | Conditioning Factor / Morphometric |
-| 4 | Drainage Density Map (Fig. 11) | `04_drainage_density_map.png` | Conditioning Factor / Hydrological |
-| 5 | Land Use / Land Cover (LULC) Map (Fig. 12) | `05_lulc_map.png` | Conditioning Factor / Thematic |
-| 6 | Normalized Difference Vegetation Index (NDVI) Map (Fig. 13) | `06_ndvi_map.png` | Conditioning Factor / Spectral Index |
-| 7 | Rainfall Distribution Map (Fig. 14) | `07_rainfall_map.png` | Conditioning Factor / Climatic |
-| 8 | Terrain Slope Map (Fig. 15) | `08_slope_map.png` | Conditioning Factor / Morphometric |
-| 9 | Soil Map — Hydrologic Soil Groups (Fig. 16) | `09_soil_hsg_map.png` | Conditioning Factor / Pedological |
-| 10 | Topographic Wetness Index (TWI) Map (Fig. 17) | `10_topographic_wetness_index_twi_map.png` | Conditioning Factor / Hydrological |
-| 11 | Multi-Criteria Flood Risk Map (Fig. 18) | `11_flood_risk_map.png` | Synthesis / Susceptibility Output |
-| 12 | Flood Inundation and Settlement Exposure Map (Fig. 19) | `12_flood_inundation_map.png` | Synthesis / Inundation Output |
+| 1 | Distance from River Map  | `01_distance_from_river_map.png` | Conditioning Factor / Proximity |
+| 2 | Distance from Road Map  | `02_distance_from_road_map.png` | Conditioning Factor / Proximity |
+| 3 | Digital Elevation Model (DEM) Map  | `03_dem_elevation_map.png` | Conditioning Factor / Morphometric |
+| 4 | Drainage Density Map  | `04_drainage_density_map.png` | Conditioning Factor / Hydrological |
+| 5 | Land Use / Land Cover (LULC) Map  | `05_lulc_map.png` | Conditioning Factor / Thematic |
+| 6 | Normalized Difference Vegetation Index (NDVI) Map  | `06_ndvi_map.png` | Conditioning Factor / Spectral Index |
+| 7 | Rainfall Distribution Map  | `07_rainfall_map.png` | Conditioning Factor / Climatic |
+| 8 | Terrain Slope Map  | `08_slope_map.png` | Conditioning Factor / Morphometric |
+| 9 | Soil Map — Hydrologic Soil Groups  | `09_soil_hsg_map.png` | Conditioning Factor / Pedological |
+| 10 | Topographic Wetness Index (TWI) Map  | `10_topographic_wetness_index_twi_map.png` | Conditioning Factor / Hydrological |
+| 11 | Multi-Criteria Flood Risk Map  | `11_flood_risk_map.png` | Synthesis / Susceptibility Output |
+| 12 | Flood Inundation and Settlement Exposure Map  | `12_flood_inundation_map.png` | Synthesis / Inundation Output |
 
 ---
 
 ### 7.2 Cartographic Gallery and Map Interpretations
 
-#### 1. Distance from River Map (Fig. 8)
+#### 1. Distance from River Map 
 * **Technical Description:** Reclassified proximity surface categorized into five distance intervals from $0 - 0.04665$ (red) to $0.1867 - 0.2332$ (green).
 * **Purpose:** Quantifies direct spatial exposure to overbank river overflow along the Lower Niger River and its tributaries.
 * **Interpretation:** Zones closest to the active river channels ($0 - 0.04665$, red) face the highest probability of overbank submergence, while risk diminishes progressively outward toward green zones ($0.1867 - 0.2332$), though distal areas remain susceptible to localized flash flooding.
@@ -171,7 +170,7 @@ flowchart TD
 ![Distance from River Map](maps/01_distance_from_river_map.png)
 *Expected file path: `maps/01_distance_from_river_map.png`*
 
-#### 2. Distance from Road Map (Fig. 9)
+#### 2. Distance from Road Map 
 * **Technical Description:** Five-class proximity surface ranging on the map legend from $0 - 0.04773$ (red) to $0.191 - 0.2387$ (green) *(narrative text notes $0 - 0.04665$ to $0.1867 - 0.2332$)*.
 * **Purpose:** Captures anthropogenic runoff acceleration from impervious road corridors and potential drainage blockage during storm events.
 * **Interpretation:** Areas immediately adjacent to road networks ($0 - 0.04773$, red) experience heightened flood susceptibility due to higher impervious surface concentration and flow constriction, whereas remote zones ($0.191 - 0.2387$, green) experience lower direct infrastructure-induced runoff impacts.
@@ -179,7 +178,7 @@ flowchart TD
 ![Distance from Road Map](maps/02_distance_from_road_map.png)
 *Expected file path: `maps/02_distance_from_road_map.png`*
 
-#### 3. Digital Elevation Model (DEM) Map (Fig. 10)
+#### 3. Digital Elevation Model (DEM) Map 
 * **Technical Description:** $90\text{ m}$ SRTM elevation surface classified into five elevation tiers: $-8 - 94\text{ m}$ (red), $94.01 - 175\text{ m}$ (orange), $175.1 - 262\text{ m}$ (yellow), $262.1 - 370\text{ m}$ (light green), and $370.1 - 657\text{ m}$ (dark green).
 * **Purpose:** Identifies low-lying gravitational water accumulation basins versus elevated runoff-generating uplands.
 * **Interpretation:** Low-elevation valley floors ($-8\text{ m}$ to $94\text{ m}$, symbolized in red for flood susceptibility) along the central and southern Niger floodplain are highly susceptible to inundation as runoff drains downhill, whereas elevated uplands ($370.1\text{ m}$ to $657\text{ m}$) shed runoff downward without pooling.
@@ -187,7 +186,7 @@ flowchart TD
 ![Digital Elevation Model (DEM) Map](maps/03_dem_elevation_map.png)
 *Expected file path: `maps/03_dem_elevation_map.png`*
 
-#### 4. Drainage Density Map (Fig. 11)
+#### 4. Drainage Density Map 
 * **Technical Description:** Interpolated stream network density ($1\text{ km}^2$ grid basis) divided into five classes from $0.241 - 1.143$ (dark green) to $3.852 - 4.754$ (red).
 * **Purpose:** Evaluates the concentration of surface drainage channels and rapid runoff delivery potential.
 * **Interpretation:** High drainage density zones ($2.95 - 4.754$, orange and red) along the central axial corridor and northern confluence rapidly concentrate overland flow, increasing peak discharge and downstream channel overflow risk, whereas low-density zones ($0.241 - 1.143$, dark green) promote slower runoff collection and greater infiltration.
@@ -195,7 +194,7 @@ flowchart TD
 ![Drainage Density Map](maps/04_drainage_density_map.png)
 *Expected file path: `maps/04_drainage_density_map.png`*
 
-#### 5. Land Use / Land Cover (LULC) Map (Fig. 12)
+#### 5. Land Use / Land Cover (LULC) Map 
 * **Technical Description:** Maximum-Likelihood supervised classification of 2022 Landsat 8 OLI imagery delineating six land cover categories: *Water Body*, *Dense Vegetation*, *Sparse Vegetation*, *Built-up Area*, *Bare Land*, and *Wetland*.
 * **Purpose:** Characterizes surface permeability, vegetative interception, and natural floodplain storage across the basin.
 * **Interpretation:** *Water Bodies* and riparian *Wetlands* represent active inundation zones and natural flood-retention sponges; *Built-up Areas* and *Bare Land* (prominent in the north and along river crossings) generate high surface runoff due to imperviousness and soil exposure, while *Dense Vegetation* in the south enhances rainfall interception.
@@ -203,7 +202,7 @@ flowchart TD
 ![Land Use / Land Cover (LULC) Map](maps/05_lulc_map.png)
 *Expected file path: `maps/05_lulc_map.png`*
 
-#### 6. Normalized Difference Vegetation Index (NDVI) Map (Fig. 13)
+#### 6. Normalized Difference Vegetation Index (NDVI) Map 
 * **Technical Description:** Five-class vegetation vigor surface derived from 2022 Landsat 8 OLI imagery, spanning $-0.106 - 0.02127$ (red) to $0.1966 - 0.3644$ (dark green).
 * **Purpose:** Quantifies canopy density and biomass conditions governing rainfall interception and infiltration capacity.
 * **Interpretation:** Higher NDVI values ($0.1966 - 0.3644$, dark green) in the southern and eastern flanks indicate healthy, dense vegetation that retards overland flow, whereas low and negative NDVI values ($-0.106 - 0.1098$, red and orange) along the river channel and northern/central sectors reflect water surfaces, bare ground, and sparse cover with higher runoff generation.
@@ -211,7 +210,7 @@ flowchart TD
 ![NDVI Map](maps/06_ndvi_map.png)
 *Expected file path: `maps/06_ndvi_map.png`*
 
-#### 7. Rainfall Distribution Map (Fig. 14)
+#### 7. Rainfall Distribution Map 
 * **Technical Description:** Five-class spatial rainfall distribution categorized on the map legend from $1,240 - 1,371$ (light blue) to $1,766 - 1,896$ (dark blue) *(narrative text reports average annual rainfall ranging from $667\text{ mm}$ to $1,495\text{ mm}$)*.
 * **Purpose:** Represents spatial variability in meteorological precipitation input driving surface runoff and river discharge.
 * **Interpretation:** Higher precipitation zones (dark blue classes in the southern and northwestern sectors) experience greater rainfall intensity and volume, amplifying flood generation potential compared to lower-rainfall central/northeastern pockets.
@@ -219,7 +218,7 @@ flowchart TD
 ![Rainfall Map](maps/07_rainfall_map.png)
 *Expected file path: `maps/07_rainfall_map.png`*
 
-#### 8. Terrain Slope Map (Fig. 15)
+#### 8. Terrain Slope Map 
 * **Technical Description:** DEM-derived slope gradient raster in degrees ($0^\circ$ to $41.23^\circ$) grouped into five intervals: $0 - 2.102^\circ$ (red), $2.103 - 5.174^\circ$ (orange), $5.175 - 10.02^\circ$ (yellow), $10.03 - 16.98^\circ$ (light green), and $16.99 - 41.23^\circ$ (dark green).
 * **Purpose:** Evaluates topographic control over overland flow velocity versus water stagnation and ponding.
 * **Interpretation:** Flat to gently sloping plains ($0^\circ - 2.102^\circ$, red) across the central floodplain and northern lowlands exhibit the highest flood susceptibility because water pools readily, whereas steeper slopes ($16.99^\circ - 41.23^\circ$, green) shed surface water rapidly downhill.
@@ -227,7 +226,7 @@ flowchart TD
 ![Slope Map](maps/08_slope_map.png)
 *Expected file path: `maps/08_slope_map.png`*
 
-#### 9. Soil Map — Hydrologic Soil Groups (Fig. 16)
+#### 9. Soil Map — Hydrologic Soil Groups 
 * **Technical Description:** Spatial distribution of FAO-derived Hydrologic Soil Groups classified into **HSG C** (red) and **HSG B** (yellow).
 * **Purpose:** Evaluates soil infiltration rates and subsurface drainage capacity during heavy precipitation.
 * **Interpretation:** **HSG C soils** (red), which cover the majority of the northern and central basin, possess fine textures or impeding layers with slow infiltration rates, generating high surface runoff and elevated flood risk; **HSG B soils** (yellow) in the southwest exhibit moderate infiltration rates and lower runoff propensity.
@@ -235,7 +234,7 @@ flowchart TD
 ![Soil Map](maps/09_soil_hsg_map.png)
 *Expected file path: `maps/09_soil_hsg_map.png`*
 
-#### 10. Topographic Wetness Index (TWI) Map (Fig. 17)
+#### 10. Topographic Wetness Index (TWI) Map 
 * **Technical Description:** Five-class hydrological wetness surface ranging from $4.672 - 8.001$ (dark green) to $16.22 - 32.97$ (red).
 * **Purpose:** Delineates topographic zones prone to soil moisture saturation and surface water accumulation.
 * **Interpretation:** High TWI corridors ($12.45 - 32.97$, orange and red) trace the main Niger River valley and tributary floodplains, pinpointing areas of persistent saturation and high flood propensity, while lower TWI uplands ($4.672 - 8.001$, dark green) are well-drained.
@@ -243,7 +242,7 @@ flowchart TD
 ![Topographic Wetness Index (TWI) Map](maps/10_topographic_wetness_index_twi_map.png)
 *Expected file path: `maps/10_topographic_wetness_index_twi_map.png`*
 
-#### 11. Multi-Criteria Flood Risk Map (Fig. 18)
+#### 11. Multi-Criteria Flood Risk Map 
 * **Technical Description:** Composite AHP-GIS weighted overlay map classifying the Lower Niger River Basin into five flood susceptibility zones: **Very Low** (dark green), **Low** (light green), **Moderate** (yellow), **High** (orange), and **Very High** (red).
 * **Purpose:** Synthesizes all ten hydro-environmental and anthropogenic conditioning layers into an actionable flood hazard zonation product.
 * **Interpretation:** **Very High** and **High** flood risk zones form a continuous, broad corridor along the central Niger River axis, the northern confluence zone, and the broad southern alluvial floodplain where low elevation, flat slopes, high TWI, HSG C soils, and proximity to drainage channels coincide.
@@ -251,7 +250,7 @@ flowchart TD
 ![Flood Risk Map](maps/11_flood_risk_map.png)
 *Expected file path: `maps/11_flood_risk_map.png`*
 
-#### 12. Flood Inundation and Settlement Exposure Map (Fig. 19)
+#### 12. Flood Inundation and Settlement Exposure Map 
 * **Technical Description:** Spatial inundation extent map displaying **Inundated Area** (blue), **LGA Boundaries** (green outlines), and **Settlement** point locations (red markers).
 * **Purpose:** Delineates the spatial footprint of floodwater inundation and identifies exposed communities across administrative jurisdictions.
 * **Interpretation:** Extensive flood inundation (blue) concentrates along the north–south Niger River channel, the northeastern tributary confluence, and the wide southwestern/southern confluence floodplains, directly intersecting numerous riparian settlements (red markers) across multiple LGAs.
