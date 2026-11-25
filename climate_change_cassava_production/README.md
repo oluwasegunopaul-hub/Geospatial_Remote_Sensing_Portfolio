@@ -14,8 +14,6 @@
 * [Discussion](#discussion)
 * [Research Limitations](#research-limitations)
 * [Conclusion and Recommendations](#conclusion-and-recommendations)
-* [Repository Structure](#repository-structure)
-* [Author and Project Information](#author-and-project-information)
 
 ---
 
@@ -374,48 +372,3 @@ Multi-temporal Landsat analysis ($2014\text{--}2024$) and $34$-year ECMWF ERA-In
 1. **Promote Drought- and Heat-Tolerant Cassava Varieties:** Prioritize the dissemination and adoption of improved, climate-resilient *Manihot esculenta* cultivars in northern Ekiti State (Ikole, Oye, and Ilejemeje LGAs), where elevated LST and declining NDVI/EVI converge.
 2. **Strengthen Soil Moisture Conservation Practices:** Scale up agronomic water-conservation techniques—including **mulching**, **reduced/minimum tillage**, and **organic matter management**—to reduce soil evaporation and mitigate elevated Vapour Pressure Deficit (VPD) during dry spells.
 3. **Optimize Planting Calendars and Spatial Planning:** Align cassava planting dates and planting densities with updated rainfall onset patterns and use spatial LST/NDVI vulnerability maps to target agricultural extension services toward high-stress farming communities.
-
----
-
-## Repository Structure
-
-```text
-ekiti-cassava-climate-change-gis/
-├── README.md                                       # Complete technical project documentation
-├── maps/                                           # Exported ArcGIS 10.7 cartographic map layouts (PNG)
-│   ├── 01_study_area_location_map.png              # Fig 1: Study area map (5 LGAs in Ekiti State)
-│   ├── 02_ndvi_2014_map.png                        # Fig 4.1a: 2014 NDVI spatial distribution map
-│   ├── 03_ndvi_2024_map.png                        # Fig 4.1b: 2024 NDVI spatial distribution map
-│   ├── 04_evi_2014_map.png                         # Fig 4.2a: 2014 EVI spatial distribution map
-│   ├── 05_evi_2024_map.png                         # Fig 4.2b: 2024 EVI spatial distribution map
-│   ├── 06_lst_2014_map.png                         # Fig 4.3a: 2014 Land Surface Temperature map
-│   └── 07_lst_2024_map.png                         # Fig 4.3b: 2024 Land Surface Temperature map
-├── charts/                                         # Exported Microsoft Excel time-series & anomaly charts (PNG)
-│   ├── 01_annual_rainfall_anomaly_chart.png        # 1990-2024 Annual rainfall & anomaly chart
-│   ├── 02_annual_lowest_temperature_chart.png      # 1990-2024 Annual minimum temperature & anomaly chart
-│   ├── 03_annual_highest_temperature_chart.png     # 1990-2024 Annual maximum temperature & anomaly chart
-│   ├── 04_annual_solar_radiation_chart.png         # 1990-2024 Annual solar radiation chart
-│   ├── 05_annual_lowest_rh_chart.png               # 1990-2024 Annual minimum relative humidity chart
-│   ├── 06_annual_highest_rh_chart.png              # 1990-2024 Annual maximum relative humidity chart
-│   ├── 07_annual_wind_speed_chart.png              # 1990-2024 Annual average wind speed chart
-│   └── 08_cassava_cultivated_area_chart.png        # 1990-2024 Cassava cultivated area dynamics chart
-└── docs/                                           # Supporting manuscript documentation
-    └── olowoniyi_olumide_richard_research.docx     # Source research document
-```
-
----
-
-## Author and Project Information
-
-* **Author:** Olowoniyi Olumide Richard
-* **Academic / Professional Background:** `[Information to be provided — e.g., B.Tech / M.Sc. in Remote Sensing and GIS / Geography / Agricultural Meteorology]`
-* **Department & Institution:** `[Information to be provided]`
-* **Project Category:** Agro-Climatology, Vegetation Monitoring, Thermal Remote Sensing & GIS
-* **GitHub Profile:** `[Information to be provided — e.g., https://github.com/yourusername]`
-* **LinkedIn / Portfolio:** `[Information to be provided]`
-* **Contact Email:** `[Information to be provided]`
-
----
-
-### Citation
-> Olowoniyi, O. R. (`[Year]`). *Assessing the Impacts of Climate Change on Cassava Production and Farmers' Coping Strategies in Ekiti State, Nigeria*. `[Institution / Department — Information to be provided]`.
