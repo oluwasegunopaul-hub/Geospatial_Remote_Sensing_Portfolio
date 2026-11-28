@@ -351,7 +351,7 @@ While no dedicated limitations section was included in the uploaded manuscript e
 ## Conclusion and Recommendations
 
 ### Conclusion
-Multi-temporal Landsat analysis ($2014\text{--}2024$) and $34$-year ECMWF ERA-Interim climatic records ($1990\text{--}2024$) demonstrate that agricultural landscapes in northern and central Ekiti State are experiencing measurable surface warming (minimum LST up by $+1.80^\circ\text{C}$, maximum LST up by $+0.40^\circ\text{C}$), rising maximum and minimum air temperatures, increased post-$2020$ solar radiation, and significantly drier daytime atmospheric conditions ($\text{RH}_{\min}$ dropping to $\approx 45\%$). Corresponding expansions in low-NDVI and low-EVI zones—most pronounced in the northern LGAs—underscore growing climate vulnerability for rain-fed cassava production and highlight the uneven buffering capacity of current farmer coping strategies.
+Multi-temporal Landsat analysis ($2014\text{--}2024$) and $34$-year ECMWF ERA-Interim climatic records ($1990\text{--}2024$) demonstrate that agricultural landscapes in northern and central Ekiti State are experiencing measurable surface warming (minimum LST up by $+1.80^\circ\text{C}$, maximum LST up by $+0.40^\circ\text{C}$), rising maximum and minimum air temperatures, increased post-$2020$ solar radiation, and significantly drier daytime atmospheric conditions ($\text{RH}_{\min}$ dropping to $\approx 45\%$). Corresponding expansions in low-NDVI and low-EVI zones most pronounced in the northern LGAs underscore growing climate vulnerability for rain-fed cassava production and highlight the uneven buffering capacity of current farmer coping strategies.
 
 
 ### Recommendations 
