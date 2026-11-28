@@ -237,7 +237,7 @@ In addition to the decadal spatial maps, seven multi-decadal ($1994\text{--}2024
 
 ### Chart Inventory
 
-| No. | Chart Title | Paper Reference | Suggested Filename | Category |
+| No. | Chart Title | Paper Reference | Filename | Category |
 | :---: | :--- | :---: | :--- | :--- |
 | 1 | Annual Rainfall and Standardized Rainfall Anomaly ($1994\text{--}2024$) | Rainfall Chart | `01_annual_rainfall_anomaly_chart.png` | Hydrological Time-Series |
 | 2 | Annual Highest Temperature ($T_{\max}$) and Standardized Anomaly ($1994\text{--}2024$) | Tmax Chart | `02_tmax_anomaly_chart.png` | Thermal Time-Series |
@@ -326,10 +326,6 @@ In addition to the decadal spatial maps, seven multi-decadal ($1994\text{--}2024
 ### Land Use and Land Cover ($\text{LULC}$) Transition Summary ($2014\text{--}2024$)
 * **Categories Mapped:** `Water body`, `Vegetation`, `Built-up Area`, and `Bare land`.
 * **Observed Spatial Dynamics:** Significant loss of `Vegetation` cover and corresponding expansion of `Built-up Area` and `Bare land` between $2014$ and $2024$, concentrated around Ado-Ekiti and Ikere urban centers.
-* **Quantitative Area & Accuracy Metrics:** `[Information to be provided — insert LULC class area table in km²/ha, percentage change, and classification accuracy metrics if available]`
-
-### Public Perception Findings
-* `[Information to be provided — summarize key statistical findings from the farmer/public perception survey regarding observed climate changes, yield impacts, and adaptation practices]`
 
 ---
 
@@ -350,14 +346,7 @@ The following methodological considerations and data limitations are noted from 
 * **Sensor and Atmospheric Sensitivity:** $\text{NDVI}$ effectiveness can be influenced by atmospheric interference, sensor calibration, and canopy saturation in dense vegetation (addressed in part by complementing $\text{NDVI}$ with $\text{EVI}$).
 * **Highest Relative Humidity Chart Scaling:** Assessment of long-term trends in annual maximum relative humidity ($\text{RH}_{\max}$) was constrained by chart axis scaling limitations and high inter-annual variability.
 * **Landscape-Wide Vegetation Scope:** The $2014$ and $2024$ spectral indices ($\text{NDVI}$, $\text{EVI}$, $\text{NDWI}$) and $\text{LULC}$ classifications characterize overall landscape vegetation rather than isolating oil palm plantations exclusively from surrounding forest and crop cover.
-* **Additional Manuscript Limitations:** `[Information to be provided — insert any survey sample size, field validation, or reanalysis resolution limitations discussed in the full manuscript]`
 
 ---
 
-## Conclusion and Recommendations
 
-### Conclusion
-`[Information to be provided — summarize the overarching conclusions integrating both the geospatial/climatic analysis and the public perception findings from Chapter Five]`
-
-### Recommendations
-`[Information to be provided — insert the specific agronomic, climate adaptation, and land-use policy recommendations from Chapter Five of your manuscript]`
