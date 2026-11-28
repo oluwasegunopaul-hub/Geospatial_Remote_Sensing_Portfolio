@@ -18,27 +18,21 @@
 
 ## Project Overview
 
-Oil palm (*Elaeis guineensis*) is a vital perennial cash crop in Ekiti State, southwestern Nigeria, whose physiological development, canopy vigor, and fruit yield depend heavily on stable thermal and hydrological regimes as well as available agricultural land. Over recent decades, changing climatic conditions—characterized by rising temperatures, fluctuating precipitation patterns, and shifts in atmospheric moisture—alongside rapid urban expansion have introduced compounding environmental pressures on agricultural landscapes.
+Oil palm (*Elaeis guineensis*) is a vital perennial cash crop in Ekiti State, southwestern Nigeria, whose physiological development, canopy vigor, and fruit yield depend heavily on stable thermal and hydrological regimes as well as available agricultural land. Over recent decades, changing climatic conditions characterized by rising temperatures, fluctuating precipitation patterns, and shifts in atmospheric moisture alongside rapid urban expansion have introduced compounding environmental pressures on agricultural landscapes.
 
 This project integrates **Remote Sensing (RS)**, **Geographic Information System (GIS)** spatial analysis, and **multi-decadal agro-climatic time-series modeling** to evaluate environmental and climatic changes affecting oil palm production across **Ado-Ekiti** and **Ikere** Local Government Areas (LGAs) in Ekiti State, Nigeria. Using multi-temporal **Landsat 8 Operational Land Imager (OLI)** imagery ($30\text{ m}$ resolution) for **2014** and **2024**, spatial distribution maps were generated for the Normalized Difference Vegetation Index ($\text{NDVI}$), Enhanced Vegetation Index ($\text{EVI}$), Land Surface Temperature ($\text{LST}$), Normalized Difference Water Index ($\text{NDWI}$), and Land Use and Land Cover ($\text{LULC}$). These decadal spatial assessments were combined with a 30-year (**1994–2024**) climatic record from the **ECMWF ERA-Interim** archive covering rainfall, maximum and minimum temperatures ($T_{\max}$, $T_{\min}$), incident solar radiation, relative humidity ($\text{RH}$), and wind speed.
 
 The primary purpose of this analysis is to quantify decadal land-cover transformation, surface warming, vegetation stress, and long-term climatic anomalies, providing an empirical geospatial baseline to support climate-resilient oil palm management and agricultural land-use planning in Ekiti State.
 
-> **Documentation Note:** The geospatial and climatic analyses documented below reflect the technical chapters provided in the source manuscript. Sections covering the introductory problem statement, formal research objectives, public perception survey methodology/results, and final recommendations include clearly marked placeholders (`[Information to be provided]`) where those chapters were omitted from the uploaded excerpt.
-
 ---
 
 ## Research Objectives
-
-**Research Aim:**  
-`[Information to be provided — insert the exact overarching aim statement from Chapter One of your manuscript]`
 
 **Specific Objectives:**
 1. Assess decadal spatial and temporal variations in vegetation health and canopy vigor ($2014$ vs. $2024$) across Ado-Ekiti and Ikere LGAs using Landsat 8-derived $\text{NDVI}$ and $\text{EVI}$.
 2. Quantify decadal changes in Land Surface Temperature ($\text{LST}$) and landscape moisture conditions ($\text{NDWI}$) between $2014$ and $2024$ to evaluate thermal and water stress on vegetated and agricultural zones.
 3. Map Land Use and Land Cover ($\text{LULC}$) transitions between $2014$ and $2024$ to examine urban encroachment and land competition affecting vegetation and oil palm cultivation areas.
 4. Analyze 30-year ($1994\text{--}2024$) historical trends and standardized anomalies in rainfall, temperature ($T_{\max}$ and $T_{\min}$), solar radiation, relative humidity, and wind speed.
-5. `[Information to be provided — insert the specific objective(s) addressing public/farmer perception of climate change impacts on oil palm production]`
 
 ---
 
@@ -48,7 +42,6 @@ The study area comprises **Ado-Ekiti** and **Ikere** Local Government Areas (LGA
 
 * **Geographic Coordinates:** Approximately Latitudes $7^\circ 26'\text{ N}$ to $7^\circ 40'\text{ N}$ and Longitudes $5^\circ 07'\text{ E}$ to $5^\circ 24'\text{ E}$
 * **Administrative Context:** Encompasses Ado-Ekiti LGA (the state capital in the northern sector of the study area) and contiguous Ikere LGA (in the southern sector), situated within central-southern Ekiti State.
-* **Total Study Area Extent:** `[Information to be provided — e.g., total area in km² or hectares]`
 * **Climate & Agro-Ecological Context:** Tropical climate supporting dense forest vegetation and perennial cash-crop agriculture, notably oil palm plantations. Settlement and built-up infrastructure are concentrated in the northwestern (Ado-Ekiti) and south-central (Ikere) urban corridors, surrounded by vegetated agricultural belts in the eastern, central, and southern sectors.
 
 ### Study Area Reference Map
@@ -61,14 +54,13 @@ The study area comprises **Ado-Ekiti** and **Ikere** Local Government Areas (LGA
 
 | Dataset | Source | Acquisition Year / Period | Spatial Resolution | Application in the Research |
 | :--- | :--- | :--- | :--- | :--- |
-| **Landsat 8 OLI Satellite Imagery** | United States Geological Survey (USGS EarthExplorer) | $2014$ and $2024$ *(exact scene dates `[To be provided]`)* | $30\text{ m} \times 30\text{ m}$ | Derivation of $\text{NDVI}$, $\text{EVI}$, $\text{LST}$ (Band 10 thermal infrared), $\text{NDWI}$, and $\text{LULC}$ classification maps for $2014$ and $2024$. |
-| **Annual Rainfall Data** | European Centre for Medium-Range Weather Forecasts (ECMWF) — ERA-Interim | $1994\text{--}2024$ (and $2014$, $2024$ spatial layers) | `[Information to be provided]` | 30-year annual precipitation and standardized anomaly charting ($1994\text{--}2024$) and spatial rainfall distribution mapping ($2014$ and $2024$). |
-| **Temperature Data ($T_{\max}$ & $T_{\min}$)** | ECMWF — ERA-Interim | $1994\text{--}2024$ | `[Information to be provided]` | Multi-decadal time-series and standardized anomaly charting of annual highest ($T_{\max}$) and lowest ($T_{\min}$) temperatures. |
-| **Incident Solar Radiation Data** | ECMWF — ERA-Interim | $1994\text{--}2024$ | `[Information to be provided]` | Assessment of 30-year temporal variability in annual surface solar radiation ($\text{J m}^{-2}$). |
-| **Relative Humidity ($\text{RH}$) Data** | ECMWF — ERA-Interim | $1994\text{--}2024$ | `[Information to be provided]` | Trend evaluation of annual lowest and highest relative humidity ($\%$) and atmospheric evaporative demand. |
-| **Wind Speed Data** | ECMWF — ERA-Interim | $1994\text{--}2024$ | `[Information to be provided]` | Evaluation of inter-annual variations in annual wind speed ($\text{m s}^{-1}$) and boundary-layer evapotranspiration effects. |
-| **Administrative Boundary Shapefiles** | `[Information to be provided]` | `[Information to be provided]` | Vector | Spatial delineation of Nigeria states, Ekiti State, and Ado-Ekiti / Ikere LGA boundaries. |
-| **Public Perception Survey Data** | `[Information to be provided]` | `[Information to be provided]` | Field / Survey | `[Information to be provided — questionnaire/interview dataset on farmer and public perceptions]` |
+| **Landsat 8 OLI Satellite Imagery** | United States Geological Survey (USGS EarthExplorer) | $2014$ and $2024$ *(exact scene dates  | $30\text{ m} \times 30\text{ m}$ | Derivation of $\text{NDVI}$, $\text{EVI}$, $\text{LST}$ (Band 10 thermal infrared), $\text{NDWI}$, and $\text{LULC}$ classification maps for $2014$ and $2024$. |
+| **Annual Rainfall Data** | European Centre for Medium-Range Weather Forecasts (ECMWF) — ERA-Interim | $1994\text{--}2024$ (and $2014$, $2024$ spatial layers) | 80 km | 30-year annual precipitation and standardized anomaly charting ($1994\text{--}2024$) and spatial rainfall distribution mapping ($2014$ and $2024$). |
+| **Temperature Data ($T_{\max}$ & $T_{\min}$)** | ECMWF — ERA-Interim | $1994\text{--}2024$ | 80 km | Multi-decadal time-series and standardized anomaly charting of annual highest ($T_{\max}$) and lowest ($T_{\min}$) temperatures. |
+| **Incident Solar Radiation Data** | ECMWF — ERA-Interim | $1994\text{--}2024$ | 80 km | Assessment of 30-year temporal variability in annual surface solar radiation ($\text{J m}^{-2}$). |
+| **Relative Humidity ($\text{RH}$) Data** | ECMWF — ERA-Interim | $1994\text{--}2024$ | 80 km | Trend evaluation of annual lowest and highest relative humidity ($\%$) and atmospheric evaporative demand. |
+| **Wind Speed Data** | ECMWF — ERA-Interim | $1994\text{--}2024$ | 80 km | Evaluation of inter-annual variations in annual wind speed ($\text{m s}^{-1}$) and boundary-layer evapotranspiration effects. |
+| **Administrative Boundary Shapefiles** | GRID3 |  | Vector | Spatial delineation of Nigeria states, Ekiti State, and Ado-Ekiti / Ikere LGA boundaries. |
 
 ---
 
@@ -153,21 +145,21 @@ Historical annual climatic variables from ECMWF ERA-Interim ($1994\text{--}2024$
 
 ### Map Inventory
 
-| No. | Map Title | Paper Figure Ref. | Suggested Filename | Category |
+| No. | Map Title | Suggested Filename | Category |
 | :---: | :--- | :---: | :--- | :--- |
 | 1 | Study Area Map (Ado-Ekiti & Ikere LGAs) | Study Area | `01_study_area_map.png` | Reference |
-| 2 | 2014 NDVI Map of the Study Area | Fig. 4.1a | `02_ndvi_2014_map.png` | Vegetation Index |
-| 3 | 2024 NDVI Map of the Study Area | Fig. 4.1b | `03_ndvi_2024_map.png` | Vegetation Index |
-| 4 | 2014 EVI Map of the Study Area | Fig. 4.2a | `04_evi_2014_map.png` | Vegetation Index |
-| 5 | 2024 EVI Map of the Study Area | Fig. 4.2b | `05_evi_2024_map.png` | Vegetation Index |
-| 6 | 2014 Land Surface Temperature (LST) Map | Fig. 4.3a | `06_lst_2014_map.png` | Thermal Analysis |
-| 7 | 2024 Land Surface Temperature (LST) Map | Fig. 4.3b | `07_lst_2024_map.png` | Thermal Analysis |
-| 8 | 2014 NDWI Map of the Study Area | Fig. 4.4a | `08_ndwi_2014_map.png` | Moisture / Water Index |
-| 9 | 2024 NDWI Map of the Study Area | Fig. 4.4b | `09_ndwi_2024_map.png` | Moisture / Water Index |
-| 10 | 2014 Rainfall Distribution Map | Fig. 4.5a | `10_rainfall_2014_map.png` | Climatic Spatial |
-| 11 | 2024 Rainfall Distribution Map | Fig. 4.5b | `11_rainfall_2024_map.png` | Climatic Spatial |
-| 12 | 2014 Land Use / Land Cover (LULC) Map | Fig. 4.6a | `12_lulc_2014_map.png` | Thematic Classification |
-| 13 | 2024 Land Use / Land Cover (LULC) Map | Fig. 4.6b | `13_lulc_2024_map.png` | Thematic Classification |
+| 2 | 2014 NDVI Map of the Study Area  | `02_ndvi_2014_map.png` | Vegetation Index |
+| 3 | 2024 NDVI Map of the Study Area  | `03_ndvi_2024_map.png` | Vegetation Index |
+| 4 | 2014 EVI Map of the Study Area  | `04_evi_2014_map.png` | Vegetation Index |
+| 5 | 2024 EVI Map of the Study Area  | `05_evi_2024_map.png` | Vegetation Index |
+| 6 | 2014 Land Surface Temperature (LST) Map  | `06_lst_2014_map.png` | Thermal Analysis |
+| 7 | 2024 Land Surface Temperature (LST) Map  | `07_lst_2024_map.png` | Thermal Analysis |
+| 8 | 2014 NDWI Map of the Study Area  | `08_ndwi_2014_map.png` | Moisture / Water Index |
+| 9 | 2024 NDWI Map of the Study Area  | `09_ndwi_2024_map.png` | Moisture / Water Index |
+| 10 | 2014 Rainfall Distribution Map  | `10_rainfall_2014_map.png` | Climatic Spatial |
+| 11 | 2024 Rainfall Distribution Map  | `11_rainfall_2024_map.png` | Climatic Spatial |
+| 12 | 2014 Land Use / Land Cover (LULC) Map  | `12_lulc_2014_map.png` | Thematic Classification |
+| 13 | 2024 Land Use / Land Cover (LULC) Map  | `13_lulc_2024_map.png` | Thematic Classification |
 
 ---
 
