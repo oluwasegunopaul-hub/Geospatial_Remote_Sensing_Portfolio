@@ -13,8 +13,7 @@
 - [8. Maps and Cartographic Outputs](#8-maps-and-cartographic-outputs)
 - [9. Results and Key Findings](#9-results-and-key-findings)
 - [10. Discussion](#10-discussion)
-- [11. Research Limitations](#11-research-limitations)
-- [12. Conclusion and Recommendations](#12-conclusion-and-recommendations)
+- [11. Conclusion and Recommendations](#12-conclusion-and-recommendations)
 
 ---
 
@@ -219,12 +218,7 @@ The multi-temporal comparison of spectral indices demonstrates how satellite rem
 
 ---
 
-## 11. Research Limitations
-- The pre-incident (1 November 2021) and post-incident (1 March 2022) imagery span the transition from the late wet/early dry season into the late dry season in southern Nigeria, seasonal vegetation phenology may also contribute to observed spectral differences alongside anthropogenic disturbance.
-
----
-
-## 12. Conclusion and Recommendations
+## 11. Conclusion and Recommendations
 
 ### Conclusion
 Integrating Landsat 8 OLI spectral indices (NDVI, SAVI, NDBI, and NDTI) with field-recorded incident data in ArcGIS 10.7.1 effectively captures pre- and post-incident vegetation and soil surface changes associated with poaching and trafficking activities in Okomu National Park. Post-incident reductions in peak NDVI and SAVI values, paired with increases in peak NDBI and NDTI values, indicate localized vegetation degradation and ground disturbance across affected sectors of the park.
