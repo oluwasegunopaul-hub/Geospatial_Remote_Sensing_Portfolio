@@ -17,7 +17,6 @@
 - [Maps and Cartographic Outputs](#maps-and-cartographic-outputs)
 - [Results and Key Findings](#results-and-key-findings)
 - [Discussion](#discussion)
-- [Research Limitations](#research-limitations)
 - [Conclusion and Recommendations](#conclusion-and-recommendations)
 
 ---
@@ -299,13 +298,6 @@ The spatial pattern of soil erosion in the Lower Ogun-Osun Basin demonstrates ho
 * **Agricultural Productivity & Food Security:** Because cocoa, cassava, maize, and yam cultivation underpin local livelihoods across Ogun, Osun, Ekiti, Ondo, and Edo States, severe topsoil loss ($> 50\text{ t ha}^{-1}\text{ yr}^{-1}$ across $25.10\%$ of the basin) threatens soil organic matter, nutrient retention, and long-term crop yields.
 * **Watershed & Reservoir Sedimentation:** Accelerated sheet and rill erosion on unprotected slopes increases sediment delivery into rivers and streams, elevating risks of channel siltation, degraded water quality, and reduced storage capacity in downstream water infrastructure.
 * **Spatial Planning Utility:** Identifying exact spatial hotspots allows state ministries of agriculture, river basin development authorities (such as the Ogun-Osun River Basin Development Authority), and environmental planners to concentrate limited conservation funding on the $22.26\%$ very-severe risk zones rather than applying uniform basin-wide measures.
-
----
-
-## Research Limitations
-
-* **Erosion Process Scope:** In accordance with standard RUSLE formulation, the model estimates long-term average annual soil loss from **sheet and rill erosion** and does not explicitly simulate gully erosion, channel bank collapse, or sediment deposition processes.
-* **Support Practice ($P$) Assumption:** Due to the absence of basin-wide spatial records on structural conservation practices, $P$ was parameterized uniformly as $1.0$.
 
 ---
 
