@@ -12,8 +12,7 @@
 - [7. Maps and Cartographic Outputs](#7-maps-and-cartographic-outputs)
 - [8. Results and Key Findings](#8-results-and-key-findings)
 - [9. Discussion](#9-discussion)
-- [10. Research Limitations](#10-research-limitations)
-- [11. Conclusion and Recommendations](#11-conclusion-and-recommendations)
+- [10. Conclusion and Recommendations](#11-conclusion-and-recommendations)
 
 ---
 
@@ -282,16 +281,7 @@ The spatial synthesis of multi-criteria flood susceptibility and floodplain inun
 
 ---
 
-## 10. Research Limitations
-
-Based on the scope and data documented in the technical report:
-
-1. **Spatial Resolution of Input Layers ($30\text{ m}$):** All conditioning factors were standardized to a $30\text{ m}$ grid matching the SRTM DEM; while suitable for basin-scale susceptibility assessment, $90\text{ m}$ resolution cannot resolve micro-topographic urban drainage channels, levees, or individual building footprints.
-3. **Susceptibility Index vs. Hydrodynamic Discharge Routing:** Multi-criteria AHP overlay identifies spatial propensity to flooding based on physical terrain and environmental conditioning factors rather than time-stepped hydraulic flow velocities or return-period flood hydrographs (e.g., 10-, 50-, or 100-year discharge simulations).
-
----
-
-## 11. Conclusion and Recommendations
+## 10. Conclusion and Recommendations
 
 ### Conclusion
 Integrating Satellite Remote Sensing, GIS spatial analysis, and the Analytic Hierarchy Process (AHP) provides an effective decision-support framework for delineating flood susceptibility and inundation exposure across the Lower Niger River Basin. By combining ten morphometric, hydrological, climatic, soil, and land-cover parameters at $30\text{ m}$ resolution, the study successfully identifies *High* and *Very High* flood risk corridors along the central Niger River valley and major confluences, highlighting vulnerable settlements across riparian LGAs.
