@@ -145,9 +145,9 @@ Historical annual climatic variables from ECMWF ERA-Interim ($1994\text{--}2024$
 
 ### Map Inventory
 
-| No. | Map Title | Suggested Filename | Category |
+| No. | Map Title | Filename | Category |
 | :---: | :--- | :--- | :--- |
-| 1 | Study Area Map (Ado-Ekiti & Ikere LGAs) | Study Area | `01_study_area_map.png` | Reference |
+| 1 | Study Area Map (Ado-Ekiti & Ikere LGAs) | `01_study_area_map.png` | Reference |
 | 2 | 2014 NDVI Map of the Study Area | `02_ndvi_2014_map.png` | Vegetation Index |
 | 3 | 2024 NDVI Map of the Study Area | `03_ndvi_2024_map.png` | Vegetation Index |
 | 4 | 2014 EVI Map of the Study Area | `04_evi_2014_map.png` | Vegetation Index |
