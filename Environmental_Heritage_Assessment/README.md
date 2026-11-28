@@ -211,14 +211,7 @@ The following 24 cartographic outputs were produced in ArcGIS 10.7:
 The findings demonstrate that the ecological integrity and cultural heritage value of the Osun-Osogbo Sacred Grove face compounding pressures from localized land-use change and regional hydro-climatic variability:
 - **Conservation & Buffer Zone Management:** Rapid urban expansion (`NDBI` peaking at `0.550`) has eroded the protective capacity of the 47-hectare buffer zone, creating edge effects, thermal barriers that isolate wildlife habitats, and fuelwood/clearing pressures along the eastern boundary.
 - **Heritage & Ecotourism Preservation:** Emerging internal heat hotspots threaten material weathering of exposed sacred sculptures and reduce thermal comfort along visitor trails. Simultaneously, elevated upstream rainfall (`up to 230.7 mm` in 2024) combined with increased impervious runoff from surrounding urban settlements heightens riverine flood and soil erosion risks for low-lying shrines and access roads along the Osun River.
-
----
-
-## 10. Research Limitations
-- **Spatial Resolution Constraints:** Medium-resolution multispectral and thermal imagery (`30 m` Landsat 7 ETM+ and Landsat 8 OLI) captures broad canopy, thermal, and built-up trends across the 75 ha grove and 47 ha buffer zone, but limits the detection of sub-pixel structural encroachments or individual under-canopy artefacts.
-- **Satellite Rainfall Interpolation:** Satellite-based rainfall estimates (TAMSAT) provide regional precipitation gradients but carry spatial scale limitations when interpolated over small local catchments without dense in-situ gauge calibration.
-
-
+  
 ---
 
 ## 11. Conclusion and Recommendations
