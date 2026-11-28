@@ -146,20 +146,20 @@ Historical annual climatic variables from ECMWF ERA-Interim ($1994\text{--}2024$
 ### Map Inventory
 
 | No. | Map Title | Suggested Filename | Category |
-| :---: | :--- | :---: | :--- | :--- |
+| :---: | :--- | :--- | :--- |
 | 1 | Study Area Map (Ado-Ekiti & Ikere LGAs) | Study Area | `01_study_area_map.png` | Reference |
-| 2 | 2014 NDVI Map of the Study Area  | `02_ndvi_2014_map.png` | Vegetation Index |
-| 3 | 2024 NDVI Map of the Study Area  | `03_ndvi_2024_map.png` | Vegetation Index |
-| 4 | 2014 EVI Map of the Study Area  | `04_evi_2014_map.png` | Vegetation Index |
-| 5 | 2024 EVI Map of the Study Area  | `05_evi_2024_map.png` | Vegetation Index |
-| 6 | 2014 Land Surface Temperature (LST) Map  | `06_lst_2014_map.png` | Thermal Analysis |
-| 7 | 2024 Land Surface Temperature (LST) Map  | `07_lst_2024_map.png` | Thermal Analysis |
-| 8 | 2014 NDWI Map of the Study Area  | `08_ndwi_2014_map.png` | Moisture / Water Index |
-| 9 | 2024 NDWI Map of the Study Area  | `09_ndwi_2024_map.png` | Moisture / Water Index |
-| 10 | 2014 Rainfall Distribution Map  | `10_rainfall_2014_map.png` | Climatic Spatial |
-| 11 | 2024 Rainfall Distribution Map  | `11_rainfall_2024_map.png` | Climatic Spatial |
-| 12 | 2014 Land Use / Land Cover (LULC) Map  | `12_lulc_2014_map.png` | Thematic Classification |
-| 13 | 2024 Land Use / Land Cover (LULC) Map  | `13_lulc_2024_map.png` | Thematic Classification |
+| 2 | 2014 NDVI Map of the Study Area | `02_ndvi_2014_map.png` | Vegetation Index |
+| 3 | 2024 NDVI Map of the Study Area | `03_ndvi_2024_map.png` | Vegetation Index |
+| 4 | 2014 EVI Map of the Study Area | `04_evi_2014_map.png` | Vegetation Index |
+| 5 | 2024 EVI Map of the Study Area | `05_evi_2024_map.png` | Vegetation Index |
+| 6 | 2014 Land Surface Temperature (LST) Map | `06_lst_2014_map.png` | Thermal Analysis |
+| 7 | 2024 Land Surface Temperature (LST) Map | `07_lst_2024_map.png` | Thermal Analysis |
+| 8 | 2014 NDWI Map of the Study Area | `08_ndwi_2014_map.png` | Moisture / Water Index |
+| 9 | 2024 NDWI Map of the Study Area | `09_ndwi_2024_map.png` | Moisture / Water Index |
+| 10 | 2014 Rainfall Distribution Map | `10_rainfall_2014_map.png` | Climatic Spatial |
+| 11 | 2024 Rainfall Distribution Map | `11_rainfall_2024_map.png` | Climatic Spatial |
+| 12 | 2014 Land Use / Land Cover (LULC) Map | `12_lulc_2014_map.png` | Thematic Classification |
+| 13 | 2024 Land Use / Land Cover (LULC) Map | `13_lulc_2024_map.png` | Thematic Classification |
 
 ---
 
