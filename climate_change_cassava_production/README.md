@@ -28,20 +28,10 @@ The primary purpose of this analysis is to provide spatially explicit evidence o
 ---
 
 ## Research Objectives
-
-> **Note:** The introductory chapter containing the verbatim thesis aim and itemized objectives was not included in the uploaded manuscript excerpt. Below is a structured summary derived directly from the analytical scope in Chapters 3 and 4, alongside placeholders for your exact Chapter 1 wording.
-
-**Research Aim:**  
-`[Information to be provided — insert exact Research Aim from Chapter One of the manuscript]`
-
-*(Operational summary: To assess the spatial-temporal impacts of climate change on vegetation vigor, thermal regime, and cassava production in northern and central Ekiti State, Nigeria, and evaluate implications for farmers' coping strategies using Remote Sensing, GIS, and multi-decadal climatic data.)*
-
-**Specific Objectives:**
 1. Derive and compare decadal spatial distributions of vegetation health and canopy condition using **NDVI** and **EVI** from Landsat 8 OLI ($2014$) and Landsat 9 OLI ($2024$) imagery.
 2. Retrieve and quantify decadal changes in **Land Surface Temperature (LST)** between $2014$ and $2024$ across the five selected LGAs to identify thermal stress hotspots.
 3. Analyze $34$-year ($1990\text{--}2024$) inter-annual trends and anomalies in key agro-climatic parameters (rainfall, minimum/maximum temperature, solar radiation, minimum/maximum relative humidity, and wind speed) alongside cassava cultivated area dynamics.
 4. Evaluate the spatial-temporal relationships between climatic stressors, vegetation spectral responses, and the efficacy of farmers' climate coping and adaptation strategies.
-5. `[Information to be provided — add any additional specific objectives from Chapter One, such as questionnaire/survey objectives if applicable]`
 
 ---
 
@@ -56,7 +46,6 @@ The research was conducted across **five contiguous Local Government Areas (LGAs
 5. **Irepodun/Ifelodun**
 
 * **Geographic Coordinates:** Approximately latitudes $7^\circ 31'\text{ N}$ to $8^\circ 10'\text{ N}$ and longitudes $5^\circ 3'\text{ E}$ to $5^\circ 42'\text{ E}$.
-* **Total Study Area Extent:** `[Information to be provided — e.g., total area in km² or hectares]`
 * **Agro-Ecological & Agricultural Context:** The region supports rain-fed arable agriculture in which cassava (*Manihot esculenta*) is a primary staple crop, alongside forested zones, shrublands, and rural-to-peri-urban settlements.
 
 ### Study Area Reference Map
@@ -74,9 +63,8 @@ All satellite imagery and meteorological datasets utilized in this study were ob
 | :--- | :--- | :--- | :--- | :--- |
 | **Landsat 8 OLI / TIRS Satellite Imagery** | United States Geological Survey (USGS EarthExplorer) | $2014$ | $30\text{ m}$ | Baseline computation of Normalized Difference Vegetation Index (NDVI), Enhanced Vegetation Index (EVI), and Land Surface Temperature (LST). |
 | **Landsat 9 OLI-2 / TIRS-2 Satellite Imagery** | United States Geological Survey (USGS EarthExplorer) | $2024$ | $30\text{ m}$ | Decadal comparison of NDVI, EVI, and LST to detect vegetation stress, canopy changes, and surface warming trends. |
-| **ERA-Interim Reanalysis Climatic Data** | European Centre for Medium-Range Weather Forecasts (ECMWF) | $1990\text{--}2024$ ($34\text{ years}$) | `[Information to be provided]` | Time-series and anomaly analysis of annual rainfall, minimum/maximum temperature, solar radiation, minimum/maximum relative humidity, and wind speed. |
-| **Cassava Cultivated Area Records** | `[Information to be provided — e.g., Ekiti State ADP / FAOSTAT / NBS]` | $1990\text{--}2024$ | LGA / State aggregate | Evaluation of multi-decadal volatility in land area allocated to cassava cultivation relative to climatic anomalies. |
-| **Administrative Boundary Shapefiles** | `[Information to be provided — e.g., OSGOF / DIVA-GIS]` | `[Information to be provided]` | Vector | Spatial delineation and clipping of Ekiti State and the five target LGAs. |
+| **ERA-Interim Reanalysis Climatic Data** | European Centre for Medium-Range Weather Forecasts (ECMWF) | $1990\text{--}2024$ ($34\text{ years}$) | 80KM | Time-series and anomaly analysis of annual rainfall, minimum/maximum temperature, solar radiation, minimum/maximum relative humidity, and wind speed. |
+| **Administrative Boundary Shapefiles** | GRID3 |  | Vector | Spatial delineation and clipping of Ekiti State and the five target LGAs. |
 
 ---
 
@@ -346,8 +334,8 @@ All spatial indices ($\text{NDVI}$, $\text{EVI}$, and $\text{LST}$) for $2014$ a
 
 The convergence of satellite-derived biophysical indicators ($2014\text{--}2024$) and $34$-year ERA-Interim meteorological records ($1990\text{--}2024$) provides coherent evidence of intensifying hydroclimatic stress across northern and central Ekiti State:
 
-* **Synergistic Thermal and Moisture Stress:** The $+1.80^\circ\text{C}$ rise in minimum LST and $+0.40^\circ\text{C}$ rise in maximum LST between $2014$ and $2024$ align directly with the post-$2014$ acceleration in $T_{\max}$, elevated solar radiation ($2020\text{--}2024$), and sharp drop in $\text{RH}_{\min}$ ($\approx 45\%$ in $2021\text{--}2024$). Together, higher temperatures and lower daytime humidity substantially increase Vapour Pressure Deficit (VPD) and evapotranspiration, placing rain-fed cassava under acute physiological water stress even during years without extreme rainfall deficits.
-* **Spatial Diagnostics of Farmer Coping Efficacy:** Multi-temporal NDVI and EVI maps serve as an indirect spatial diagnostic of adaptation outcomes. Zones in central and southwestern Ekiti State that retained high NDVI ($> 0.5$) and EVI ($> 0.6$) between $2014$ and $2024$ indicate resilient agro-ecosystems or effective adoption of adaptive management practices. Conversely, the expansion of degraded/stressed NDVI and EVI zones in the northern sector (Ikole, Oye, and Ilejemeje LGAs)—coinciding with the highest LST values—highlights areas where existing coping strategies are insufficient to buffer intensifying heat and atmospheric dryness.
+* **Synergistic Thermal and Moisture Stress:** The $+1.80^\circ\text{C}$ rise in minimum LST and $+0.40^\circ\text{C}$ rise in maximum LST between $2014$ and $2024$ align directly with the post-2014 acceleration in $T_{\max}$, elevated solar radiation ($2020\text{--}2024$), and sharp drop in $\text{RH}_{\min}$ ($\approx 45\%$ in $2021\text{--}2024$). Together, higher temperatures and lower daytime humidity substantially increase Vapour Pressure Deficit (VPD) and evapotranspiration, placing rain-fed cassava under acute physiological water stress even during years without extreme rainfall deficits.
+* **Spatial Diagnostics of Farmer Coping Efficacy:** Multi-temporal NDVI and EVI maps serve as an indirect spatial diagnostic of adaptation outcomes. Zones in central and southwestern Ekiti State that retained high NDVI ($> 0.5$) and EVI ($> 0.6$) between $2014$ and $2024$ indicate resilient agro-ecosystems or effective adoption of adaptive management practices. Conversely, the expansion of degraded/stressed NDVI and EVI zones in the northern sector (Ikole, Oye, and Ilejemeje LGAs) coinciding with the highest LST values highlights areas where existing coping strategies are insufficient to buffer intensifying heat and atmospheric dryness.
 
 ---
 
@@ -357,7 +345,6 @@ While no dedicated limitations section was included in the uploaded manuscript e
 
 * **Decadal Snapshot Comparison:** Remote sensing change detection relied on two temporal endpoints ($2014$ and $2024$) rather than dense annual satellite time-series composites, which may capture seasonal or phenological variations alongside long-term land degradation.
 * **Visual & Descriptive Trend Assessment:** As explicitly noted in Chapter 4, long-term hydroclimatic trends (such as the post-$2019$ $\text{RH}_{\min}$ decline and wind speed fluctuations) were evaluated via visual inspection of time-series and anomaly charts and remain subject to formal non-parametric statistical significance testing (e.g., Mann-Kendall test).
-* **Indirect Inference of Coping Strategies:** In the uploaded chapters, the effectiveness of farmers' coping strategies was inferred indirectly from spatial-temporal NDVI, EVI, and LST dynamics rather than direct farm-level yield or survey measurements (`[Information to be provided — add survey/field methodology details if documented in other chapters]`).
 
 ---
 
@@ -366,9 +353,8 @@ While no dedicated limitations section was included in the uploaded manuscript e
 ### Conclusion
 Multi-temporal Landsat analysis ($2014\text{--}2024$) and $34$-year ECMWF ERA-Interim climatic records ($1990\text{--}2024$) demonstrate that agricultural landscapes in northern and central Ekiti State are experiencing measurable surface warming (minimum LST up by $+1.80^\circ\text{C}$, maximum LST up by $+0.40^\circ\text{C}$), rising maximum and minimum air temperatures, increased post-$2020$ solar radiation, and significantly drier daytime atmospheric conditions ($\text{RH}_{\min}$ dropping to $\approx 45\%$). Corresponding expansions in low-NDVI and low-EVI zones—most pronounced in the northern LGAs—underscore growing climate vulnerability for rain-fed cassava production and highlight the uneven buffering capacity of current farmer coping strategies.
 
-*(Note: `[Information to be provided — insert verbatim Conclusions and Recommendations from Chapter Five of the manuscript if available]`)*
 
-### Actionable Recommendations (Derived from Chapter 4 Findings)
+### Recommendations 
 1. **Promote Drought- and Heat-Tolerant Cassava Varieties:** Prioritize the dissemination and adoption of improved, climate-resilient *Manihot esculenta* cultivars in northern Ekiti State (Ikole, Oye, and Ilejemeje LGAs), where elevated LST and declining NDVI/EVI converge.
-2. **Strengthen Soil Moisture Conservation Practices:** Scale up agronomic water-conservation techniques—including **mulching**, **reduced/minimum tillage**, and **organic matter management**—to reduce soil evaporation and mitigate elevated Vapour Pressure Deficit (VPD) during dry spells.
+2. **Strengthen Soil Moisture Conservation Practices:** Scale up agronomic water-conservation techniques including **mulching**, **reduced/minimum tillage**, and **organic matter management** to reduce soil evaporation and mitigate elevated Vapour Pressure Deficit (VPD) during dry spells.
 3. **Optimize Planting Calendars and Spatial Planning:** Align cassava planting dates and planting densities with updated rainfall onset patterns and use spatial LST/NDVI vulnerability maps to target agricultural extension services toward high-stress farming communities.
