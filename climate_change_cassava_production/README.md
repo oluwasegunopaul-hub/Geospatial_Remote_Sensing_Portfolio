@@ -12,7 +12,6 @@
 * [Hydroclimatic and Agricultural Charts](#hydroclimatic-and-agricultural-charts)
 * [Results and Key Findings](#results-and-key-findings)
 * [Discussion](#discussion)
-* [Research Limitations](#research-limitations)
 * [Conclusion and Recommendations](#conclusion-and-recommendations)
 
 ---
@@ -336,15 +335,6 @@ The convergence of satellite-derived biophysical indicators ($2014\text{--}2024$
 
 * **Synergistic Thermal and Moisture Stress:** The $+1.80^\circ\text{C}$ rise in minimum LST and $+0.40^\circ\text{C}$ rise in maximum LST between $2014$ and $2024$ align directly with the post-2014 acceleration in $T_{\max}$, elevated solar radiation ($2020\text{--}2024$), and sharp drop in $\text{RH}_{\min}$ ($\approx 45\%$ in $2021\text{--}2024$). Together, higher temperatures and lower daytime humidity substantially increase Vapour Pressure Deficit (VPD) and evapotranspiration, placing rain-fed cassava under acute physiological water stress even during years without extreme rainfall deficits.
 * **Spatial Diagnostics of Farmer Coping Efficacy:** Multi-temporal NDVI and EVI maps serve as an indirect spatial diagnostic of adaptation outcomes. Zones in central and southwestern Ekiti State that retained high NDVI ($> 0.5$) and EVI ($> 0.6$) between $2014$ and $2024$ indicate resilient agro-ecosystems or effective adoption of adaptive management practices. Conversely, the expansion of degraded/stressed NDVI and EVI zones in the northern sector (Ikole, Oye, and Ilejemeje LGAs) coinciding with the highest LST values highlights areas where existing coping strategies are insufficient to buffer intensifying heat and atmospheric dryness.
-
----
-
-## Research Limitations
-
-While no dedicated limitations section was included in the uploaded manuscript excerpt, the following methodological scope constraints are noted directly from the research design:
-
-* **Decadal Snapshot Comparison:** Remote sensing change detection relied on two temporal endpoints ($2014$ and $2024$) rather than dense annual satellite time-series composites, which may capture seasonal or phenological variations alongside long-term land degradation.
-* **Visual & Descriptive Trend Assessment:** As explicitly noted in Chapter 4, long-term hydroclimatic trends (such as the post-$2019$ $\text{RH}_{\min}$ decline and wind speed fluctuations) were evaluated via visual inspection of time-series and anomaly charts and remain subject to formal non-parametric statistical significance testing (e.g., Mann-Kendall test).
 
 ---
 
