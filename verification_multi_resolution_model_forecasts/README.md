@@ -36,14 +36,11 @@ Using **Panoply** for NetCDF multidimensional data inspection and **ArcGIS 10.8*
 
 **Research Aim:**  
 To verify the spatial distribution and peak intensity of multi-resolution model forecasts of heavy rainfall events over Nigeria in 2024 against TAMSAT satellite-based rainfall observations.  
-*(Note: `[Information to be provided — insert the exact verbatim Research Aim from Chapter One if different]`)*
 
 **Specific Objectives:**  
-1. `[Information to be provided — insert Specific Objective 1 from Chapter One]`
-2. `[Information to be provided — insert Specific Objective 2 from Chapter One]`
-3. `[Information to be provided — insert Specific Objective 3 from Chapter One]`
-
-*(Based on Chapters Three and Four of the manuscript, the analytical scope encompasses: [1] acquiring and inspecting 2024 NetCDF satellite rainfall estimates and multi-resolution model forecast products; [2] mapping monthly spatial rainfall distributions across Nigeria's 36 states and the Federal Capital Territory; and [3] comparing forecasted spatial patterns and peak intensities against historical TAMSAT observations from January to December 2024.)*
+1. Acquiring and inspecting 2024 NetCDF satellite rainfall estimates and multi-resolution model forecast products
+2. Mapping monthly spatial rainfall distributions across Nigeria's 36 states and the Federal Capital Territory
+3. comparing forecasted spatial patterns and peak intensities against historical TAMSAT observations from January to December 2024
 
 ---
 
@@ -70,12 +67,10 @@ Five primary gridded datasets covering **January to December 2024** were utilize
 | Dataset | Source | Acquisition Year / Period | Spatial Resolution | Application in the Research |
 | :--- | :--- | :--- | :--- | :--- |
 | **TAMSAT v3.1 Daily Recovered Rainfall Estimate (`rfe_filled`)** | Tropical Applications of Meteorology using SATellite data (TAMSAT), Dept. of Meteorology, University of Reading; accessed via IRI Data Library, Lamont-Doherty Earth Observatory, Columbia University | January – December 2024 (Daily) | $0.0375^\circ \times 0.0375^\circ$ | Historical/observed reference baseline selected for enhanced local accuracy and suitability for African rainfall analysis. |
-| **`rrarp_24` Forecast Product** | `[Information to be provided — e.g., Météo-France ARPEGE model product]` | January – December 2024 | `[Information to be provided]` | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
-| **`rrdwd_24` (`RRDWD`) Forecast Product** | German National Meteorological Service (Deutscher Wetterdienst, DWD) | January – December 2024 | `[Information to be provided]` | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
-| **`rrecmwf_24` Forecast Product** | `[Information to be provided — e.g., European Centre for Medium-Range Weather Forecasts (ECMWF)]` | January – December 2024 | `[Information to be provided]` | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
-| **`rruk_24` Forecast Product** | `[Information to be provided — e.g., UK Met Office model product]` | January – December 2024 | `[Information to be provided]` | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
-
-*(Note: Chapter Three of the manuscript also references `RRGFS` from the Global Forecast Service and `RREM` during dataset selection; the four forecast layers systematically mapped and verified across Chapter Four are `rrarp_24`, `rrdwd_24`, `rrecmwf_24`, and `rruk_24`.)*
+| **`rrarp_24` Forecast Product** |  | January – December 2024 |  | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
+| **`rrdwd_24` (`RRDWD`) Forecast Product** |  | January – December 2024 |  | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
+| **`rrecmwf_24` Forecast Product** |  | January – December 2024 |  | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
+| **`rruk_24` Forecast Product** |  | January – December 2024 |  | Multi-resolution forecast model evaluated for spatial rainfall distribution and peak intensity ($\text{mm}$). |
 
 ---
 
@@ -106,20 +101,17 @@ flowchart TD
     J --> K[Seasonal Climatological & Model Skill Assessment]
 ```
 
-### 1. Data Acquisition
-Daily recovered rainfall estimates (`rfe_filled`, Version 3.1) were retrieved from the TAMSAT archive via the International Research Institute for Climate and Society (IRI) Data Library at Columbia University (`https://iridl.ldeo.columbia.edu/SOURCES/.Reading/.Meteorology/.TAMSAT/.v3p1/.daily/.rfe_filled/index.html#info`). Concurrent 2024 forecast products (`rrarp_24`, `rrdwd_24`, `rrecmwf_24`, and `rruk_24`) were acquired from their respective meteorological modeling centers based on their established literature use over Nigeria, spatial resolution, and accessibility.
-
-### 2. NetCDF Inspection and Preprocessing
+### 1. NetCDF Inspection and Preprocessing
 Downloaded NetCDF climate files were inspected in **Panoply** to verify temporal dimensions, variable attributes, and annual precipitation magnitudes, confirming the selection of the **2024** dataset for analysis. The datasets were subsequently imported into **ArcGIS 10.8** and spatially clipped/overlaid against Nigeria's state boundary shapefile (`Nig_States`).
 
-### 3. Spatial Analysis and Forecast Verification
+### 2. Spatial Analysis and Forecast Verification
 Monthly rainfall surfaces from January through December 2024 were analyzed in **ArcGIS 10.8** using continuous color-ramp symbology (ranging from low/zero rainfall in dark blue to peak rainfall intensities in red). Each monthly historical TAMSAT map was compared against the corresponding multi-model forecast maps across three diagnostic criteria:
 * **Spatial Location and Rain-Belt Migration:** Evaluating whether models accurately capture the northward advance (March–August) and southward retreat (September–November) of the Intertropical Discontinuity / rain belt, as well as localized coastal or Sahelian precipitation cores.
 * **Peak Rainfall Intensity ($\text{mm}$):** Comparing maximum predicted grid values against historical TAMSAT peak values for each month.
 * **Inter-Model Consensus:** Assessing agreement or divergence among `rrarp_24`, `rrdwd_24`, `rrecmwf_24`, and `rruk_24` across dry, transitional, and wet seasons.
 
-### 4. Cartographic Production
-Standardized map layouts—incorporating geographic coordinate grids, north arrows, scale bars ($\text{km}$), state boundary overlays, and model-specific value legends—were generated in **ArcGIS 10.8**, producing one study area reference map and 24 monthly rainfall distribution maps.
+### 3. Cartographic Production
+Standardized map layouts incorporating geographic coordinate grids, north arrows, scale bars ($\text{km}$), state boundary overlays, and model specific value legends—were generated in **ArcGIS 10.8**, producing one study area reference map and 24 monthly rainfall distribution maps.
 
 ---
 
@@ -127,33 +119,33 @@ Standardized map layouts—incorporating geographic coordinate grids, north arro
 
 ### Map Inventory
 
-| No. | Map Title | Suggested Filename | Category |
+| No. | Map Title | Filename | Category |
 | :---: | :--- | :--- | :--- |
-| 1 | Study Area Map (`Fig 1`) | `01_study_area_map.png` | Reference |
-| 2 | Historical Daily Rainfall Distribution – January 2024 (`Fig 2`) | `02_historical_rainfall_january_2024.png` | Thematic (Historical) |
-| 3 | Forecasted Daily Rainfall Distribution – January 2024 (`Fig 3`) | `03_forecast_rainfall_january_2024.png` | Analytical (Forecast) |
-| 4 | Historical Daily Rainfall Distribution – February 2024 (`Fig 4`) | `04_historical_rainfall_february_2024.png` | Thematic (Historical) |
-| 5 | Forecasted Daily Rainfall Distribution – February 2024 (`Fig 5`) | `05_forecast_rainfall_february_2024.png` | Analytical (Forecast) |
-| 6 | Historical Daily Rainfall Distribution – March 2024 (`Fig 6`) | `06_historical_rainfall_march_2024.png` | Thematic (Historical) |
-| 7 | Forecasted Daily Rainfall Distribution – March 2024 (`Fig 7`) | `07_forecast_rainfall_march_2024.png` | Analytical (Forecast) |
-| 8 | Historical Daily Rainfall Distribution – April 2024 (`Fig 8`) | `08_historical_rainfall_april_2024.png` | Thematic (Historical) |
-| 9 | Forecasted Daily Rainfall Distribution – April 2024 (`Fig 9`) | `09_forecast_rainfall_april_2024.png` | Analytical (Forecast) |
-| 10 | Historical Daily Rainfall Distribution – May 2024 (`Fig 10`) | `10_historical_rainfall_may_2024.png` | Thematic (Historical) |
-| 11 | Forecasted Daily Rainfall Distribution – May 2024 (`Fig 11`) | `11_forecast_rainfall_may_2024.png` | Analytical (Forecast) |
-| 12 | Historical Daily Rainfall Distribution – June 2024 (`Fig 12`) | `12_historical_rainfall_june_2024.png` | Thematic (Historical) |
-| 13 | Forecasted Daily Rainfall Distribution – June 2024 (`Fig 13`) | `13_forecast_rainfall_june_2024.png` | Analytical (Forecast) |
-| 14 | Historical Daily Rainfall Distribution – July 2024 (`Fig 14`) | `14_historical_rainfall_july_2024.png` | Thematic (Historical) |
-| 15 | Forecasted Daily Rainfall Distribution – July 2024 (`Fig 15`) | `15_forecast_rainfall_july_2024.png` | Analytical (Forecast) |
-| 16 | Historical Daily Rainfall Distribution – August 2024 (`Fig 16`) | `16_historical_rainfall_august_2024.png` | Thematic (Historical) |
-| 17 | Forecasted Daily Rainfall Distribution – August 2024 (`Fig 17`) | `17_forecast_rainfall_august_2024.png` | Analytical (Forecast) |
-| 18 | Historical Daily Rainfall Distribution – September 2024 (`Fig 18`) | `18_historical_rainfall_september_2024.png` | Thematic (Historical) |
-| 19 | Forecasted Daily Rainfall Distribution – September 2024 (`Fig 19`) | `19_forecast_rainfall_september_2024.png` | Analytical (Forecast) |
-| 20 | Historical Daily Rainfall Distribution – October 2024 (`Fig 20`) | `20_historical_rainfall_october_2024.png` | Thematic (Historical) |
-| 21 | Forecasted Daily Rainfall Distribution – October 2024 (`Fig 21`) | `21_forecast_rainfall_october_2024.png` | Analytical (Forecast) |
-| 22 | Historical Daily Rainfall Distribution – November 2024 (`Fig 22`) | `22_historical_rainfall_november_2024.png` | Thematic (Historical) |
-| 23 | Forecasted Daily Rainfall Distribution – November 2024 (`Fig 23`) | `23_forecast_rainfall_november_2024.png` | Analytical (Forecast) |
-| 24 | Historical Daily Rainfall Distribution – December 2024 (`Fig 24`) | `24_historical_rainfall_december_2024.png` | Thematic (Historical) |
-| 25 | Forecasted Daily Rainfall Distribution – December 2024 (`Fig 25` / labeled `Fig 3` in text) | `25_forecast_rainfall_december_2024.png` | Analytical (Forecast) |
+| 1 | Study Area Map  | `01_study_area_map.png` | Reference |
+| 2 | Historical Daily Rainfall Distribution – January 2024  | `02_historical_rainfall_january_2024.png` | Thematic (Historical) |
+| 3 | Forecasted Daily Rainfall Distribution – January 2024 | `03_forecast_rainfall_january_2024.png` | Analytical (Forecast) |
+| 4 | Historical Daily Rainfall Distribution – February 2024  | `04_historical_rainfall_february_2024.png` | Thematic (Historical) |
+| 5 | Forecasted Daily Rainfall Distribution – February 2024  | `05_forecast_rainfall_february_2024.png` | Analytical (Forecast) |
+| 6 | Historical Daily Rainfall Distribution – March 2024  | `06_historical_rainfall_march_2024.png` | Thematic (Historical) |
+| 7 | Forecasted Daily Rainfall Distribution – March 2024  | `07_forecast_rainfall_march_2024.png` | Analytical (Forecast) |
+| 8 | Historical Daily Rainfall Distribution – April 2024  | `08_historical_rainfall_april_2024.png` | Thematic (Historical) |
+| 9 | Forecasted Daily Rainfall Distribution – April 2024  | `09_forecast_rainfall_april_2024.png` | Analytical (Forecast) |
+| 10 | Historical Daily Rainfall Distribution – May 2024  | `10_historical_rainfall_may_2024.png` | Thematic (Historical) |
+| 11 | Forecasted Daily Rainfall Distribution – May 2024  | `11_forecast_rainfall_may_2024.png` | Analytical (Forecast) |
+| 12 | Historical Daily Rainfall Distribution – June 2024  | `12_historical_rainfall_june_2024.png` | Thematic (Historical) |
+| 13 | Forecasted Daily Rainfall Distribution – June 2024  | `13_forecast_rainfall_june_2024.png` | Analytical (Forecast) |
+| 14 | Historical Daily Rainfall Distribution – July 2024  | `14_historical_rainfall_july_2024.png` | Thematic (Historical) |
+| 15 | Forecasted Daily Rainfall Distribution – July 2024  | `15_forecast_rainfall_july_2024.png` | Analytical (Forecast) |
+| 16 | Historical Daily Rainfall Distribution – August 2024  | `16_historical_rainfall_august_2024.png` | Thematic (Historical) |
+| 17 | Forecasted Daily Rainfall Distribution – August 2024  | `17_forecast_rainfall_august_2024.png` | Analytical (Forecast) |
+| 18 | Historical Daily Rainfall Distribution – September 2024  | `18_historical_rainfall_september_2024.png` | Thematic (Historical) |
+| 19 | Forecasted Daily Rainfall Distribution – September 2024  | `19_forecast_rainfall_september_2024.png` | Analytical (Forecast) |
+| 20 | Historical Daily Rainfall Distribution – October 2024  | `20_historical_rainfall_october_2024.png` | Thematic (Historical) |
+| 21 | Forecasted Daily Rainfall Distribution – October 2024  | `21_forecast_rainfall_october_2024.png` | Analytical (Forecast) |
+| 22 | Historical Daily Rainfall Distribution – November 2024  | `22_historical_rainfall_november_2024.png` | Thematic (Historical) |
+| 23 | Forecasted Daily Rainfall Distribution – November 2024  | `23_forecast_rainfall_november_2024.png` | Analytical (Forecast) |
+| 24 | Historical Daily Rainfall Distribution – December 2024  | `24_historical_rainfall_december_2024.png` | Thematic (Historical) |
+| 25 | Forecasted Daily Rainfall Distribution – December 2024  | `25_forecast_rainfall_december_2024.png` | Analytical (Forecast) |
 
 ---
 
@@ -286,14 +278,10 @@ Standardized map layouts—incorporating geographic coordinate grids, north arro
 | **November** | $18.9$ | $21.25$ | $16.85$ | $7.19$ | $16.55$ | Models capture broad drying trend but displace residual rains from Oyo/Osun to the coast. |
 | **December** | $16.1$ | $5.49$ | $5.52$ | $2.34$ | $2.46$ | Strong multi-model consensus on nationwide Harmattan dryness and coastal trace showers. |
 
-*\*Value displayed on the ArcGIS map legend (`High` class).*  
-*$\dagger$Value cited in the Chapter Four text narrative.*
-
 ### Summary of Verification Findings
 1. **High Dry-Season Forecast Skill (December–February):** All four models exhibited strong spatial agreement and reliability in predicting nationwide dry conditions during the Harmattan-dominated months of December, January, and February, restricting precipitation strictly to minor coastal zones.
 2. **Systematic Underestimation During Onset Months (March–April):** During the northward progression of the rain belt in March and April, all four models substantially underestimated peak rainfall intensities relative to TAMSAT observations and struggled to reproduce inland penetration into the Middle Belt.
 3. **High Inter-Model Divergence During Peak Monsoon & Transitional Regimes (May–October):** Forecast skill degraded during convective peak and transitional months, characterized by spatial displacement errors (such as missing the August Sahelian rain belt and southern "August Break") and large positive intensity biases in September (`rrecmwf_24` reaching $206.52\text{ mm}$ and `rrarp_24` reaching $185.51\text{ mm}$ versus $34.2\text{ mm}$ historical).
-4. **Quantitative Error Metrics:** `[Information to be provided — insert RMSE, Mean Bias, Correlation Coefficient, or categorical skill scores (POD, FAR, CSI) if computed in the full manuscript]`
 
 ---
 
@@ -306,21 +294,10 @@ The spatiotemporal evaluation of multi-resolution rainfall forecasts against TAM
 * **Climatological Cycle Representation:** While the models successfully resolve synoptic-scale Harmattan dry-season stability, convective parameterization challenges remain evident during rapid seasonal transitions of the West African Monsoon.
 
 ---
-
-## Research Limitations
-
-No dedicated limitations section was included in the provided manuscript chapters; however, the following methodological scope constraints are evident from the study design:
-
-* **Qualitative & Peak-Value Verification Scope:** The analysis evaluates spatial pattern alignment and monthly maximum grid values ($\text{mm}$), without pixel-by-pixel continuous or categorical statistical verification metrics (e.g., RMSE, Bias, POD, FAR).
-* **Manuscript Section Availability:** `[Information to be provided — insert any explicit study limitations documented in Chapters One or Five of the complete thesis]`
-
----
-
 ## Conclusion and Recommendations
 
 ### Conclusion
 Based on the 12-month spatial verification across Nigeria in 2024, multi-resolution numerical forecast models (`rrarp_24`, `rrdwd_24`, `rrecmwf_24`, and `rruk_24`) demonstrate high agreement and reliability in capturing widespread dry-season conditions during December, January, and February. Conversely, model performance degrades markedly during the rainy-season onset (March–April), peak monsoon/August Break dynamics (June–August), and southward retreat transitions (September–November), exhibiting substantial inter-model disagreement, spatial rain-belt displacement, and peak intensity biases.  
-*(Note: `[Information to be provided — insert formal concluding statements from Chapter Five]`)*
 
 ### Recommendations
-* `[Information to be provided — insert formal recommendations from Chapter Five of the manuscript, such as multi-model ensemble calibration, bias correction for hydrological modeling, or operational integration with NiMet ground gauge networks]`
+
