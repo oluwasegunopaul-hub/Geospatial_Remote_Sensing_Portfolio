@@ -14,10 +14,6 @@ Welcome to my **Remote Sensing & Geographic Information Systems (GIS) Portfolio*
 
 ---
 
-## Repository Directory Structure
-
-```
-
 ## Featured Project Categories
 
 | # | Project Category | Focus & Techniques | Folder Link |
