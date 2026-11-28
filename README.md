@@ -16,63 +16,7 @@ Welcome to my **Remote Sensing & Geographic Information Systems (GIS) Portfolio*
 
 ## Repository Directory Structure
 
-```text
-geospatial-remote-sensing-portfolio/
-│
-├── README.md                                  # Main repository documentation & overview
 
-│
-├── 01_Environmental_Heritage_Assessment/
-│   ├── maps/
-│   │   ├── 01_unesco_composite_threat_index.png
-│   │   └── 02_heritage_buffer_encroachment_change.png
-│   ├── README.md
-│   └── project_information.md
-│
-├── 02_Okomu_Poaching_Hotspots/
-│   ├── maps/
-│   │   ├── 01_okomu_poaching_hotspot_gi_star.png
-│   │   └── 02_okomu_patrol_accessibility_surface.png
-│   ├── README.md
-│   └── project_information.md
-│
-├── 03_Soil_Fertility_Assessment/
-│   ├── maps/
-│   │   ├── 01_soil_fertility_index_map.png
-│   │   └── 02_soil_ph_organic_carbon_surface.png
-│   ├── README.md
-│   └── project_information.md
-│
-├── 04_Flood_Risk_Assessment/
-│   ├── maps/
-│   │   ├── 01_flood_susceptibility_ahp_map.png
-│   │   └── 02_topographic_wetness_index_twi.png
-│   ├── README.md
-│   └── project_information.md
-│
-├── 05_Soil_Erosion_Assessment/
-│   ├── maps/
-│   │   ├── 01_rusle_soil_loss_erosion_map.png
-│   │   └── 02_rusle_ls_topographic_factor.png
-│   ├── README.md
-│   └── project_information.md
-│
-├── 06_Other_Geospatial_Maps/
-│   ├── Study_Area_Maps/
-│   │   └── study_area_location_map.png
-│   ├── LULC_Maps/
-│   │   └── lulc_supervised_classification.png
-│   ├── Terrain_Maps/
-│   │   ├── dem_elevation_model.png
-│   │   └── terrain_slope_degrees.png
-│   ├── Vegetation_Maps/
-│   │   ├── ndvi_vegetation_vigor.png
-│   │   └── ndwi_surface_water_index.png
-│   └── README.md
-│
-└── assets/
-    └── portfolio-images/
-        └── portfolio_banner.png
 ```
 
 ---
