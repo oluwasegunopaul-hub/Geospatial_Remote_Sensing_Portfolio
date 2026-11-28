@@ -11,7 +11,6 @@
 - [Climatic Charts and Time-Series Outputs](#climatic-charts-and-time-series-outputs)
 - [Results and Key Findings](#results-and-key-findings)
 - [Discussion](#discussion)
-- [Research Limitations](#research-limitations)
 - [Conclusion and Recommendations](#conclusion-and-recommendations)
 
 ---
@@ -339,14 +338,6 @@ The integration of multi-temporal satellite remote sensing ($2014\text{--}2024$)
 
 ---
 
-## Research Limitations
 
-The following methodological considerations and data limitations are noted from the research text:
-
-* **Sensor and Atmospheric Sensitivity:** $\text{NDVI}$ effectiveness can be influenced by atmospheric interference, sensor calibration, and canopy saturation in dense vegetation (addressed in part by complementing $\text{NDVI}$ with $\text{EVI}$).
-* **Highest Relative Humidity Chart Scaling:** Assessment of long-term trends in annual maximum relative humidity ($\text{RH}_{\max}$) was constrained by chart axis scaling limitations and high inter-annual variability.
-* **Landscape-Wide Vegetation Scope:** The $2014$ and $2024$ spectral indices ($\text{NDVI}$, $\text{EVI}$, $\text{NDWI}$) and $\text{LULC}$ classifications characterize overall landscape vegetation rather than isolating oil palm plantations exclusively from surrounding forest and crop cover.
-
----
 
 
